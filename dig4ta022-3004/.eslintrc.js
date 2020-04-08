@@ -8,16 +8,21 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
+    'eslint:recommended',
     '@nuxtjs',
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'plugin:vue/recommended'
   ],
   plugins: [
-    'prettier'
+    'prettier',
+    'vue'
   ],
   // add your custom rules here
   rules: {
+    "vue/html-indent": ["error", "tab"],
+    "indent": ["error", "tab"]
   }
 }
