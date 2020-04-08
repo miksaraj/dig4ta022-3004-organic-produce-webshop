@@ -12,3 +12,9 @@ Course project for Haaga-Helia DIG4TA022-3004 Digiproject course, team 01
 - Nuxt.js: https://nuxtjs.org/guide
 - Vue.js: https://vuejs.org/v2/guide/
 - Bootstrap-Vue: https://bootstrap-vue.js.org/docs/
+
+# Recommended Dev Tools
+Good tried-and-tested tools to develop Vue applications with are the Firefox Developer Edition paired with Vue.js devtools.
+They are available from the following links:
+https://www.mozilla.org/en-US/firefox/developer/
+https://addons.mozilla.org/fi/firefox/addon/vue-js-devtools/
