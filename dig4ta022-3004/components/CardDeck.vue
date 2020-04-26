@@ -15,7 +15,7 @@ export default {
 	},
 	computed: {
 		items() {
-			return this.$store.state.courses.list
+			return this.$attrs.items
 		}
 	}
 }
