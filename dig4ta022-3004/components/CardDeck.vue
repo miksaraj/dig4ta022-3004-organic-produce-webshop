@@ -13,30 +13,9 @@ export default {
 	components: {
 		Card
 	},
-	data() {
-		return {
-			items: [
-				{
-					id: 1,
-					header: 'Header',
-					description: 'This is a description'
-				},
-				{
-					id: 2,
-					header: 'Header',
-					description: 'This is a description'
-				},
-				{
-					id: 3,
-					header: 'Header',
-					description: 'This is a description'
-				},
-				{
-					id: 4,
-					header: 'Header',
-					description: 'This is a description'
-				}
-			]
+	computed: {
+		items() {
+			return this.$store.state.courses.list
 		}
 	}
 }
