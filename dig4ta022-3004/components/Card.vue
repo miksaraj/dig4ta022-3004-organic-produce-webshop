@@ -1,6 +1,6 @@
 <template>
 	<b-card>
-		<h1>{{ item.header }}</h1>
+		<nuxt-link to="/courses/1">{{ item.header }}</nuxt-link>
 		<p>{{ item.description }}</p>
 	</b-card>
 </template>
