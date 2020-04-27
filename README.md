@@ -1,5 +1,25 @@
-# dig4ta022-3004-organic-produce-webshop
-Course project for Haaga-Helia DIG4TA022-3004 Digiproject course, team 01
+# dig4ta022-3004
+
+> Course project for HH DIG4TA022-3004 Digiproject course
+
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 # To set up development environment:
 1. Clone repository
@@ -18,3 +38,4 @@ Good tried-and-tested tools to develop Vue applications with are the Firefox Dev
 They are available from the following links:
 https://www.mozilla.org/en-US/firefox/developer/
 https://addons.mozilla.org/fi/firefox/addon/vue-js-devtools/
+
