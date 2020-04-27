@@ -1,0 +1,12 @@
+:root {
+    /* Main Color */
+    --color-main: #D81E5B;
+    /* Secondary Color */
+    --color-secondary: #042A2B;
+    /* Third Color */
+    --color-3: #1D7874;
+    /* Fourth Color */
+    --color-4: #50BEB9;
+    /* Fifth Color */
+    --color-5: #0081A7;
+}

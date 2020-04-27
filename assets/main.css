@@ -1,1 +1,22 @@
-@import 'theme.css';
+@import './theme.css';
+
+#app {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#content {
+    max-width: 80%;
+}
+
+.jumbotron {
+    background-color: var(--color-main);
+}
+
+a {
+    color: var(--color-4);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-3);
+}
