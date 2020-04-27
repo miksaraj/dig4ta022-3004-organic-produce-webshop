@@ -1,6 +1,8 @@
 <template>
 	<b-navbar sticky toggleable>
-		<b-navbar-brand>Oppia.io</b-navbar-brand>
+		<b-navbar-brand>
+			<h1>Oppia.<i>io</i></h1>
+		</b-navbar-brand>
 		<b-navbar-toggle target="navbar-toggle-collapse">
 			<template v-slot:default="{ expanded }">
 				<b-icon v-if="expanded" icon="x-circle" />
@@ -16,6 +18,29 @@
 		</b-collapse>
 	</b-navbar>
 </template>
+
+<style scoped>
+.navbar-brand {
+	color: var(--color-main);
+	font-weight: bolder;
+	-webkit-text-fill-color: var(--color-main);
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #ffffff;
+}
+
+.navbar {
+	background-color: var(--color-main);
+}
+
+.navbar-toggler {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.navbar-nav {
+	float: right;
+}
+</style>
 
 <script>
 export default {

@@ -1,7 +1,10 @@
 <template>
 	<div>
 		<navbar />
-		<nuxt />
+		<b-jumbotron fluid />
+		<b-container id="content">
+			<nuxt />
+		</b-container>
 	</div>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
 	<b-card>
-		<nuxt-link to="/courses/1">{{ item.header }}</nuxt-link>
+		<h2>
+			<nuxt-link :to="'/courses/' + item.id">{{ item.header }}</nuxt-link>
+		</h2>
 		<p>{{ item.description }}</p>
 	</b-card>
 </template>
