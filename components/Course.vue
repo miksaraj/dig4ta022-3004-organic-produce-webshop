@@ -9,7 +9,7 @@
 
 <script>
 export default {
-	name: 'card',
+	name: 'course',
 
 	computed: {
 		item() {

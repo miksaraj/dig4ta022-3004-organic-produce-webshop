@@ -1,12 +1,12 @@
 <template>
-	<card-deck :items="items" />
+	<course-deck :items="items" />
 </template>
 
 <script>
-import CardDeck from '~/components/CardDeck.vue'
+import CourseDeck from '~/components/CourseDeck.vue'
 export default {
 	components: {
-		CardDeck
+		CourseDeck
 	},
 	computed: {
 		items() {

@@ -1,5 +1,8 @@
 <template>
-	<card-deck :items="items" />
+	<div>
+		<h3>Luku</h3>
+		<card-deck :items="items" />
+	</div>
 </template>
 
 <script>

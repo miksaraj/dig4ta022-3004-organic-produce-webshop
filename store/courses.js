@@ -2,23 +2,23 @@ export const state = () => ({
 	list: [
 		{
 			id: 1,
-			header: 'Otsikko 1',
-			description: 'Ensimmäisen kurssin kootut selitykset'
+			header: 'javaScriptin alkeet',
+			description: 'Tällä kurssilla opit kaiken olennaisen'
 		},
 		{
 			id: 2,
-			header: 'Otsikko 2',
-			description: 'Toisen kurssin kootut selitykset'
+			header: 'Vue aloittelijoille',
+			description: ' on nopea, mutta monikäyttöinen'
 		},
 		{
 			id: 3,
-			header: 'Otsikko 3',
-			description: 'Lorem ipsum loorum laarum'
+			header: 'React.js',
+			description: 'Opiskele kuukaudessa Reactin mestariksi'
 		},
 		{
 			id: 4,
-			header: 'Otsikko 4',
-			description: ''
+			header: 'Java-ohjelmointia',
+			description: 'Tällä kurssilla otat haltuun Javaohjelmoinnin'
 		}
 	]
 })
