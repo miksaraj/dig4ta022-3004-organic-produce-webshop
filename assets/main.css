@@ -20,3 +20,17 @@ a:hover {
     text-decoration: none;
     color: var(--color-3);
 }
+
+.btn-primary {
+    background-color: var(--color-main);
+    border-color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-3);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--color-4);
+}
