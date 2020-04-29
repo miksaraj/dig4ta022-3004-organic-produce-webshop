@@ -1,7 +1,9 @@
 <template>
 	<b-navbar sticky toggleable>
 		<b-navbar-brand>
-			<h1>Oppia.<i>io</i></h1>
+			<nuxt-link to="/">
+				<h1>Oppia.<i>io</i></h1>
+			</nuxt-link>
 		</b-navbar-brand>
 		<b-navbar-toggle target="navbar-toggle-collapse">
 			<template v-slot:default="{ expanded }">
@@ -20,7 +22,7 @@
 </template>
 
 <style scoped>
-.navbar-brand {
+.navbar-brand a {
 	color: var(--color-main);
 	font-weight: bolder;
 	-webkit-text-fill-color: var(--color-main);
