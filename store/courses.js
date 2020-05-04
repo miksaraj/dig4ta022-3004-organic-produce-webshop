@@ -34,3 +34,9 @@ export const state = () => ({
 		}
 	]
 })
+
+export const getters = {
+	courseById: state => id => {
+		return state.list.find(x => x.id === id)
+	}
+}

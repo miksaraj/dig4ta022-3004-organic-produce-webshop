@@ -6,14 +6,23 @@
 				backdrop
 				shadow
 				:right="sidebar == 'sidebar-progress'"
-			></b-sidebar>
+			>
+				<sidebar-contents v-if="sidebar == 'sidebar-contents'" />
+				<sidebar-progress v-if="sidebar == 'sidebar-progress'" />
+			</b-sidebar>
 		</div>
 	</div>
 </template>
 
 <script>
+import SidebarContents from '~/components/SidebarContents.vue'
+import SidebarProgress from '~/components/SidebarProgress.vue'
 export default {
 	name: 'side-drawer',
+	components: {
+		SidebarContents,
+		SidebarProgress
+	},
 	data() {
 		return {
 			sidebars: ['sidebar-contents', 'sidebar-progress']

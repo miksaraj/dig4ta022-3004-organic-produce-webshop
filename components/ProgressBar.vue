@@ -42,7 +42,9 @@ export default {
 		}
 	},
 	created() {
-		if (!this.item.tasks) {
+		if (!this.item) {
+			this.getOverallProgress()
+		} else if (!this.item.tasks) {
 			this.countTasks()
 			this.getDone('course')
 		} else {
@@ -65,6 +67,15 @@ export default {
 			for (let i = 0; i < this.subItems.length; i++) {
 				this.max = this.max + this.subItems[i].tasks
 			}
+		},
+		getOverallProgress() {
+			const modules = this.$store.state.modules.list
+			let tasks = 0
+			for (let i = 0; i < modules.length; i++) {
+				tasks += modules[i].tasks
+			}
+			this.max = tasks
+			this.done = this.$store.state.progress.completed.length
 		}
 	}
 }
