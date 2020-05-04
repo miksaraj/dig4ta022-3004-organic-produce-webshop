@@ -1,7 +1,7 @@
 <template>
 	<b-card-group deck>
 		<div v-for="item in items" :key="item.id">
-			<card :item="item" />
+			<card :item="item" :type="type" />
 		</div>
 	</b-card-group>
 </template>
@@ -16,6 +16,9 @@ export default {
 	computed: {
 		items() {
 			return this.$attrs.items
+		},
+		type() {
+			return this.$attrs.type
 		}
 	}
 }

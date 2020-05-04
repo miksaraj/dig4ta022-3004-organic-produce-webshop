@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<options-row :type="type" />
-		<card-deck v-if="view === 'cards'" :items="items" />
+		<card-deck v-if="view === 'cards'" :items="items" :type="type" />
 		<accordion-list v-if="view === 'list'" :items="items" />
 	</div>
 </template>

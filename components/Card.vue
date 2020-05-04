@@ -1,18 +1,62 @@
 <template>
 	<b-card>
 		<h2>
-			<nuxt-link :to="'/courses/' + item.id">{{ item.header }}</nuxt-link>
+			<nuxt-link v-if="type === 'courses'" :to="'/courses/' + item.id">
+				{{ item.header }}
+			</nuxt-link>
+			<div v-else>
+				{{ item.header }}
+			</div>
 		</h2>
 		<p>{{ item.description }}</p>
+		<card-list-group :items="subItems" />
+		<template v-slot:footer>
+			<progress-bar :item="item" :subItems="subItems" />
+		</template>
 	</b-card>
 </template>
 
+<style scoped>
+.card {
+	height: 95%;
+	margin-bottom: 1rem;
+	width: 24vw;
+}
+</style>
+
 <script>
+import { mapGetters } from 'vuex'
+import CardListGroup from '~/components/CardListGroup.vue'
+import ProgressBar from '~/components/ProgressBar.vue'
 export default {
 	name: 'card',
+	components: {
+		CardListGroup,
+		ProgressBar
+	},
+	data() {
+		return {
+			subItems: []
+		}
+	},
 	computed: {
+		...mapGetters('modules', ['modulesByCourse']),
 		item() {
 			return this.$attrs.item
+		},
+		type() {
+			return this.$attrs.type
+		}
+	},
+	mounted() {
+		// only for course modules for now
+		if (this.type === 'courses') {
+			this.getSubItems()
+		}
+	},
+	methods: {
+		getSubItems() {
+			this.subItems = this.modulesByCourse(this.item.id)
 		}
 	}
 }
