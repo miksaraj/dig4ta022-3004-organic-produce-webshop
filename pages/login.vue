@@ -10,9 +10,9 @@
 			<h1 class="title">
 				learn, succeed, repeat
 			</h1>
-			<!-- TODO: add login form -->
+			<form-group :items="items" />
 			<div class="links">
-				<a href="https://nuxtjs.org/" target="_blank" class="button">
+				<a class="button" @click="login">
 					Kirjaudu
 				</a>
 				<nuxt-link to="/signup" class="button">Rekisteröidy</nuxt-link>
@@ -22,8 +22,42 @@
 </template>
 
 <script>
+import FormGroup from '~/components/FormGroup.vue'
 export default {
-	layout: 'login'
+	layout: 'login',
+	components: {
+		FormGroup
+	},
+	data() {
+		return {
+			items: [
+				{
+					id: 'username',
+					label: 'Käyttäjätunnus',
+					input: '',
+					type: 'text',
+					required: true
+				},
+				{
+					id: 'pwd',
+					label: 'Salasana',
+					input: '',
+					type: 'password',
+					required: true
+				}
+			]
+		}
+	},
+	methods: {
+		login() {
+			const pwd = this.items.find(item => item.id === 'pwd')
+			const user = this.items.find(item => item.id === 'username')
+			if (pwd.input.length < 8 || user.input.length === 0) {
+				return
+			}
+			localStorage.setItem('user', user.input)
+		}
+	}
 }
 </script>
 
@@ -52,5 +86,9 @@ export default {
 .button:hover {
 	color: var(--color-main);
 	background-color: #ffffff;
+}
+
+label {
+	color: #ffffff;
 }
 </style>
