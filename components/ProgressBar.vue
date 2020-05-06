@@ -9,7 +9,7 @@
 				<strong>{{ done }} / {{ max }}</strong>
 			</b-progress-bar>
 		</b-progress>
-		<b-button v-else>
+		<b-button v-else @click="start">
 			Aloita!
 		</b-button>
 	</div>
@@ -76,6 +76,15 @@ export default {
 			}
 			this.max = tasks
 			this.done = this.$store.state.progress.completed.length
+		},
+		start() {
+			let path = '/'
+			if (!this.item.tasks) {
+				path = '/courses/' + this.item.id
+			} else {
+				path = this.$route.path + '/' + this.item.id
+			}
+			this.$router.push(path)
 		}
 	}
 }
