@@ -56,6 +56,7 @@ export default {
 				return
 			}
 			localStorage.setItem('user', user.input)
+			this.$router.push('/')
 		}
 	}
 }

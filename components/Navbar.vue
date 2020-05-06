@@ -28,7 +28,7 @@
 				</b-nav-item>
 				<b-nav-item>Asetukset</b-nav-item>
 				<b-nav-item>Edistyminen</b-nav-item>
-				<b-nav-item>Kirjaudu ulos</b-nav-item>
+				<b-nav-item @click="logout">Kirjaudu ulos</b-nav-item>
 			</b-navbar-nav>
 		</b-collapse>
 	</b-navbar>
@@ -72,6 +72,12 @@
 
 <script>
 export default {
-	name: 'navbar'
+	name: 'navbar',
+	methods: {
+		logout() {
+			localStorage.removeItem('user')
+			this.$router.push('/login')
+		}
+	}
 }
 </script>

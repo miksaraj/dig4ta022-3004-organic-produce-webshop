@@ -117,6 +117,7 @@ export default {
 				return
 			}
 			localStorage.setItem('user', JSON.stringify(userDetails))
+			this.$router.push('/')
 		}
 	}
 }
