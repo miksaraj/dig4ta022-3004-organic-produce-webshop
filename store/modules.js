@@ -130,5 +130,8 @@ export const state = () => ({
 export const getters = {
 	modulesByCourse: state => id => {
 		return state.list.filter(item => item.courseId === id)
+	},
+	moduleById: state => id => {
+		return state.list.find(item => item.id === id)
 	}
 }

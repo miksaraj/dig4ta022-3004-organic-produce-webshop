@@ -1,74 +1,56 @@
 <template>
 	<div class="container">
 		<div>
-			<logo />
+			<img
+				src="../static/oppia.io_logo_oranssi.png"
+				alt="Oppia.io"
+				width="520"
+				height="180"
+			/>
 			<h1 class="title">
-				dig4ta022-3004
+				learn, succeed, repeat
 			</h1>
-			<h2 class="subtitle">
-				Course project for HH DIG4TA022-3004 Digiproject course
-			</h2>
+			<!-- TODO: add login form -->
 			<div class="links">
-				<a
-					href="https://nuxtjs.org/"
-					target="_blank"
-					class="button--green"
-				>
-					Documentation
+				<a href="https://nuxtjs.org/" target="_blank" class="button">
+					Kirjaudu
 				</a>
-				<a
-					href="https://github.com/nuxt/nuxt.js"
-					target="_blank"
-					class="button--grey"
-				>
-					GitHub
-				</a>
+				<nuxt-link to="/signup" class="button">Rekisteröidy</nuxt-link>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-	layout: 'login',
-	components: {
-		Logo
-	}
+	layout: 'login'
 }
 </script>
 
 <style>
-.container {
-	margin: 0 auto;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
 .title {
-	font-family: 'Quicksand', 'Source Sans Pro', -apple-system,
-		BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-		sans-serif;
 	display: block;
 	font-weight: 300;
-	font-size: 100px;
-	color: #35495e;
+	font-size: 46px;
+	color: #ffffff;
 	letter-spacing: 1px;
-}
-
-.subtitle {
-	font-weight: 300;
-	font-size: 42px;
-	color: #526488;
-	word-spacing: 5px;
-	padding-bottom: 15px;
 }
 
 .links {
 	padding-top: 15px;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+
+.button:hover {
+	color: var(--color-main);
+	background-color: #ffffff;
 }
 </style>
