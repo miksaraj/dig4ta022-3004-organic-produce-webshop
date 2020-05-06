@@ -34,3 +34,12 @@ a:hover {
 .btn-primary:focus {
     background-color: var(--color-4);
 }
+
+#assignment{
+    background-color: #209df7;
+}
+
+#speciaText{
+    padding: 10%;
+
+}
