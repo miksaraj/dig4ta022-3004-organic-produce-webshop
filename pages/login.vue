@@ -92,4 +92,12 @@ export default {
 label {
 	color: #ffffff;
 }
+
+a:not([href]) {
+	color: #ffffff;
+}
+
+a:not([href]):hover {
+	color: var(--color-main);
+}
 </style>
