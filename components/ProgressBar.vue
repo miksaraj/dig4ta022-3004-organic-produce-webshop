@@ -24,7 +24,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'progress-bar',
+	name: 'ProgressBar',
 	data() {
 		return {
 			max: 0,
@@ -33,7 +33,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters('progress', ['progressByCourse', 'progressByModule']),
+		...mapGetters('progress', ['progressByChapter', 'progressBySection']),
 		item() {
 			return this.$attrs.item
 		},
@@ -44,43 +44,43 @@ export default {
 	created() {
 		if (!this.item) {
 			this.getOverallProgress()
-		} else if (!this.item.tasks) {
-			this.countTasks()
-			this.getDone('course')
+		} else if (!this.item.assignments) {
+			this.countAssignments()
+			this.getDone('chapter')
 		} else {
-			this.max = this.item.tasks
-			this.getDone('module')
+			this.max = this.item.assignments
+			this.getDone('section')
 		}
 		this.progress = (this.done / this.max) * 100
 	},
 	methods: {
 		getDone(type) {
 			let done = []
-			if (type === 'course') {
-				done = this.progressByCourse(this.item.id)
-			} else if (type === 'module') {
-				done = this.progressByModule(this.item.id)
+			if (type === 'chapter') {
+				done = this.progressByChapter(this.item.id)
+			} else if (type === 'section') {
+				done = this.progressBySection(this.item.id)
 			}
 			this.done = done.length
 		},
-		countTasks() {
+		countAssignments() {
 			for (let i = 0; i < this.subItems.length; i++) {
-				this.max = this.max + this.subItems[i].tasks
+				this.max = this.max + this.subItems[i].assignments
 			}
 		},
 		getOverallProgress() {
-			const modules = this.$store.state.modules.list
-			let tasks = 0
-			for (let i = 0; i < modules.length; i++) {
-				tasks += modules[i].tasks
+			const sections = this.$store.state.sections.list
+			let assignments = 0
+			for (let i = 0; i < sections.length; i++) {
+				assignments += sections[i].assignments
 			}
-			this.max = tasks
+			this.max = assignments
 			this.done = this.$store.state.progress.completed.length
 		},
 		start() {
 			let path = '/'
-			if (!this.item.tasks) {
-				path = '/courses/' + this.item.id
+			if (!this.item.assignments) {
+				path = '/chapters/' + this.item.id
 			} else {
 				path = this.$route.path + '/' + this.item.id
 			}

@@ -1,7 +1,7 @@
 <template>
 	<b-card>
 		<h2>
-			<nuxt-link v-if="type === 'courses'" :to="'/courses/' + item.id">
+			<nuxt-link v-if="type === 'chapters'" :to="'/chapters/' + item.id">
 				{{ item.header }}
 			</nuxt-link>
 			<div v-else>
@@ -29,7 +29,7 @@ import { mapGetters } from 'vuex'
 import CardListGroup from '~/components/CardListGroup.vue'
 import ProgressBar from '~/components/ProgressBar.vue'
 export default {
-	name: 'card',
+	name: 'Card',
 	components: {
 		CardListGroup,
 		ProgressBar
@@ -40,7 +40,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters('modules', ['modulesByCourse']),
+		...mapGetters('sections', ['sectionsByChapter']),
 		item() {
 			return this.$attrs.item
 		},
@@ -50,13 +50,13 @@ export default {
 	},
 	mounted() {
 		// only for course modules for now
-		if (this.type === 'courses') {
+		if (this.type === 'chapters') {
 			this.getSubItems()
 		}
 	},
 	methods: {
 		getSubItems() {
-			this.subItems = this.modulesByCourse(this.item.id)
+			this.subItems = this.sectionsByChapter(this.item.id)
 		}
 	}
 }

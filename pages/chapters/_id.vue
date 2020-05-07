@@ -19,18 +19,18 @@ export default {
 	},
 	data() {
 		return {
-			type: 'modules'
+			type: 'sections'
 		}
 	},
 	computed: {
-		...mapGetters('modules', ['modulesByCourse']),
+		...mapGetters('sections', ['sectionsByChapter']),
 		items() {
-			return this.modulesByCourse(this.courseId)
+			return this.sectionsByChapter(this.chapterId)
 		},
 		view() {
-			return this.$store.state.settings.modulesView
+			return this.$store.state.settings.sectionsView
 		},
-		courseId() {
+		chapterId() {
 			return parseInt(this.$route.params.id)
 		}
 	}

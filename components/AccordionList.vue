@@ -9,7 +9,7 @@
 <script>
 import AccordionCard from '~/components/AccordionCard.vue'
 export default {
-	name: 'accordion-list',
+	name: 'AccordionList',
 	components: {
 		AccordionCard
 	},

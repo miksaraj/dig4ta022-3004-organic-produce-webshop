@@ -15,7 +15,7 @@
 
 <script>
 export default {
-	name: 'options-row',
+	name: 'OptionsRow',
 	computed: {
 		type() {
 			return this.$attrs.type

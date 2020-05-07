@@ -18,15 +18,15 @@ export default {
 	},
 	data() {
 		return {
-			type: 'courses'
+			type: 'chapters'
 		}
 	},
 	computed: {
 		items() {
-			return this.$store.state.courses.list
+			return this.$store.state.chapters.list
 		},
 		view() {
-			return this.$store.state.settings.coursesView
+			return this.$store.state.settings.chaptersView
 		}
 	}
 }

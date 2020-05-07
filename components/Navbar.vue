@@ -72,7 +72,7 @@
 
 <script>
 export default {
-	name: 'navbar',
+	name: 'Navbar',
 	methods: {
 		logout() {
 			localStorage.removeItem('user')

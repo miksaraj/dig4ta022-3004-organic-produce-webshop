@@ -8,7 +8,7 @@
 
 <script>
 export default {
-	name: 'card-list-item',
+	name: 'CardListItem',
 	computed: {
 		items() {
 			return this.$attrs.items
