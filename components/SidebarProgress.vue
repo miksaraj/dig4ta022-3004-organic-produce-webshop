@@ -25,7 +25,7 @@
 import { mapGetters } from 'vuex'
 import ProgressBar from '~/components/ProgressBar.vue'
 export default {
-	name: 'sidebar-progress',
+	name: 'sidebarProgress',
 	components: {
 		ProgressBar
 	},
@@ -38,14 +38,14 @@ export default {
 	},
 	computed: {
 		...mapGetters({
-			modulesByCourse: 'modules/modulesByCourse',
-			courseById: 'courses/courseById'
+			sectionsByChapter: 'sections/sectionsByChapter',
+			chapterById: 'chapters/chapterById'
 		})
 	},
 	mounted() {
 		this.getRoute()
 		if (this.route !== 'index') {
-			this.getCourseById(parseInt(this.$route.params.id))
+			this.getChapterById(parseInt(this.$route.params.id))
 			this.getSubItems()
 		}
 	},
@@ -53,15 +53,15 @@ export default {
 		getRoute() {
 			if (this.$route.name === 'index') {
 				this.route = this.$route.name
-			} else if (this.$route.name === 'courses-id') {
+			} else if (this.$route.name === 'chapters-id') {
 				this.route = this.$route.params.id
 			}
 		},
 		getSubItems() {
-			this.subItems = this.modulesByCourse(this.item.id)
+			this.subItems = this.sectionsByChapter(this.item.id)
 		},
-		getCourseById(id) {
-			this.item = this.courseById(id)
+		getChapterById(id) {
+			this.item = this.chapterById(id)
 		}
 	}
 }

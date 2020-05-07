@@ -36,6 +36,6 @@
 
 <script>
 export default {
-	name: 'theory-element'
+	name: 'theoryElement'
 }
 </script>

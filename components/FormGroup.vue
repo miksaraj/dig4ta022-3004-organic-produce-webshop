@@ -1,6 +1,6 @@
 <template>
 	<div class="form">
-		<b-form v-for="item in items" :key="item">
+		<b-form v-for="item in items" :key="item.id">
 			<b-form-group :label="item.label" :label-for="item.id">
 				<b-form-input
 					:id="item.id"
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-	name: 'form-group',
+	name: 'formGroup',
 	computed: {
 		items() {
 			return this.$attrs.items

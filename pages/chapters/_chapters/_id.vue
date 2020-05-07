@@ -14,9 +14,9 @@ export default {
 		TheoryElement
 	},
 	computed: {
-		...mapGetters('modules', ['moduleById']),
+		...mapGetters('sections', ['sectionById']),
 		item() {
-			return this.moduleById(this.itemId)
+			return this.sectionById(this.itemId)
 		},
 		itemId() {
 			return parseInt(this.$route.params.id)

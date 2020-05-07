@@ -19,7 +19,7 @@
 
 <script>
 export default {
-	name: 'accordion-card',
+	name: 'accordionCard',
 	computed: {
 		item() {
 			return this.$attrs.item

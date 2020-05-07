@@ -36,7 +36,7 @@ export const state = () => ({
 })
 
 export const getters = {
-	courseById: state => id => {
+	chapterById: state => id => {
 		return state.list.find(x => x.id === id)
 	}
 }

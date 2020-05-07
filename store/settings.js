@@ -1,6 +1,6 @@
 export const state = () => ({
-	coursesView: 'cards',
-	modulesView: 'cards'
+	chaptersView: 'cards',
+	sectionsView: 'cards'
 })
 
 export const actions = {

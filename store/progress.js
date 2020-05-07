@@ -1,48 +1,48 @@
 export const state = () => ({
 	completed: [
 		{
-			module: 1,
-			course: 1,
-			task: 1
+			section: 1,
+			chapter: 1,
+			assignments: 1
 		},
 		{
-			module: 1,
-			course: 1,
-			task: 2
+			section: 1,
+			chapter: 1,
+			assignments: 2
 		},
 		{
-			module: 1,
-			course: 1,
-			task: 3
+			section: 1,
+			chapter: 1,
+			assignments: 3
 		},
 		{
-			module: 1,
-			course: 1,
-			task: 4
+			section: 1,
+			chapter: 1,
+			assignments: 4
 		},
 		{
-			module: 2,
-			course: 1,
-			task: 1
+			section: 2,
+			chapter: 1,
+			assignments: 1
 		},
 		{
-			module: 2,
-			course: 1,
-			task: 2
+			section: 2,
+			chapter: 1,
+			assignments: 2
 		},
 		{
-			module: 7,
-			course: 2,
-			task: 1
+			section: 7,
+			chapter: 2,
+			assignments: 1
 		}
 	]
 })
 
 export const getters = {
-	progressByModule: state => id => {
-		return state.completed.filter(item => item.module === id)
+	progressBySection: state => id => {
+		return state.completed.filter(item => item.section === id)
 	},
-	progressByCourse: state => id => {
-		return state.completed.filter(item => item.course === id)
+	progressByChapter: state => id => {
+		return state.completed.filter(item => item.chapter === id)
 	}
 }

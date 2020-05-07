@@ -31,6 +31,6 @@
 
 <script>
 export default {
-	name: 'footer-buttons'
+	name: 'footerButtons'
 }
 </script>
