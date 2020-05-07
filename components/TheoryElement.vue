@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<h3>Otsikko</h3>
 		<p>
 			Pellentesque habitant morbi tristique senectus et netus et malesuada
 			fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
@@ -36,6 +37,6 @@
 
 <script>
 export default {
-	name: 'theoryElement'
+	name: 'TheoryElement'
 }
 </script>

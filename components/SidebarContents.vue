@@ -62,7 +62,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'sidebarContents',
+	name: 'SidebarContents',
 	data() {
 		return {
 			contentList: []

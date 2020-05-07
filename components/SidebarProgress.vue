@@ -25,7 +25,7 @@
 import { mapGetters } from 'vuex'
 import ProgressBar from '~/components/ProgressBar.vue'
 export default {
-	name: 'sidebarProgress',
+	name: 'SidebarProgress',
 	components: {
 		ProgressBar
 	},

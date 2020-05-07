@@ -9,7 +9,7 @@
 <script>
 import Card from '~/components/Card.vue'
 export default {
-	name: 'cardDeck',
+	name: 'CardDeck',
 	components: {
 		Card
 	},

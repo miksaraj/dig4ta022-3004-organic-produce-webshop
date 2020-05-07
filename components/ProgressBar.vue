@@ -24,7 +24,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-	name: 'progressBar',
+	name: 'ProgressBar',
 	data() {
 		return {
 			max: 0,

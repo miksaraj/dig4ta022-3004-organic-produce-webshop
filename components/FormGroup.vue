@@ -21,7 +21,7 @@
 
 <script>
 export default {
-	name: 'formGroup',
+	name: 'FormGroup',
 	computed: {
 		items() {
 			return this.$attrs.items

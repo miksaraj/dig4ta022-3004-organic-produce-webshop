@@ -18,7 +18,7 @@
 import SidebarContents from '~/components/SidebarContents.vue'
 import SidebarProgress from '~/components/SidebarProgress.vue'
 export default {
-	name: 'sideDrawer',
+	name: 'SideDrawer',
 	components: {
 		SidebarContents,
 		SidebarProgress

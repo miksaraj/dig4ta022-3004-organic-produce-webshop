@@ -29,7 +29,7 @@ import { mapGetters } from 'vuex'
 import CardListGroup from '~/components/CardListGroup.vue'
 import ProgressBar from '~/components/ProgressBar.vue'
 export default {
-	name: 'card',
+	name: 'Card',
 	components: {
 		CardListGroup,
 		ProgressBar
