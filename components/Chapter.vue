@@ -1,40 +1,33 @@
 <template>
 	<div>
-		<b-jumbotron fluid="true" header="Kappaleen otsikko" lead="Alaotsikko">
+		<!-- use fluid instead of fluid="true" (latter gives Vue warning) -->
+		<!-- also, I'm turning this to page before merging into master -->
+		<b-jumbotron fluid header="Kappaleen otsikko" lead="Alaotsikko">
 			<template v-slot:lead>For more information visit website</template>
 			<b-button variant="primary" href="#">Tehtävät</b-button>
 		</b-jumbotron>
 		<b-container fluid="sm">
 			<h1>Otsikko</h1>
-			<basicText />
-			<assignment />
-			<basicText />
-			<specialText />
-			<basicText />
-			<multipleChoice />
-			<basicText />
-			<assignment />
-			<basicText />
+			<div v-for="item in items" :key="item.order">
+				<component :is="contentComponent(item.type)" />
+			</div>
 		</b-container>
 	</div>
 </template>
 
 <script>
-import BasicText from '~/components/BasicText.vue'
-import Assignment from '~/components/Assignment.vue'
-import SpecialText from '~/components/SpecialText.vue'
-import MultipleChoice from '~/components/MultipleChoice.vue'
 export default {
 	name: 'chapter',
-	components: {
-		BasicText,
-		Assignment,
-		SpecialText,
-		MultipleChoice
-	},
 	computed: {
+		...mapGetters('contents', ['orderedList']),
 		items() {
-			return this.$attrs.items
+			// replaced this.$attrs.items with...
+			return this.orderedList()
+			// ... because no attributes were passed
+			// from parent component.
+		},
+		contentComponent(type) {
+			return () => import(`~/components/${type}.vue`)
 		}
 	}
 }
