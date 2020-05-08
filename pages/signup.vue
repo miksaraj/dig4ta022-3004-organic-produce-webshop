@@ -116,7 +116,7 @@ export default {
 			if (pwd !== pwd2) {
 				return
 			}
-			localStorage.setItem('user', JSON.stringify(userDetails))
+			this.$store.dispatch('auth/login', userDetails)
 			this.$router.push('/')
 		}
 	}
