@@ -46,7 +46,7 @@ export const state = () => ({
 			contentId: 8,
 			sectionId: 1,
 			order: 8,
-			type: 'Assignment'
+			type: 'ReturnAssignment'
 		},
 		{
 			contentId: 9,

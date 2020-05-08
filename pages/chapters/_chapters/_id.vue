@@ -22,12 +22,14 @@ const Assignment = () => import('~/components/Assignment.vue')
 const MultipleChoice = () => import('~/components/MultipleChoice.vue')
 const SpecialText = () => import('~/components/SpecialText.vue')
 const TheoryElement = () => import('~/components/TheoryElement.vue')
+const ReturnAssignment = () => import('~/components/ReturnAssignment.vue')
 export default {
 	components: {
 		Assignment,
 		MultipleChoice,
 		SpecialText,
-		TheoryElement
+		TheoryElement,
+		ReturnAssignment
 	},
 	computed: {
 		...mapGetters('structure', ['sectionStructure']),
