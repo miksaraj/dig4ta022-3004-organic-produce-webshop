@@ -82,5 +82,8 @@ module.exports = {
 	},
 	server: {
 		host: '0.0.0.0'
+	},
+	router: {
+		middleware: 'auth'
 	}
 }

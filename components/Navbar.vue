@@ -75,8 +75,7 @@ export default {
 	name: 'Navbar',
 	methods: {
 		logout() {
-			localStorage.removeItem('user')
-			this.$router.push('/login')
+			this.$store.dispatch('auth/logout', this)
 		}
 	}
 }

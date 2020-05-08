@@ -55,7 +55,7 @@ export default {
 			if (pwd.input.length < 8 || user.input.length === 0) {
 				return
 			}
-			localStorage.setItem('user', user.input)
+			this.$store.dispatch('auth/login', user.input)
 			this.$router.push('/')
 		}
 	}
