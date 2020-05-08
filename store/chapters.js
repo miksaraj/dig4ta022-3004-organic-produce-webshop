@@ -2,35 +2,40 @@ export const state = () => ({
 	list: [
 		{
 			id: 1,
-			header: 'JavaScriptin alkeet',
-			description: 'Tällä kurssilla opit kaiken olennaisen.'
+			header: 'Aloitus',
+			description: 'Tietoa opiskelusta sekä johdanto psykologiaan.'
 		},
 		{
 			id: 2,
-			header: 'Vue.js aloittelijoille',
-			description: 'Vue on nopea, mutta monikäyttöinen!'
+			header: 'Biologinen näkökulma',
+			description: 'Aivot ja hermosto psyykkisen toiminnan perustana'
 		},
 		{
 			id: 3,
-			header: 'React.js',
-			description: 'Opiskele kuukaudessa React-mestariksi!'
+			header: 'Käyttäytymisen näkökullma',
+			description:
+				'Ärsykkeillä voidaan ehdollistaa eläimiä ja ihmisiä oppimaan'
 		},
 		{
 			id: 4,
-			header: 'Java-ohjelmointi',
-			description: 'Tällä kurssilla otat haltuun Java-ohjelmoinnin.'
+			header: 'Kognitiivinen näkökulma',
+			description: 'Ihminen aktiivisena tiedonrakentajana'
 		},
 		{
 			id: 5,
-			header: 'PHP',
+			header: 'Tunteiden ja motivaation näkökulma',
 			description:
-				'Klassisen, mutta aina ajankohtaisen ohjelmointikielen otat haltuusi tällä kurssilla.'
+				'Innostus syntyy itsetunnon, vapauden ja muiden ihmisten avulla'
 		},
 		{
 			id: 6,
-			header: 'Node.js:llä nopeasti valmista',
-			description:
-				'Nodella teet muutamassa viikossa jo pelkkää timanttia!'
+			header: 'Sosiokulttuurinen näkökulma',
+			description: 'Ryhmän ja yhteisöjen vaikutus yksilöön'
+		},
+		{
+			id: 7,
+			header: 'Psykologinen tutkimus',
+			description: 'Miten tehdään psykologista tutkimusta?'
 		}
 	]
 })
