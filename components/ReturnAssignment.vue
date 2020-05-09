@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h3>Otsikko</h3>
-		<p>Kootut selitykset</p>
+		<h3>{{ item.header }}</h3>
+		<p>{{ item.description }}</p>
 		<!-- TODO: add :accept="filetype ? filetype : ''" to b-form-file -->
 		<b-form-file
 			v-model="file"
@@ -21,11 +21,21 @@
 </style>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
 	name: 'ReturnAssignment',
 	data() {
 		return {
 			file: null
+		}
+	},
+	computed: {
+		...mapGetters('content', ['contentById']),
+		item() {
+			return this.contentById(this.id)
+		},
+		id() {
+			return this.$attrs.id
 		}
 	}
 }

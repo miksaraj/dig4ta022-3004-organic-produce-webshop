@@ -38,5 +38,6 @@
 <script>
 export default {
 	name: 'TheoryElement'
+	// TODO: tämän teen seuraavaan erään, nyt en ehdi
 }
 </script>

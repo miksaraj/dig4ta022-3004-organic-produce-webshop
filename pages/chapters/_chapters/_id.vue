@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<b-jumbotron fluid header="Kappaleen otsikko" lead="Alaotsikko">
+		<b-jumbotron fluid :header="section.header" lead="subheader">
 			<template v-slot:lead>
-				Tämän kappaleen tehtäviin pääset klikkaamalla tästä:
+				{{ !section.lead ? section.description : section.lead }}
 			</template>
 			<b-button class="btn-primary">Tehtävät</b-button>
 		</b-jumbotron>
@@ -11,6 +11,7 @@
 				v-for="item in items"
 				:key="item.order"
 				:is="item.type"
+				:id="item.contentId"
 			/>
 		</b-container>
 	</div>
@@ -32,9 +33,18 @@ export default {
 		ReturnAssignment
 	},
 	computed: {
-		...mapGetters('structure', ['sectionStructure']),
+		...mapGetters({
+			sectionById: 'sections/sectionById',
+			sectionStructure: 'structure/sectionStructure'
+		}),
 		items() {
-			return this.sectionStructure(1)
+			return this.sectionStructure(this.sectionId)
+		},
+		sectionId() {
+			return parseInt(this.$route.params.id)
+		},
+		section() {
+			return this.sectionById(this.sectionId)
 		}
 	}
 }
