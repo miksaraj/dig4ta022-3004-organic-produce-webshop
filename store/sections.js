@@ -3,126 +3,133 @@ export const state = () => ({
 		{
 			id: 1,
 			chapterId: 1,
-			header: 'Mikä JavaScript?',
-			description:
-				'Tässä moduulissa opit mikä on JS ja mihin sitä käytetään.',
-			assignments: 4
+			header: 'Opiskeluohjeet',
+			description: 'Miten saan kurssilta eniten irti?',
+			assignments: 1
 		},
 		{
 			id: 2,
 			chapterId: 1,
-			header: 'Mitä tapahtuu konepellin alla?',
+			header: 'Arkitieto ja psykologinen tieto',
 			description:
-				'Tässä moduulissa paneudutaan tarkemmin JavaScriptin olemukseen ja toimintaan.',
-			assignments: 5
+				'Psykologinen tieto perustuu tieteelliseen tutkimukseen',
+			assignments: 1
 		},
 		{
 			id: 3,
-			chapterId: 1,
-			header: 'DOM-manipulaatio',
-			description: '',
-			assignments: 3
+			chapterId: 2,
+			header: 'Aivot ja hermostuminen',
+			description: 'Mitä tapahtuu, jos osa aivoista tuhoutuu?',
+			assignments: 1
 		},
 		{
 			id: 4,
-			chapterId: 1,
-			header: 'Objektit ja funktiot',
-			description:
-				'Tässä moduulissa menemme syvemmälle JavaScriptin maailmaa opettelemalla hyödyntämään objekteja ja tutustumme funktioihin.',
-			assignments: 6
+			chapterId: 2,
+			header: 'Luontainen temperamentti',
+			description: 'Kylmäpäinen kotka ja tunteellinen elefantti',
+			assignments: 1
 		},
 		{
 			id: 5,
-			chapterId: 1,
-			header: 'ES6 / ES2015',
-			description: '',
-			assignments: 3
+			chapterId: 2,
+			header: 'Ympäristö muokkaa aivoja',
+			description: 'Aivot ovat supermuovautuva elin',
+			assignments: 1
 		},
 		{
 			id: 6,
-			chapterId: 1,
-			header: 'Async/Await ja AJAX',
+			chapterId: 3,
+			header: 'Ehdollistuminen',
 			description:
-				'Asynkroniset funktiot Javascriptissä. Mitä ne ovat ja miten niitä käytetään?',
-			assignments: 6
+				'Kuolaavat koirat ja tanssivat kyyhkyset. Miten Pikku Albert saatiin pelkäämään pupua?',
+			assignments: 1
 		},
 		{
 			id: 7,
-			chapterId: 2,
-			header: 'Intro',
-			description: 'Mikä on Vue.js, ja miksi käyttäisit sitä?',
-			assignments: 3
+			chapterId: 3,
+			header: 'Behaviorismi',
+			description:
+				'Antakaa minulle tusina lapsia ja minä teen yhdestä lääkärin, yhdestä juristin ja yhdestä taidemaalarin',
+			assignments: 1
 		},
 		{
 			id: 8,
-			chapterId: 2,
-			header: 'Reaktiivinen Vue',
-			description:
-				'Tässä moduulissa opimme, miten Vue on vuorovaikuksessa DOMin kanssa ja kuinka sen ominaisuuksista otetaan paras hyöty irti.',
+			chapterId: 3,
+			header: 'Mallioppiminen',
+			description: 'Mitä aikuinen edellä, sitä lapsi perässä.',
 			assignments: 8
 		},
 		{
 			id: 9,
-			chapterId: 2,
-			header: 'Konditionaalit ja listojen palauttaminen Vuessa',
-			description: '',
-			assignments: 5
+			chapterId: 4,
+			header: 'Sisäiset mallit',
+			description:
+				'Py35yT eh82 lu36m22n t2t2 t7k31ä v21kk2 t2m2 on k13j095355u s3k2v23ti',
+			assignments: 1
 		},
 		{
 			id: 10,
-			chapterId: 3,
-			header: 'Reactin perusteet',
-			description: '',
-			assignments: 4
+			chapterId: 4,
+			header: 'Muisti',
+			description: 'Maaginen numero 7 +- 2',
+			assignments: 1
 		},
 		{
 			id: 11,
-			chapterId: 3,
-			header: 'Miksi React?',
-			description: 'Mikä tekee Reactista niin suositun sovelluskehyksen?',
-			assignments: 3
+			chapterId: 4,
+			header: 'Syväoppiminen',
+			description: 'Virtahepo vie tietoa kampukselle',
+			assignments: 1
 		},
 		{
 			id: 12,
-			chapterId: 3,
-			header: 'Komponentit ja JSX',
-			description: '',
-			assignments: 5
+			chapterId: 5,
+			header: 'Psykodynaaminen ja Freud',
+			description: 'Ihmisen tiedostamaton mieli',
+			assignments: 1
 		},
 		{
 			id: 13,
-			chapterId: 4,
-			header: 'Java 1',
-			description: 'Intro, syntaksi, kommentit ja datatyypit',
-			assignments: 4
+			chapterId: 5,
+			header: 'Positiivinen psykologia',
+			description: 'Usko ihmisen voimavaroihin',
+			assignments: 1
 		},
 		{
 			id: 14,
-			chapterId: 4,
-			header: 'Java 2',
-			description: 'Ehtolauseet ja luupit',
-			assignments: 6
+			chapterId: 5,
+			header: 'Attribuutiot',
+			description: 'Tulkintoja itsestä ja muista',
+			assignments: 1
 		},
+
 		{
 			id: 15,
-			chapterId: 4,
-			header: 'Java 3',
-			description: 'Java-metodit',
-			assignments: 5
+			chapterId: 6,
+			header: 'Ryhmä ja roolit',
+			description: 'Millaiseksi ihminen muuttuu vankilassa?',
+			assignments: 1
 		},
 		{
 			id: 16,
-			chapterId: 4,
-			header: 'Java 4',
-			description: 'Luokat 1',
-			assignments: 5
+			chapterId: 6,
+			header: 'Tottelevaisuus ja ryhmäpaine',
+			description: 'Joukossa tyhmyys tiivistyy',
+			assignments: 1
 		},
 		{
 			id: 17,
-			chapterId: 4,
-			header: 'Java 5',
-			description: 'Luokat 2',
-			assignments: 5
+			chapterId: 6,
+			header: 'Stereotypiat ja asenteet',
+			description: 'Sinisilmäiset ja ruskeasilmäiset',
+			assignments: 1
+		},
+		{
+			id: 18,
+			chapterId: 7,
+			header: 'Psykologinen tutkimus',
+			description: 'Miten tehdään psykologista tutkimusta?',
+			assignments: 1
 		}
 	]
 })
