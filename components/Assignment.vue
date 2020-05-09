@@ -1,6 +1,6 @@
 <template>
-	<b-card title="Tehtävä:">
-		<b-card-text>Lorem ipsum liirum laarum?</b-card-text>
+	<b-card :title="item.header">
+		<b-card-text>{{ item.description }}</b-card-text>
 		<b-form-textarea
 			placeholder="Kirjoita tähän..."
 			rows="8"
@@ -11,7 +11,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-	name: 'Assignment'
+	name: 'Assignment',
+	computed: {
+		...mapGetters('content', ['contentById']),
+		item() {
+			return this.contentById(this.id)
+		},
+		id() {
+			return this.$attrs.id
+		}
+	}
 }
 </script>

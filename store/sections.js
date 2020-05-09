@@ -5,7 +5,8 @@ export const state = () => ({
 			chapterId: 1,
 			header: 'Opiskeluohjeet',
 			description: 'Miten saan kurssilta eniten irti?',
-			assignments: 1
+			assignments: 1,
+			lead: 'Näin saat kurssilta eniten irti'
 		},
 		{
 			id: 2,
@@ -129,7 +130,9 @@ export const state = () => ({
 			chapterId: 7,
 			header: 'Psykologinen tutkimus',
 			description: 'Miten tehdään psykologista tutkimusta?',
-			assignments: 1
+			assignments: 1,
+			lead: 'Takaisin kotisivulle',
+			btnLink: '/'
 		}
 	]
 })

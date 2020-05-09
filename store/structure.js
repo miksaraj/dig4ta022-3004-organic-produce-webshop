@@ -14,44 +14,44 @@ export const state = () => ({
 		},
 		{
 			contentId: 3,
-			sectionId: 1,
-			order: 3,
+			sectionId: 2,
+			order: 1,
 			type: 'TheoryElement'
 		},
 		{
 			contentId: 4,
-			sectionId: 1,
-			order: 4,
+			sectionId: 2,
+			order: 2,
 			type: 'SpecialText'
 		},
 		{
 			contentId: 5,
-			sectionId: 1,
-			order: 5,
+			sectionId: 3,
+			order: 1,
 			type: 'TheoryElement'
 		},
 		{
 			contentId: 6,
-			sectionId: 1,
-			order: 6,
+			sectionId: 3,
+			order: 2,
 			type: 'MultipleChoice'
 		},
 		{
 			contentId: 7,
-			sectionId: 1,
-			order: 7,
+			sectionId: 4,
+			order: 1,
 			type: 'TheoryElement'
 		},
 		{
 			contentId: 8,
-			sectionId: 1,
-			order: 8,
+			sectionId: 4,
+			order: 2,
 			type: 'ReturnAssignment'
 		},
 		{
 			contentId: 9,
-			sectionId: 1,
-			order: 9,
+			sectionId: 5,
+			order: 1,
 			type: 'TheoryElement'
 		}
 	]
