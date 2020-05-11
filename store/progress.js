@@ -6,9 +6,9 @@ export const state = () => ({
 			assignments: 1
 		},
 		{
-			section: 1,
+			section: 2,
 			chapter: 1,
-			assignments: 2
+			assignments: 1
 		},
 		{
 			section: 1,

@@ -1,5 +1,6 @@
 <template>
-	<b-form @submit.prevent="handleSubmit">
+	<!--b-form @submit.prevent="handleSubmit"-->
+	<b-form>
 		<h3>{{ item.header }}</h3>
 		<component
 			v-for="part in item.parts"
@@ -31,11 +32,13 @@ export default {
 		id() {
 			return this.$attrs.id
 		}
-	},
+	}
+	/* Later gator, ie. gotta figure this out
 	methods: {
 		handleSubmit() {
 			alert(JSON.stringify(this.fruitCollection))
 		}
 	}
+	*/
 }
 </script>

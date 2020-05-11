@@ -4,12 +4,15 @@
 			<nuxt-link v-if="type === 'chapters'" :to="'/chapters/' + item.id">
 				{{ item.header }}
 			</nuxt-link>
-			<div v-else>
+			<nuxt-link
+				v-else
+				:to="'/chapters/' + $route.params.id + '/' + item.id"
+			>
 				{{ item.header }}
-			</div>
+			</nuxt-link>
 		</h2>
 		<p>{{ item.description }}</p>
-		<card-list-group :items="subItems" />
+		<card-list-group :items="subItems" :type="type" />
 		<template v-slot:footer>
 			<progress-bar :item="item" :subItems="subItems" />
 		</template>
