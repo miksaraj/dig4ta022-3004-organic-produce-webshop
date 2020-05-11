@@ -114,7 +114,7 @@ export const state = () => ({
 		{
 			id: 16,
 			chapterId: 6,
-			header: 'Tottelevaisuus ja ryhmäpaine',
+			header: 'Ryhmäpaine ja tottelevaisuus',
 			description: 'Joukossa tyhmyys tiivistyy',
 			assignments: 1
 		},

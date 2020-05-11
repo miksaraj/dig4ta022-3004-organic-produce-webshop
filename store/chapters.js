@@ -12,7 +12,7 @@ export const state = () => ({
 		},
 		{
 			id: 3,
-			header: 'Käyttäytymisen näkökullma',
+			header: 'Käyttäytymisen näkökulma',
 			description:
 				'Ärsykkeillä voidaan ehdollistaa eläimiä ja ihmisiä oppimaan'
 		},
