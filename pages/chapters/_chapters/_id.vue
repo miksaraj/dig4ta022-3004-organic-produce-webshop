@@ -24,13 +24,15 @@ const MultipleChoice = () => import('~/components/MultipleChoice.vue')
 const SpecialText = () => import('~/components/SpecialText.vue')
 const TheoryElement = () => import('~/components/TheoryElement.vue')
 const ReturnAssignment = () => import('~/components/ReturnAssignment.vue')
+const VideoEmbed = () => import('~/components/VideoEmbed.vue')
 export default {
 	components: {
 		Assignment,
 		MultipleChoice,
 		SpecialText,
 		TheoryElement,
-		ReturnAssignment
+		ReturnAssignment,
+		VideoEmbed
 	},
 	computed: {
 		...mapGetters({
