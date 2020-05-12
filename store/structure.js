@@ -124,13 +124,13 @@ export const state = () => ({
 			contentId: 20,
 			sectionId: 9,
 			order: 2,
-			type: 'Assignment'
+			type: 'TheoryElement'
 		},
 		{
 			contentId: 21,
 			sectionId: 9,
 			order: 3,
-			type: 'TheoryElement'
+			type: 'Assignment'
 		},
 		{
 			contentId: 22,

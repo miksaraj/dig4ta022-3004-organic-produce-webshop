@@ -4,7 +4,7 @@
 			<!--	//	v-model="text" -->
 			<!--	:state="text.length >= 50" -->
 			<b-form-textarea
-				:placeholder="iten.placeholder"
+				:placeholder="item.placeholder"
 				rows="8"
 				max-rows="16"
 			/>
