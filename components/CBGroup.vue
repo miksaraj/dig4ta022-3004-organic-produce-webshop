@@ -3,6 +3,9 @@
 		<b-form-checkbox-group
 			v-model="selected"
 			:options="item.items"
+			size="lg"
+			button-variant="primary"
+			buttons
 			:stacked="item.stacked"
 		/>
 	</b-form-group>

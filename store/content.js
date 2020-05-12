@@ -243,7 +243,7 @@ export const state = () => ({
 				{
 					type: 'p',
 					content:
-						'Hyvä esimerkki aivojen muovautuvuudesta ovat harvinaiset villilapset eli susilapset. He ovat ilman muita ihmisiä kehittyneitä lapsia. Eli heidät on jostain syystä hylätty ja he ovat eläneet ilman muiden ihmisen seuraa. Näillä lapsilla aivot ovat muovautuneet vastaamaan ympäristön haasteisiin ja tämä ympäristö on aika erilainen kuin muilla lapsilla. Esimerkiksi luonnossa eläessä aivot ovat muovautuneet käsittelemään hajuaistimuksia tehokkaasti. Hajuaisti on tärkeä, jotta löytää syötävää. Villilapsilla aivot eivät ole muovautuneet käsittelemään kieltä ja puhetta, koska kieltä ei kuule, eikä sitä harjoiteta eristyksissä muista ihmisistä. Villilapsilla onkin vaikeuksia oppia kieltä, koska aivot eivät ole ensimmäisten elinvuosien aikana oppineet käsittelemään kielellisiä ärsykkeitä. Kielen oppimisen kohdalla puhutaan herkkyyskaudesta, eli se on aika, jolloin on sopiva hetki oppia jokin asia. Hermoston kehitys on on otollisessa vaiheessa tämän taidon oppimiselle. Kielen oppimisen kannalta herkkyyskausi on ikävuodet 1-6.'
+						'Intiassa 1920- luvulla löydettiin Amala ja Kamala. He olivat 1,5-, ja 8- vuotiaita tyttöjä löydettäessä luonnosta. He liikkuivat neljällä jalalla, eivät puhuneet vaan ääntelivät kuin sudet. Nuorempi tytöistä kuoli pian, mutta toinen eli muutamia vuosia. Tätä tapausta on epäilty myös huijaukseksi ja villilapsitapauksiin onkin syytä suhtautua kriittisesti. Toinen hieman tuoreempi tapaus on Genie. Hänet löydettiin 1970-luvulla Kaliforniassa ja Genie oli tuolloin 13-vuotias. Hänen mielenterveysongelmista kärsivä isänsä oli eristänyt hänet yhteen huoneeseen. Genie ei kuullut puhetta eikä hänellä juurikaan ollut virikkeitä. Hänen isänsä löi häntä, mikäli hän äänteli, myös hänen liikkumistaan rajoitettiin. Hänet oli esimerkiksi kahlittu pottaan. Genie ehti olla vankilassaan 12 vuotta, jonka jälkeen hänen äitinsä jätti miehensä ja otti Genien mukaan. Äiti vei Genien sosiaalitoimistoon. Genie otettiin huostaan ja vanhemmat joutuivat syytteeseen kaltoinkohtelusta. Hänen isänsä teki itsemurhan.'
 				}
 			]
 		},
@@ -282,6 +282,38 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Välineellinen ehdollistuminen on oppimisen muoto, jossa opitaan toiminnan seurauksista. Palkkiot ja rangaistukset ovat tässä olennainen asia. Se, mistä palkitaan, vahvistuu yksilön toiminnassa. Äidin kehut saavat lapsen jatkossakin siivoamaan huoneensa. Hyvä arvosana saa opiskelijan jatkamaan ahkeraa opiskelua.  B F Skinner opetti ruokapalkkioilla kyyhkysiä painamaan tiettyä nappulaa. Aina kun kyyhkynen painoi nappia, se sai herkkupalkkion. Näin kyyhkynen oppi painamaan oikein nappuloita. Skinner tutki nimenomaan eläinten käyttäytymistä ja hyvä onkin pohtia, voiko näitä tutkimustuloksia soveltaa lainkaan ihmisiin.'
+				}
+			]
+		},
+		{
+			id: 131,
+			header: 'Monivalintatehtävä: ehdollistuminen',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Pavlovin koirakoe kuvaa ilmiötä, jossa',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
+							value: 'klassinen'
+						},
+						{
+							text:
+								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
+							value: 'mallioppiminen'
+						},
+						{
+							text:
+								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
+							value: 'valineellinen'
+						}
+					]
+					// correctAnswer: 'klassinen'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1082,136 +1114,6 @@ export const state = () => ({
 					content:
 						'Kun tutkimus on toteutettu, se julkaistaan muiden tutkijoiden arvosteltavaksi. Tieteellisen tutkimuksen on oltava luotettava (reliabiliteetti) ja pätevä (validiteetti). Tutkimus on luotettava, jos sen tulokset voidaan toistaa muissa tutkimuksissa. Tutkimus on pätevä, mikäli tutkimuksessa onnistutaan mittaamaan juuri sitä mitä halutaan. Eli tutkijan on syytä tarkastella, että mittaako tutkimus juuri sitä, mitä halutaan mitata. Tutkimuksen pätevyys eli validiteetti on hyvä, mikäli esimerkiksi motivaatiotutkimus mittaa nimenomaan motivaatiota eikä vaikka vireystilaa.'
 				}
-			]
-		},
-		{
-			id: 62,
-			header: 'Tehtäväkokonaisuus',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Stacked CB',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text: 'Omena',
-							value: 'apple'
-						},
-						{
-							text: 'Appelsiini',
-							value: 'orange'
-						},
-						{
-							text: 'Mango',
-							value: 'mango'
-						},
-						{
-							text: 'Banaani',
-							value: 'banana'
-						}
-					]
-					// correctAnswer: lisätään vasta kun tiedetään miten handlataan
-					// tosin voit lisätä kommentoituna
-				},
-				{
-					label: 'Inline Radio',
-					order: 2,
-					type: 'RadioGroup',
-					stacked: false,
-					items: [
-						{
-							text: 'Omena',
-							value: 'apple'
-						},
-						{
-							text: 'Appelsiini',
-							value: 'orange'
-						},
-						{
-							text: 'Mango',
-							value: 'mango'
-						},
-						{
-							text: 'Banaani',
-							value: 'banana'
-						}
-					]
-				},
-				{
-					label: 'Select Element',
-					order: 3,
-					type: 'SelectElement',
-					items: [
-						{
-							text: 'Omena',
-							value: 'apple'
-						},
-						{
-							text: 'Appelsiini',
-							value: 'orange'
-						},
-						{
-							text: 'Mango',
-							value: 'mango'
-						},
-						{
-							text: 'Banaani',
-							value: 'banana'
-						}
-					]
-				},
-				{
-					label: 'Inline CB',
-					order: 4,
-					type: 'CBGroup',
-					stacked: false,
-					items: [
-						{
-							text: 'Omena',
-							value: 'apple'
-						},
-						{
-							text: 'Appelsiini',
-							value: 'orange'
-						},
-						{
-							text: 'Mango',
-							value: 'mango'
-						},
-						{
-							text: 'Banaani',
-							value: 'banana'
-						}
-					]
-				},
-				{
-					label: 'Stacked Radio',
-					order: 5,
-					type: 'RadioGroup',
-					stacked: true,
-					items: [
-						{
-							text: 'Omena',
-							value: 'apple'
-						},
-						{
-							text: 'Appelsiini',
-							value: 'orange'
-						},
-						{
-							text: 'Mango',
-							value: 'mango'
-						},
-						{
-							text: 'Banaani',
-							value: 'banana'
-						}
-					]
-				}
-				// Jos on tarvetta muunlaisille komponenttityypeille
-				// lisää tänne kommenoituina
 			]
 		},
 		{

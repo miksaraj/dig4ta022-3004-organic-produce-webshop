@@ -58,7 +58,7 @@ export const state = () => ({
 			contentId: 10,
 			sectionId: 5,
 			order: 4,
-			type: 'TheoryElement'
+			type: 'SpecialText'
 		},
 		{
 			contentId: 11,
@@ -77,6 +77,12 @@ export const state = () => ({
 			sectionId: 6,
 			order: 3,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 131,
+			sectionId: 6,
+			order: 4,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 14,
@@ -118,13 +124,13 @@ export const state = () => ({
 			contentId: 20,
 			sectionId: 9,
 			order: 2,
-			type: 'Assignment'
+			type: 'TheoryElement'
 		},
 		{
 			contentId: 21,
 			sectionId: 9,
 			order: 3,
-			type: 'TheoryElement'
+			type: 'Assignment'
 		},
 		{
 			contentId: 22,
@@ -316,6 +322,48 @@ export const state = () => ({
 			contentId: 54,
 			sectionId: 18,
 			order: 1,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 55,
+			sectionId: 18,
+			order: 2,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 56,
+			sectionId: 18,
+			order: 3,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 57,
+			sectionId: 18,
+			order: 4,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 58,
+			sectionId: 18,
+			order: 5,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 59,
+			sectionId: 18,
+			order: 6,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 60,
+			sectionId: 18,
+			order: 7,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 61,
+			sectionId: 18,
+			order: 8,
 			type: 'TheoryElement'
 		}
 	]
