@@ -91,6 +91,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 141,
+			sectionId: 7,
+			order: 2,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 15,
 			sectionId: 8,
 			order: 1,
@@ -113,6 +119,12 @@ export const state = () => ({
 			sectionId: 8,
 			order: 4,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 181,
+			sectionId: 8,
+			order: 5,
+			type: 'Assignment'
 		},
 		{
 			contentId: 19,
@@ -145,6 +157,12 @@ export const state = () => ({
 			type: 'SpecialText'
 		},
 		{
+			contentId: 231,
+			sectionId: 9,
+			order: 6,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 24,
 			sectionId: 10,
 			order: 1,
@@ -167,6 +185,12 @@ export const state = () => ({
 			sectionId: 10,
 			order: 4,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 271,
+			sectionId: 10,
+			order: 5,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 28,
@@ -215,6 +239,12 @@ export const state = () => ({
 			sectionId: 11,
 			order: 8,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 361,
+			sectionId: 11,
+			order: 9,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 37,

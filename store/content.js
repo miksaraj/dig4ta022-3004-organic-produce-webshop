@@ -299,17 +299,17 @@ export const state = () => ({
 						{
 							text:
 								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
-							value: 'klassinen'
+							value: 'true'
 						},
 						{
 							text:
 								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
-							value: 'mallioppiminen'
+							value: 'false'
 						},
 						{
 							text:
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
-							value: 'valineellinen'
+							value: 'false'
 						}
 					]
 					// correctAnswer: 'klassinen'
@@ -330,6 +330,37 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Vaikka behaviorismi on saanut osakseen paljon kritiikkiä, sen vahvuutena voidaan pitää sen tieteellisiä ihanteita. Behaviorismissa psykologisia ilmiöitä, kuten oppimista, tutkittiin järjestelmällisesti. Tavoitteena oli saada objektiivista, eli tutkijasta riippumatonta tietoa.'
+				}
+			]
+		},
+		{
+			id: 141,
+			header: 'Monivalintatehtävä: ehdollistuminen',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
+							value: 'true'
+						},
+						{
+							text: 'ihminen on aktiivinen tiedonkäsittelijä',
+							value: 'false'
+						},
+						{
+							text:
+								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -381,6 +412,12 @@ export const state = () => ({
 						'Banduran mukaan oppiminen on valikoivaa. Esimerkiksi nukkekokeen yhdessä versiossa pahoinpitelevät aikuiset saivat toiselta aikuiselta kielteistä palautetta. Myöhemmin tämän koeryhmän lapset eivät pahoinpidelleet nukkea. Tätä ilmiötä kutsutaan sijaisvahvistamiseksi. Lapsi jäljittelee sellaista toimintaa, jota palkitaan, mutta jos malli saa rangaistuksen, lapsi ei toista tekoa. Lapsi tutkii ja tarkkailee ympäristöään ja pohtii, mitkä käyttäytymismallit ovat hyväksyttyjä, kiinnostavia tai palkittuja, ja lapsi jäljittelee näitä.  Myös mallilla on merkitystä. Lapset jäljittelevät helpommin sellaista henkilöä, jota he ihailevat tai pitävät korkea-arvoisena. '
 				}
 			]
+		},
+		{
+			id: 181,
+			header: 'Tehtävä: mallioppiminen',
+			description: 'Miten sosiaalinen oppiminen eroaa behaviorismista?',
+			placeholder: 'Kirjoita tähän...'
 		},
 		{
 			id: 19,
@@ -446,6 +483,39 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
+				}
+			]
+		},
+		{
+			id: 231,
+			header: 'Monivalintatehtävä: sisäiset mallit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
+							value: 'true'
+						},
+						{
+							text:
+								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
+							value: 'false'
+						},
+						{
+							text:
+								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -552,6 +622,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 271,
+			header: 'Monivalintatehtävä: muistin toiminta',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Mikä seuraavista väittämistä on väärin:',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'työmuistissa muistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
+							value: 'true'
+						},
+						{
+							text: 'pitkäkestoinen muisti kuormittuu helposti',
+							value: 'false'
+						},
+						{
+							text:
+								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'false'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 28,
 			header: 'Prosessoinnin tasot',
 			text: [
@@ -651,6 +752,39 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Metakognitiivisesti taitava opiskelija ymmärtää mitä hän jo osaa ja mitä ei osaa. Metakognitiivisesti taitava opiskelija pystyy asettamaan itselleen tavoitteita sekä miettimään juuri hänen tarpeisiin sopivia opiskelutapoja. Esimerkiksi oppimisen testaaminen auttaa hahmottamaan omaa osaamistaan, käy siis tekemässä kappaleen lopussa oleva monivalintatesti kognitiivisesta psykologiasta.'
+				}
+			]
+		},
+		{
+			id: 361,
+			header: 'Monivalintatehtävä: prosessointi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
+							value: 'false'
+						},
+						{
+							text:
+								'tiedon syvällinen prosessointi tehostaa muistamista',
+							value: 'true'
+						},
+						{
+							text:
+								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
