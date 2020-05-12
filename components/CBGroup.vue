@@ -6,7 +6,7 @@
 			size="lg"
 			button-variant="primary"
 			buttons
-			stacked
+			:stacked="item.stacked"
 		/>
 	</b-form-group>
 </template>
