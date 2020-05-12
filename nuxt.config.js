@@ -78,6 +78,35 @@ module.exports = {
 					exclude: /(node_modules)/
 				})
 			}
+			/**
+			 * Tansform Asset Urls to enable using
+			 * images in ./static with Bootstrap-Vue
+			 * elements.
+			 * UNCOMMENT IF NEEDED!
+			 * -- From Bootstrap-Vue Docs:
+			 * "If using the BootstrapVue Nuxt module with Nuxt.js,
+			 * the plugin module will automatically add in the BootstrapVue
+			 * specific transformAssetUrls configuration for you."
+			 */
+			/*
+			const vueLoader = config.module.rules.find(
+				rule => rule.loader === 'vue-loader'
+			)
+			vueLoader.options.transformAssetUrls = {
+				video: ['src', 'poster'],
+				source: 'src',
+				img: 'src',
+				image: 'xlink:href',
+				'b-avatar': 'src',
+				'b-img': 'src',
+				'b-img-lazy': ['src', 'blank-src'],
+				'b-card': 'img-src',
+				'b-card-img': 'src',
+				'b-card-img-lazy': ['src', 'blank-src'],
+				'b-carousel-slide': 'img-src',
+				'b-embed': 'src'
+			}
+			*/
 		}
 	},
 	server: {

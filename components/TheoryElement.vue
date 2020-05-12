@@ -8,6 +8,13 @@
 					{{ listItem }}
 				</li>
 			</ul>
+			<!-- HUOM! img -tyyppiset sektiot vaativat myös altin! -->
+			<b-img-lazy
+				v-else-if="section.type == 'img'"
+				:src="item.content"
+				fluid
+				:alt="item.alt"
+			/>
 		</div>
 	</div>
 </template>

@@ -2,12 +2,12 @@
 	<div>
 		<h3>{{ item.header }}</h3>
 		<p>{{ item.description }}</p>
-		<!-- TODO: add :accept="filetype ? filetype : ''" to b-form-file -->
 		<b-form-file
 			v-model="file"
 			:state="Boolean(file)"
 			placeholder="Palauta vastauksesi tähän..."
 			drop-placeholder="Pudota tiedosto tähän..."
+			:accept="item.accept ? item.accept : ''"
 		></b-form-file>
 		<b-button class="btn-primary" @click="file = null">Tyhjennä</b-button>
 		<!-- TODO: add submit button when we have an idea where this goes... -->
