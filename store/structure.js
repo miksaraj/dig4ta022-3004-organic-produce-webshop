@@ -253,6 +253,18 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 371,
+			sectionId: 12,
+			order: 2,
+			type: 'MultipleChoice'
+		},
+		{
+			contentId: 372,
+			sectionId: 12,
+			order: 3,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 38,
 			sectionId: 13,
 			order: 1,
@@ -275,6 +287,12 @@ export const state = () => ({
 			sectionId: 14,
 			order: 1,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 401,
+			sectionId: 14,
+			order: 2,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 42,
@@ -331,6 +349,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 501,
+			sectionId: 16,
+			order: 4,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 51,
 			sectionId: 16,
 			order: 4,
@@ -341,6 +365,12 @@ export const state = () => ({
 			sectionId: 16,
 			order: 5,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 521,
+			sectionId: 16,
+			order: 6,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 53,
@@ -373,27 +403,33 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 58,
-			sectionId: 18,
+			contentId: 571,
+			sectionId: 16,
 			order: 5,
-			type: 'TheoryElement'
+			type: 'MultipleChoice'
 		},
 		{
-			contentId: 59,
+			contentId: 58,
 			sectionId: 18,
 			order: 6,
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 60,
+			contentId: 59,
 			sectionId: 18,
 			order: 7,
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 61,
+			contentId: 60,
 			sectionId: 18,
 			order: 8,
+			type: 'TheoryElement'
+		},
+		{
+			contentId: 61,
+			sectionId: 18,
+			order: 9,
 			type: 'TheoryElement'
 		}
 	]

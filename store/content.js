@@ -634,7 +634,7 @@ export const state = () => ({
 					items: [
 						{
 							text:
-								'työmuistissa muistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
+								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
 							value: 'true'
 						},
 						{
@@ -834,6 +834,67 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 371,
+			header: 'Monivalintatehtävä: psykoanalyysi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sisäisten mallien ja tiedon käsittelyn merkitystä',
+							value: 'false'
+						},
+						{
+							text: 'tiedostamattoman merkitystä',
+							value: 'true'
+						},
+						{
+							text: 'palkkioiden ja rangaistusten merkitystä',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
+			id: 372,
+			header: 'Monivalintatehtävä: defenssit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'projektio',
+							value: 'false'
+						},
+						{
+							text: 'sublimaatio',
+							value: 'false'
+						},
+						{
+							text: 'torjunta',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 38,
 			header: 'Humanistinen psykologia',
 			text: [
@@ -880,6 +941,35 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Suomalainen filosofi, Frank Martela, on tehnyt viimeisten vuosien ajan yhteistyötä Decin ja Ryanin kanssa. Hän kehitti itseohjautuvuusteoriaan neljännen tekijän. Motivaatiota nostaa se, jos henkilö kokee tekemisen merkitykselliseksi. Esimerkiksi vapaaehtoistoiminnassa ihminen voi kokea oman työnsä tärkeäksi. Opiskelun kannalta olennaista on huomata, että motivaatioon on todellakin mahdollista vaikuttaa. Jos nyt mikään ei tunnu kiinnostavan, voi yrittää herätellä sisäistä motivaatiota.'
+				}
+			]
+		},
+		{
+			id: 391,
+			header: 'Monivalintatehtävä: motivaatio',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Sisäinen motivaatio tarkoittaa sitä, että',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'tehtävä itsessään kiinnostaa ja innostaa',
+							value: 'true'
+						},
+						{
+							text: 'asiaa tehdään siitä saatavan palkkion takia',
+							value: 'false'
+						},
+						{
+							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1108,6 +1198,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 501,
+			header: 'Monivalintatehtävä: konformisuus',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Konformisuus on ilmiö, jossa',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
+							value: 'false'
+						},
+						{
+							text: 'henkilö mukautuu ryhmän paineeseen',
+							value: 'true'
+						},
+						{
+							text:
+								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 51,
 			header: 'Milgramin sähköshokkikoe',
 			text: [
@@ -1126,6 +1247,38 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Kiusaamistilanteessa voi olla kyse myös tottelevaisuudesta. Milgram tutki tätä ilmiötä sähköshokkikokeessaan ja huomasi, että mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille. Nuorten joukossa voi olla siis käskyjä jakeleva pomo, joka saa muutkin ryhmän jäsenet kiusaamaan koulukaveriaan. Katso video, missä ohikulkijat tottelevat univormuun pukeutunutta miestä: https://www.youtube.com/watch?v=2ykbmBFqq54'
+				}
+			]
+		},
+		{
+			id: 521,
+			header: 'Monivalintatehtävä: Milgram',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Milgramin tutkimuksessa havaittiin, että',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihmiset eivät yleensä tottele johtajan käskyjä',
+							value: 'false'
+						},
+						{
+							text:
+								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
+							value: 'false'
+						},
+						{
+							text:
+								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1203,6 +1356,36 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Muuttuja on se asia, jota halutaan tutkia. Tässä tapauksessa meillä on kaksi muuttujaa: älypuhelimen käyttö ja oppimistulokset. Näiden muuttujien välistä syy- seuraussuhdetta haluamme tutkia. Jotta näitä asioita voidaan tutkia, tulee ne muuttaa mitattavaan muotoon eli operationalisoida. Älypuhelimen käyttö muutetaan mitattavaan muotoon siten, että koehenkilöt asettavat älypuhelimensa pulpetilleen oppitunnin ajaksi ja saavat vapaasti käyttää sitä opetusta seuratessaan. Oppimistuloksia mitataan kokeella tunnin aiheesta. Eli opiskelijat tekevät oppitunnin päätteeksi kokeen. Koetuloksista saadaan arvo toiselle muuttujalle. Näin muuttujat on muutettu mitattavaan muotoon.'
+				}
+			]
+		},
+		{
+			id: 571,
+			header: 'Monivalintatehtävä: muuttja',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Tutkimuksessa muuttuja on ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'koehenkilö',
+							value: 'false'
+						},
+						{
+							text:
+								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
+							value: 'true'
+						},
+						{
+							text: 'kontrolliryhmä',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
