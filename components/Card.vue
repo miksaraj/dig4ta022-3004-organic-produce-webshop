@@ -12,7 +12,7 @@
 			</nuxt-link>
 		</h2>
 		<p>{{ item.description }}</p>
-		<card-list-group :items="subItems" :type="type" />
+		<card-list-group :items="subItems" :type="type" :id="item.id" />
 		<template v-slot:footer>
 			<progress-bar :item="item" :subItems="subItems" />
 		</template>
@@ -43,7 +43,11 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters('sections', ['sectionsByChapter']),
+		...mapGetters({
+			sectionsByChapter: 'sections/sectionsByChapter',
+			sectionStructure: 'structure/sectionStructure',
+			contentBySection: 'content/contentBySection'
+		}),
 		item() {
 			return this.$attrs.item
 		},
@@ -52,14 +56,16 @@ export default {
 		}
 	},
 	mounted() {
-		// only for course modules for now
-		if (this.type === 'chapters') {
-			this.getSubItems()
-		}
+		this.getSubItems()
 	},
 	methods: {
 		getSubItems() {
-			this.subItems = this.sectionsByChapter(this.item.id)
+			if (this.type === 'chapters') {
+				this.subItems = this.sectionsByChapter(this.item.id)
+			} else {
+				const content = this.sectionStructure(this.item.id)
+				this.subItems = this.contentBySection(content)
+			}
 		}
 	}
 }

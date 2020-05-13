@@ -8,7 +8,15 @@
 				>
 					{{ item.header }}
 				</nuxt-link>
-				<!-- what about section content? -->
+				<nuxt-link
+					v-else
+					:to="{
+						path: $route.path + '/' + id,
+						hash: '#' + item.id
+					}"
+				>
+					{{ item.header }}
+				</nuxt-link>
 			</b-list-group-item>
 		</b-list-group>
 	</div>
@@ -23,6 +31,9 @@ export default {
 		},
 		type() {
 			return this.$attrs.type
+		},
+		id() {
+			return this.$attrs.id
 		}
 	}
 }
