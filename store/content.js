@@ -1131,5 +1131,13 @@ export const state = () => ({
 export const getters = {
 	contentById: state => id => {
 		return state.list.find(item => item.id === id)
+	},
+	contentBySection: state => data => {
+		const assignments = []
+		for (let i = 0; i < data.length; i++) {
+			const id = data[i].contentId
+			assignments.push(state.list.find(x => x.id === id))
+		}
+		return assignments
 	}
 }
