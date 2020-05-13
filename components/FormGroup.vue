@@ -7,13 +7,14 @@
 					v-model="item.input"
 					:type="item.type"
 					:required="item.required"
+					:readonly="readOnly"
 				/>
 			</b-form-group>
 		</b-form>
 	</div>
 </template>
 
-<style scoped>
+<style>
 .form {
 	padding-top: 3rem;
 }
@@ -25,6 +26,9 @@ export default {
 	computed: {
 		items() {
 			return this.$attrs.items
+		},
+		readOnly() {
+			return this.$attrs.readOnly ? this.$attrs.readOnly : false
 		}
 	}
 }

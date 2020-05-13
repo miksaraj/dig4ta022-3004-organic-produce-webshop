@@ -56,6 +56,7 @@ export default {
 				return
 			}
 			this.$store.dispatch('auth/login', user.input)
+			this.$store.dispatch('profile/update', { username: user.input })
 			this.$router.push('/')
 		}
 	}
