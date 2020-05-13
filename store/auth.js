@@ -17,6 +17,7 @@ export const actions = {
 	},
 	logout({ commit }, vm) {
 		commit('logout')
+		vm.$store.dispatch('profile/clear')
 		vm.$router.go('/login')
 	}
 }

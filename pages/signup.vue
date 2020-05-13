@@ -86,7 +86,7 @@ export default {
 	},
 	methods: {
 		signup() {
-			const userDetails = []
+			const userDetails = {}
 			let pwd = ''
 			let pwd2 = ''
 			for (let i = 0; i < this.items.length; i++) {
@@ -107,16 +107,14 @@ export default {
 					) {
 						return
 					}
-					userDetails.push({
-						key: this.items[i].id,
-						value: this.items[i].input
-					})
+					userDetails[this.items[i].id] = this.items[i].input
 				}
 			}
 			if (pwd !== pwd2) {
 				return
 			}
 			this.$store.dispatch('auth/login', userDetails)
+			this.$store.dispatch('profile/update', userDetails)
 			this.$router.push('/')
 		}
 	}
