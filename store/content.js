@@ -134,7 +134,7 @@ export const state = () => ({
 					content:
 						'Aivojen sisemmät osat vastaavat monista tahdosta riippumattomista mielen toiminnoista. Ne ovat aivojen vanhempia osia ja hyvin samankaltaisia eläinten aivojen kanssa. Tärkeä alue on esimerkiksi limbinen järjestelmä, joka on tärkeä tunteiden, motivaation ja muistin toiminnassa. Limbisen järjestelmän osia ovat esimerkiksi hippokampus ja mantelitumake. Hippokampus on tärkeä osa muistin kannalta. Sen avulla nyt mielessä olevat asiat siirtyvät pitkäkestoiseen muistiin. Mantelitumake liittyy tunteisiin, esimerkiksi pelkoon ja vihaan.'
 				},
-				/* 
+				/*
 				{
 					type: 'img',
 					content:
@@ -217,13 +217,8 @@ export const state = () => ({
 		{
 			id: 8,
 			header: 'Rottien hermoston muovautuvuus',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Greenough tutki 1970- luvulla virikkeellisen ympäristön vaikutuksia aivoihin. Hän laittoi ryhmän rottia virikkeelliseen eli leluja sisältävään ympäristöön kasvamaan. Tässä virikkeellisessä ympäristössä oli erilaisia esineitä, leikkikaluja sekä kavereita. Toinen ryhmä rottia laitettiin yksin häkkeihin, joissa ei ollut leluja. Rotat elivät näissä ympäristöissä nuoruuteen asti. Virikkeellinen ympäristö vaikutti aivojen rakenteeseen. Kokemukset kehityksen aikana vaikuttivat siten, että hermosolut muodostivat uusia yhteyksiä muiden hermosolujen kanssa. Virikkeellisessä sosiaalisessa ympäristössä eläneiden rottien hermosolut olivat haaroittuneempia ja tehokkaampia kuin ei -virikkeellisessä ympäristössä eläneiden rottien. Hyvä on huomioida, että virikkeiden hyöty oli suurinta, mikäli rotalla oli muita rottakavereita mukana.'
-				}
-			]
+			text:
+				'Greenough tutki 1970- luvulla virikkeellisen ympäristön vaikutuksia aivoihin. Hän laittoi ryhmän rottia virikkeelliseen eli leluja sisältävään ympäristöön kasvamaan. Tässä virikkeellisessä ympäristössä oli erilaisia esineitä, leikkikaluja sekä kavereita. Toinen ryhmä rottia laitettiin yksin häkkeihin, joissa ei ollut leluja. Rotat elivät näissä ympäristöissä nuoruuteen asti. Virikkeellinen ympäristö vaikutti aivojen rakenteeseen. Kokemukset kehityksen aikana vaikuttivat siten, että hermosolut muodostivat uusia yhteyksiä muiden hermosolujen kanssa. Virikkeellisessä sosiaalisessa ympäristössä eläneiden rottien hermosolut olivat haaroittuneempia ja tehokkaampia kuin ei -virikkeellisessä ympäristössä eläneiden rottien. Hyvä on huomioida, että virikkeiden hyöty oli suurinta, mikäli rotalla oli muita rottakavereita mukana.'
 		},
 		{
 			id: 9,
@@ -239,13 +234,8 @@ export const state = () => ({
 		{
 			id: 10,
 			header: 'Amala ja Kamala Intiasta sekä Genie Kaliforniasta',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Intiassa 1920- luvulla löydettiin Amala ja Kamala. He olivat 1,5-, ja 8- vuotiaita tyttöjä löydettäessä luonnosta. He liikkuivat neljällä jalalla, eivät puhuneet vaan ääntelivät kuin sudet. Nuorempi tytöistä kuoli pian, mutta toinen eli muutamia vuosia. Tätä tapausta on epäilty myös huijaukseksi ja villilapsitapauksiin onkin syytä suhtautua kriittisesti. Toinen hieman tuoreempi tapaus on Genie. Hänet löydettiin 1970-luvulla Kaliforniassa ja Genie oli tuolloin 13-vuotias. Hänen mielenterveysongelmista kärsivä isänsä oli eristänyt hänet yhteen huoneeseen. Genie ei kuullut puhetta eikä hänellä juurikaan ollut virikkeitä. Hänen isänsä löi häntä, mikäli hän äänteli, myös hänen liikkumistaan rajoitettiin. Hänet oli esimerkiksi kahlittu pottaan. Genie ehti olla vankilassaan 12 vuotta, jonka jälkeen hänen äitinsä jätti miehensä ja otti Genien mukaan. Äiti vei Genien sosiaalitoimistoon. Genie otettiin huostaan ja vanhemmat joutuivat syytteeseen kaltoinkohtelusta. Hänen isänsä teki itsemurhan.'
-				}
-			]
+			text:
+				'Intiassa 1920- luvulla löydettiin Amala ja Kamala. He olivat 1,5-, ja 8- vuotiaita tyttöjä löydettäessä luonnosta. He liikkuivat neljällä jalalla, eivät puhuneet vaan ääntelivät kuin sudet. Nuorempi tytöistä kuoli pian, mutta toinen eli muutamia vuosia. Tätä tapausta on epäilty myös huijaukseksi ja villilapsitapauksiin onkin syytä suhtautua kriittisesti. Toinen hieman tuoreempi tapaus on Genie. Hänet löydettiin 1970-luvulla Kaliforniassa ja Genie oli tuolloin 13-vuotias. Hänen mielenterveysongelmista kärsivä isänsä oli eristänyt hänet yhteen huoneeseen. Genie ei kuullut puhetta eikä hänellä juurikaan ollut virikkeitä. Hänen isänsä löi häntä, mikäli hän äänteli, myös hänen liikkumistaan rajoitettiin. Hänet oli esimerkiksi kahlittu pottaan. Genie ehti olla vankilassaan 12 vuotta, jonka jälkeen hänen äitinsä jätti miehensä ja otti Genien mukaan. Äiti vei Genien sosiaalitoimistoon. Genie otettiin huostaan ja vanhemmat joutuivat syytteeseen kaltoinkohtelusta. Hänen isänsä teki itsemurhan.'
 		},
 		{
 			id: 11,
@@ -266,13 +256,8 @@ export const state = () => ({
 		{
 			id: 12,
 			header: 'Pikku-Albert',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Pikku-Albert oli noin vuoden ikäinen lapsi, jonka tutkija John Watson opetti pelkäämään kaikkea valkoista ja karvaista. Tämä tapahtui jo 1920- luvulla. Albert ei pelännyt eläimiä, joita hänen eteensä tuotiin. Watson kuitenkin pamautti pelottavan äänimerkin aina kun Albertin läheisyyteen laitettiin valkoinen hiiri. Hiljalleen Albert ehdollistui pelkäämään valkoista hiirtä. Pelon oppimisen taustalla voi olla tällainen klassisen ehdollistumisen mekanismi. Kun koira puree, opit pelkäämään kaikkia koiria. Hammaslääkärissä poraaminen sattuu, niin opit pelkäämään hammaslääkäriä. Tämä tutkimus on epäeettinen. Ei ole hyvä idea opettaa lapselle pelkotiloja tieteen takia. Pikku-Albert on voinut saada trauman tutkimustilanteesta. Tällaista tutkimusta ei voisi enää nykyään tehdä.'
-				}
-			]
+			text:
+				'Pikku-Albert oli noin vuoden ikäinen lapsi, jonka tutkija John Watson opetti pelkäämään kaikkea valkoista ja karvaista. Tämä tapahtui jo 1920- luvulla. Albert ei pelännyt eläimiä, joita hänen eteensä tuotiin. Watson kuitenkin pamautti pelottavan äänimerkin aina kun Albertin läheisyyteen laitettiin valkoinen hiiri. Hiljalleen Albert ehdollistui pelkäämään valkoista hiirtä. Pelon oppimisen taustalla voi olla tällainen klassisen ehdollistumisen mekanismi. Kun koira puree, opit pelkäämään kaikkia koiria. Hammaslääkärissä poraaminen sattuu, niin opit pelkäämään hammaslääkäriä. Tämä tutkimus on epäeettinen. Ei ole hyvä idea opettaa lapselle pelkotiloja tieteen takia. Pikku-Albert on voinut saada trauman tutkimustilanteesta. Tällaista tutkimusta ei voisi enää nykyään tehdä.'
 		},
 		{
 			id: 13,
@@ -363,13 +348,8 @@ export const state = () => ({
 		{
 			id: 17,
 			header: 'Bobo-nukke',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Bobo-nukke-kokeessa pieni lapsi näkee tv-ruudulta tilanteen, jossa aikuinen on huoneessa bobo-nuken kanssa. Koeryhmän lapset näkivät aikuisen pahoinpitelevän nukkea. Kontrolliryhmä ei nähnyt aikuisen väkivaltaista käyttäytymistä. Kokeen toisessa vaiheessa lapsi jäi nuken kanssa samaan huoneeseen. Koeryhmän lapset pahoinpitelivät nukkea aivan kuten aikuinen oli tehnyt. Tämän lisäksi he kehittelivät uusia tapoja vahingoittaa nukkea, esimerkiksi ampuivat pyssyllä, vaikkei aikuinen ollutkaan tehnyt näin. Kontrolliryhmä ei kohdistanut väkivaltaa nukkeen.'
-				}
-			]
+			text:
+				'Bobo-nukke-kokeessa pieni lapsi näkee tv-ruudulta tilanteen, jossa aikuinen on huoneessa bobo-nuken kanssa. Koeryhmän lapset näkivät aikuisen pahoinpitelevän nukkea. Kontrolliryhmä ei nähnyt aikuisen väkivaltaista käyttäytymistä. Kokeen toisessa vaiheessa lapsi jäi nuken kanssa samaan huoneeseen. Koeryhmän lapset pahoinpitelivät nukkea aivan kuten aikuinen oli tehnyt. Tämän lisäksi he kehittelivät uusia tapoja vahingoittaa nukkea, esimerkiksi ampuivat pyssyllä, vaikkei aikuinen ollutkaan tehnyt näin. Kontrolliryhmä ei kohdistanut väkivaltaa nukkeen.'
 		},
 		{
 			id: 18,
@@ -441,13 +421,8 @@ export const state = () => ({
 		{
 			id: 23,
 			header: 'Karttatesti',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
-				}
-			]
+			text:
+				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
 		},
 		{
 			id: 24,
@@ -517,13 +492,8 @@ export const state = () => ({
 		{
 			id: 26,
 			header: 'Shakkikoe',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Shakkikoe: Simon ja Chase tekivät vuonna 1973 mielenkiintoisen tutkimuksen aloittelevilla ja kokeneilla shakinpelaajilla. Tutkimuksessa pelaajien piti katsoa pelitilanteita ja palauttaa mieleen shakkinappuloiden paikat. Kun nappuloiden määrää kasvatettiin, kokeneet shakinpelaajat pystyivät muistamaan hyvin nappuloiden sijainnit, kun taas aloittelijoiden muistivirheiden määrä nousi. Tätä on selitetty sillä, että kokeneet pelaajat pystyivät rakentamaan yksittäisistä nappuloista ja niiden sijainnista suurempia kokonaisuuksia, jolloin muistaminen vei vähemmän työmuistin kapasiteetista. Aloittelijoilta kokonaisuuksien rakentaminen ei taas onnistunut, jolloin työmuisti kuormittui ja muistiinpalauttaminen vaikeutui. Yllättävää tutkimuksessa oli kuitenkin se, että jos nappuloiden paikat eivät vastanneet oikeita pelitilanteita, kokeneet pelaajat eivät muistaneet paremmin kuin aloittelijat. Tämä tutkimus antaa tukea ajatukselle, että työmuistin kapasiteettia voi laajentaa, jos pitkäkestoisen muistin avulla voi rakentaa pienistä asioista suurempia kokonaisuuksia.'
-				}
-			]
+			text:
+				'Shakkikoe: Simon ja Chase tekivät vuonna 1973 mielenkiintoisen tutkimuksen aloittelevilla ja kokeneilla shakinpelaajilla. Tutkimuksessa pelaajien piti katsoa pelitilanteita ja palauttaa mieleen shakkinappuloiden paikat. Kun nappuloiden määrää kasvatettiin, kokeneet shakinpelaajat pystyivät muistamaan hyvin nappuloiden sijainnit, kun taas aloittelijoiden muistivirheiden määrä nousi. Tätä on selitetty sillä, että kokeneet pelaajat pystyivät rakentamaan yksittäisistä nappuloista ja niiden sijainnista suurempia kokonaisuuksia, jolloin muistaminen vei vähemmän työmuistin kapasiteetista. Aloittelijoilta kokonaisuuksien rakentaminen ei taas onnistunut, jolloin työmuisti kuormittui ja muistiinpalauttaminen vaikeutui. Yllättävää tutkimuksessa oli kuitenkin se, että jos nappuloiden paikat eivät vastanneet oikeita pelitilanteita, kokeneet pelaajat eivät muistaneet paremmin kuin aloittelijat. Tämä tutkimus antaa tukea ajatukselle, että työmuistin kapasiteettia voi laajentaa, jos pitkäkestoisen muistin avulla voi rakentaa pienistä asioista suurempia kokonaisuuksia.'
 		},
 		{
 			id: 27,
@@ -589,13 +559,8 @@ export const state = () => ({
 		{
 			id: 31,
 			header: 'Tutkimus sanojen prosessoinnin tasosta',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Vuonna 1973 tutkijat Thomas Hyde ja Jim Jenkins halusivat selvittää, miten sanojen prosessointi vaikuttaa niiden muistamiseen. Hyden ja Jenkinsin kokeellisessa tutkimuksessa koehenkilöt jaettiin kahteen ryhmään ja kummallekin ryhmälle esitettiin pitkä lista sanoja. Ensimmäisen ryhmän piti prosessoida sanaa pinnallisella tavalla. Heidän tehtävänä oli laskea, kuinka monta kertaa kirjain “e” esiintyi sanoissa. Toisen ryhmän tehtävänä oli pohtia, miten miellyttäviä sanat olivat. Tämän jälkeen molempien ryhmien piti palauttaa mieleen edelliset sanat. Kokeen tulos oli, että ensimmäinen ryhmä sai 24% sanoista oikein, kun taas jälkimmäinen ryhmä sai jopa 48%. Tutkimuksen perusteella voi huomata, miten asian miellyttävyyden pohdinta auttaa muistamaan sanoja paremmin kuin jokin mekaaninen tehtävä, jossa lasketaan kirjaimia. Tiedon prosessointi on tärkeää erityisesti silloin, kun opiskellaan suurempia alueita, esimerkiksi reaaliaineissa.'
-				}
-			]
+			text:
+				'Vuonna 1973 tutkijat Thomas Hyde ja Jim Jenkins halusivat selvittää, miten sanojen prosessointi vaikuttaa niiden muistamiseen. Hyden ja Jenkinsin kokeellisessa tutkimuksessa koehenkilöt jaettiin kahteen ryhmään ja kummallekin ryhmälle esitettiin pitkä lista sanoja. Ensimmäisen ryhmän piti prosessoida sanaa pinnallisella tavalla. Heidän tehtävänä oli laskea, kuinka monta kertaa kirjain “e” esiintyi sanoissa. Toisen ryhmän tehtävänä oli pohtia, miten miellyttäviä sanat olivat. Tämän jälkeen molempien ryhmien piti palauttaa mieleen edelliset sanat. Kokeen tulos oli, että ensimmäinen ryhmä sai 24% sanoista oikein, kun taas jälkimmäinen ryhmä sai jopa 48%. Tutkimuksen perusteella voi huomata, miten asian miellyttävyyden pohdinta auttaa muistamaan sanoja paremmin kuin jokin mekaaninen tehtävä, jossa lasketaan kirjaimia. Tiedon prosessointi on tärkeää erityisesti silloin, kun opiskellaan suurempia alueita, esimerkiksi reaaliaineissa.'
 		},
 		{
 			id: 32,
@@ -616,13 +581,8 @@ export const state = () => ({
 		{
 			id: 33,
 			header: 'Tutkimus erilaisista opiskelustrategioista',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Kirsti Lonka & et al. tekivät lääketieteen opiskelijoilla tutkimuksen eri opiskelutapojen vaikutuksista oppimiseen. Opiskelijat jaettiin kolmeen eri ryhmään. Ensimmäinen ryhmä opiskeli vain kirjan avulla, mutta he eivät tehneet muistiinpanoja. Toinen ryhmä alleviivasi tekstistä olennaisia sanoja. Kolmas ryhmä teki itse muistiinpanoja, esimerkiksi käsitekarttoja. Koetilanteessa viimeinen ryhmä sai parhaat tulokset, ja tasoero näkyi erityisesti soveltavissa tehtävissä. Käsitekarttojen teko on tietoa rakentelevaa tiedonkäsittelyä. Silloin opiskelija käsittelee tietoa monipuolisemmin kuin vaikka vain ranskalaisilla viivoilla muistiinpanoja tekemällä. Eli käsitekarttoja tekemällä opiskelija syväprosessoi tietoa. Silloin tiedonkäsittely ei ole vain tietoa toistavaa ja siksi monet opettajat kehottavat käsitekarttojen tekoon.'
-				}
-			]
+			text:
+				'Kirsti Lonka & et al. tekivät lääketieteen opiskelijoilla tutkimuksen eri opiskelutapojen vaikutuksista oppimiseen. Opiskelijat jaettiin kolmeen eri ryhmään. Ensimmäinen ryhmä opiskeli vain kirjan avulla, mutta he eivät tehneet muistiinpanoja. Toinen ryhmä alleviivasi tekstistä olennaisia sanoja. Kolmas ryhmä teki itse muistiinpanoja, esimerkiksi käsitekarttoja. Koetilanteessa viimeinen ryhmä sai parhaat tulokset, ja tasoero näkyi erityisesti soveltavissa tehtävissä. Käsitekarttojen teko on tietoa rakentelevaa tiedonkäsittelyä. Silloin opiskelija käsittelee tietoa monipuolisemmin kuin vaikka vain ranskalaisilla viivoilla muistiinpanoja tekemällä. Eli käsitekarttoja tekemällä opiskelija syväprosessoi tietoa. Silloin tiedonkäsittely ei ole vain tietoa toistavaa ja siksi monet opettajat kehottavat käsitekarttojen tekoon.'
 		},
 		{
 			id: 35,
@@ -914,13 +874,8 @@ export const state = () => ({
 		{
 			id: 45,
 			header: 'Zimbardon vankilakoe',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Zimbardo tutki 1970-luvulla Stanfordin yliopistossa roolien vaikutusta ihmisen toimintaan. Hän laittoi täysin terveitä ja tavallisia nuoria miehiä koehenkilöinä kuviteltuun vankilaan. Tämä lavastettu vankila luotiin yliopiston kellariin. Koehenkilöitä oli 24. Osa koehenkilöistä sai vangin roolin, osa vanginvartijan roolin. Vangin roolin saaneet henkilöt pidätettiin ja vietiin käsiraudoissa vankilaan. Vanki sai nimekseen numeron, häntä ei enää kutsuttu omalla nimellään. Tällä tavalla roolin omaksumista vahvistettiiin. Vartijan roolin omaksumista vahvistettiin vartijan asulla, aurinkolaseilla. Kokeen oli tarkoitus jatkua kahden viikon ajan, mutta se jouduttiin keskeyttämään kuuden päivän kuluttua. Tutkimus keskeytettiin, koska vanginvartijoina toimivat nuoret koehenkilöt alkoivat kohdella vankeja huonosti. Annettu valta sekoitti joidenkin koehenkilöiden päät ja he käyttivät valtaa väärin. Katso video täältä: https://www.youtube.com/watch?v=sZwfNs1pqG0. Nuoret voivat esimerkiksi omaksua rooleja, joissa vallankäyttö on mahdollista. Kuten Zimbardon vankilakokeessa huomattiin, opiskelijan omaksuessa vanginvartijan roolin, alkoi hän käyttäytyä tämän roolin mukaisesti. Täysin mukavasta nuoresta miehestä tulikin heikomman kiusaaja. Mahdollisesti jollain nuorella voi olla syntynyt sellainen rooli, joka mahdollistaa toisten huonon kohtelun, esimerkiksi huutelun, määräilyn ja väkivallan ja näin kiusaaminen käynnistyy. Tärkeää on ymmärtää, että rooli ei ole ihmisen pysyvä ominaisuus vaan sitä voi muuttaa. Uudessa ryhmässä nuori voi saada uuden roolin, joka ei enää saa aikaan kiusaamista.'
-				}
-			]
+			text:
+				'Zimbardo tutki 1970-luvulla Stanfordin yliopistossa roolien vaikutusta ihmisen toimintaan. Hän laittoi täysin terveitä ja tavallisia nuoria miehiä koehenkilöinä kuviteltuun vankilaan. Tämä lavastettu vankila luotiin yliopiston kellariin. Koehenkilöitä oli 24. Osa koehenkilöistä sai vangin roolin, osa vanginvartijan roolin. Vangin roolin saaneet henkilöt pidätettiin ja vietiin käsiraudoissa vankilaan. Vanki sai nimekseen numeron, häntä ei enää kutsuttu omalla nimellään. Tällä tavalla roolin omaksumista vahvistettiiin. Vartijan roolin omaksumista vahvistettiin vartijan asulla, aurinkolaseilla. Kokeen oli tarkoitus jatkua kahden viikon ajan, mutta se jouduttiin keskeyttämään kuuden päivän kuluttua. Tutkimus keskeytettiin, koska vanginvartijoina toimivat nuoret koehenkilöt alkoivat kohdella vankeja huonosti. Annettu valta sekoitti joidenkin koehenkilöiden päät ja he käyttivät valtaa väärin. Katso video täältä: https://www.youtube.com/watch?v=sZwfNs1pqG0. Nuoret voivat esimerkiksi omaksua rooleja, joissa vallankäyttö on mahdollista. Kuten Zimbardon vankilakokeessa huomattiin, opiskelijan omaksuessa vanginvartijan roolin, alkoi hän käyttäytyä tämän roolin mukaisesti. Täysin mukavasta nuoresta miehestä tulikin heikomman kiusaaja. Mahdollisesti jollain nuorella voi olla syntynyt sellainen rooli, joka mahdollistaa toisten huonon kohtelun, esimerkiksi huutelun, määräilyn ja väkivallan ja näin kiusaaminen käynnistyy. Tärkeää on ymmärtää, että rooli ei ole ihmisen pysyvä ominaisuus vaan sitä voi muuttaa. Uudessa ryhmässä nuori voi saada uuden roolin, joka ei enää saa aikaan kiusaamista.'
 		},
 		{
 			id: 46,
@@ -954,13 +909,8 @@ export const state = () => ({
 		{
 			id: 49,
 			header: 'Aschin janakoe',
-			text: [
-				{
-					type: 'p',
-					content:
-						'Jo 1950-luvulla Solomon Asch laittoi koehenkilön lisäksi valekoehenkilöitä eli näyttelijöitä samaan tilaan. Heille kaikille näytettiin kolme eripituista janaa eli viivaa, ja näistä heidän piti valita jana, joka oli samanpituinen neljännen janan kanssa. Tämä tehtävä oli helppo koehenkilöille ja yksin ollessa virheitä sattui vähän. Koetilanteessa valekoehenkilöt antoivat väärän vastauksen tahallaan. Tutkimuksessa tutkittiin, mitä koehenkilö vastaa. Tutkimuksessa havaittiin, että 37 prosenttia vastauksista meni koehenkilöillä väärin, eli he vastasivat kuten muutkin ryhmässä. Koehenkilöt eivät halunneet olla erilaisia tai he olivat epävarmoja omasta havainnosta, joten he vastasivat kuten muutkin. Mikäli ryhmään lisättiin toinen aito koehenkilö, väärien vastausten määrä väheni paljon. Oli helpompi luottaa omiin ajatuksiin, kun ei ollut ainoa erilainen ryhmässä. Toki kaikki koehenkilöt eivät mukautuneet yhdenmukaisuuden paineeseen. Mikäli koehenkilö uskoi omaan itseensä, ryhmäpaineen vaikutus väheni.'
-				}
-			]
+			text:
+				'Jo 1950-luvulla Solomon Asch laittoi koehenkilön lisäksi valekoehenkilöitä eli näyttelijöitä samaan tilaan. Heille kaikille näytettiin kolme eripituista janaa eli viivaa, ja näistä heidän piti valita jana, joka oli samanpituinen neljännen janan kanssa. Tämä tehtävä oli helppo koehenkilöille ja yksin ollessa virheitä sattui vähän. Koetilanteessa valekoehenkilöt antoivat väärän vastauksen tahallaan. Tutkimuksessa tutkittiin, mitä koehenkilö vastaa. Tutkimuksessa havaittiin, että 37 prosenttia vastauksista meni koehenkilöillä väärin, eli he vastasivat kuten muutkin ryhmässä. Koehenkilöt eivät halunneet olla erilaisia tai he olivat epävarmoja omasta havainnosta, joten he vastasivat kuten muutkin. Mikäli ryhmään lisättiin toinen aito koehenkilö, väärien vastausten määrä väheni paljon. Oli helpompi luottaa omiin ajatuksiin, kun ei ollut ainoa erilainen ryhmässä. Toki kaikki koehenkilöt eivät mukautuneet yhdenmukaisuuden paineeseen. Mikäli koehenkilö uskoi omaan itseensä, ryhmäpaineen vaikutus väheni.'
 		},
 		{
 			id: 50,
@@ -976,13 +926,8 @@ export const state = () => ({
 		{
 			id: 51,
 			header: 'Milgramin sähköshokkikoe',
-			text: [
-				{
-					type: 'p',
-					content:
-						'1960-luvulla Stanley Milgram teki kuuluisia tutkimuksia tottelevaisuudesta. Tottelevaisuus oli ajankohtainen ilmiö, koska toisen maailmansodan kauheuksia, juutalaisten teloituksia selitettiin tottelevaisuudella. Esimerkiksi holokaustin organisoija Adolf Eichman selitti toimintaansa siten, että hän vain totteli käskyjä. Milgram halusi tietää, mitä tavalliset ihmiset tekisivät, jos tutkija määräisi heitä antamaan sähköiskuja toiselle ihmiselle? Olisivatko he valmiita aiheuttamaan kipua toiselle ihmiselle auktoriteetin käskystä? Milgramin tutkimus tunnetaan nimellä sähköshokkikokeet. Sähköiskut eivät olleet kokeissa todellisia. Koehenkilö vain uskoi antavansa sähköiskuja tutkimusavustajalle.  Tutkimus toteutettiin siten, että koehenkilö uskoi osallistuvansa tutkimukseen, jossa tutkittaisiin rankaisemisen vaikutusta muistin toimintaan. Muistitehtäviä teki tutkimusavustaja eli hän näytteli oppijaa. Aina kun tutkimusavustaja vastasi muistitehtävään väärin, rankaisi koehenkilö häntä sähköiskulla. Tutkija eli kokeenjohtaja käski antaa sähköiskun väärästä vastauksesta. Tutkimuksessa tutkittiin sitä, että totteleeko koehenkilö tätä käskyä. Sähköiskuja ei siis oikeasti tapahtunut, tutkimusavustaja vain näytteli saavansa sähköiskun. Sähköiskut voimistuivat tutkimuksen aikana. Asiantuntijat ennustivat, että melkein kaikki koehenkilöt kieltäytyisivät tottelemasta kokeenjohtajaa, eivätkä antaisi sähköiskua kokeenjohtajan käskystä. Tottelevaisuuden voima oli kuitenkin yllättävä. Tutkimuksessa havaittiin, yli 60% koehenkilöistä oli valmiita antamaan voimakkaitakin sähköiskuja toiselle ihmiselle, mikäli auktoriteetti näin käski. Tämä tulos tuli koeasetelmassa, jossa koehenkilö ei nähnyt sähköiskuja saavaa tutkimusavustajaa, mutta kuuli hänen äänensä. Koehenkilö saattoi olla hyvin ahdistunut tässä tilanteessa, mutta yleensä hän kuitenkin totteli käskyä ja antoi sähköiskun. Eli kuka tahansa oli valmis vahingoittamaan toista ihmistä tietyssä tilanteessa, toisen satuttaminen ei siis vaatinut mitään sadistista luonnetta.'
-				}
-			]
+			text:
+				'1960-luvulla Stanley Milgram teki kuuluisia tutkimuksia tottelevaisuudesta. Tottelevaisuus oli ajankohtainen ilmiö, koska toisen maailmansodan kauheuksia, juutalaisten teloituksia selitettiin tottelevaisuudella. Esimerkiksi holokaustin organisoija Adolf Eichman selitti toimintaansa siten, että hän vain totteli käskyjä. Milgram halusi tietää, mitä tavalliset ihmiset tekisivät, jos tutkija määräisi heitä antamaan sähköiskuja toiselle ihmiselle? Olisivatko he valmiita aiheuttamaan kipua toiselle ihmiselle auktoriteetin käskystä? Milgramin tutkimus tunnetaan nimellä sähköshokkikokeet. Sähköiskut eivät olleet kokeissa todellisia. Koehenkilö vain uskoi antavansa sähköiskuja tutkimusavustajalle.  Tutkimus toteutettiin siten, että koehenkilö uskoi osallistuvansa tutkimukseen, jossa tutkittaisiin rankaisemisen vaikutusta muistin toimintaan. Muistitehtäviä teki tutkimusavustaja eli hän näytteli oppijaa. Aina kun tutkimusavustaja vastasi muistitehtävään väärin, rankaisi koehenkilö häntä sähköiskulla. Tutkija eli kokeenjohtaja käski antaa sähköiskun väärästä vastauksesta. Tutkimuksessa tutkittiin sitä, että totteleeko koehenkilö tätä käskyä. Sähköiskuja ei siis oikeasti tapahtunut, tutkimusavustaja vain näytteli saavansa sähköiskun. Sähköiskut voimistuivat tutkimuksen aikana. Asiantuntijat ennustivat, että melkein kaikki koehenkilöt kieltäytyisivät tottelemasta kokeenjohtajaa, eivätkä antaisi sähköiskua kokeenjohtajan käskystä. Tottelevaisuuden voima oli kuitenkin yllättävä. Tutkimuksessa havaittiin, yli 60% koehenkilöistä oli valmiita antamaan voimakkaitakin sähköiskuja toiselle ihmiselle, mikäli auktoriteetti näin käski. Tämä tulos tuli koeasetelmassa, jossa koehenkilö ei nähnyt sähköiskuja saavaa tutkimusavustajaa, mutta kuuli hänen äänensä. Koehenkilö saattoi olla hyvin ahdistunut tässä tilanteessa, mutta yleensä hän kuitenkin totteli käskyä ja antoi sähköiskun. Eli kuka tahansa oli valmis vahingoittamaan toista ihmistä tietyssä tilanteessa, toisen satuttaminen ei siis vaatinut mitään sadistista luonnetta.'
 		},
 		{
 			id: 52,

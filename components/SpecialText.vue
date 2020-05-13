@@ -1,9 +1,9 @@
 <template>
 	<b-card class="bg-info">
 		<h3>{{ item.header }}</h3>
-		<div v-for="section in item.text" :key="section.type" class="bg-light">
+		<div class="bg-light">
 			<b-card-text>
-				<i v-if="section.type == 'p'">{{ section.content }}</i>
+				{{ item.text }}
 			</b-card-text>
 		</div>
 	</b-card>
