@@ -93,11 +93,13 @@ export default {
 				if (this.items[i].id === 'pwd') {
 					pwd = this.items[i].input
 					if (pwd.length < 8) {
+						alert('Salasanan tulee olla vähintään 8 merkkiä pitkä.')
 						return
 					}
 				} else if (this.items[i].id === 'pwd-2') {
 					pwd2 = this.items[i].input
 					if (pwd2.length < 8) {
+						alert('Salasanan tulee olla vähintään 8 merkkiä pitkä.')
 						return
 					}
 				} else {
@@ -105,6 +107,7 @@ export default {
 						this.items[i].input === '' &&
 						this.items[i].id !== 'name'
 					) {
+						alert(this.items[i].label + ' puuttuu.')
 						return
 					}
 					userDetails[this.items[i].id] = this.items[i].input
@@ -112,8 +115,10 @@ export default {
 			}
 			if (pwd !== pwd2) {
 				return
+			} else {
+				userDetails.pwd = btoa(pwd)
 			}
-			this.$store.dispatch('auth/login', userDetails)
+			this.$store.dispatch('auth/login')
 			this.$store.dispatch('profile/update', userDetails)
 			this.$router.push('/')
 		}

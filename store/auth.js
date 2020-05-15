@@ -1,23 +1,9 @@
-export const state = () => ({
-	user: null
-})
-
-export const mutations = {
-	login(state, payload) {
-		state.user = payload
-	},
-	logout(state) {
-		state.user = null
-	}
-}
-
 export const actions = {
-	login({ commit }, payload) {
-		commit('login', payload)
+	login(context) {
+		window.$nuxt.$cookies.set('auth', true)
 	},
-	logout({ commit }, vm) {
-		commit('logout')
-		vm.$store.dispatch('profile/clear')
+	logout(context, vm) {
+		window.$nuxt.$cookies.remove('auth')
 		vm.$router.go('/login')
 	}
 }

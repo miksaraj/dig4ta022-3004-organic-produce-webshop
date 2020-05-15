@@ -50,14 +50,19 @@ export default {
 	},
 	methods: {
 		login() {
-			const pwd = this.items.find(item => item.id === 'pwd')
+			let pwd = this.items.find(item => item.id === 'pwd')
+			pwd = btoa(pwd.input)
 			const user = this.items.find(item => item.id === 'username')
-			if (pwd.input.length < 8 || user.input.length === 0) {
-				return
+			if (user.input === this.$store.state.profile.details.username) {
+				if (pwd === this.$cookies.get('pw')) {
+					this.$store.dispatch('auth/login')
+					this.$router.push('/')
+				} else {
+					alert('Virheellinen salasana!')
+				}
+			} else {
+				alert('Käyttäjää ei löydy!')
 			}
-			this.$store.dispatch('auth/login', user.input)
-			this.$store.dispatch('profile/update', { username: user.input })
-			this.$router.push('/')
 		}
 	}
 }

@@ -1,6 +1,5 @@
 export const state = () => ({
 	details: {
-		// id,
 		email: '',
 		name: '',
 		username: ''
@@ -10,11 +9,17 @@ export const state = () => ({
 export const mutations = {
 	update(state, payload) {
 		for (const [key, value] of Object.entries(payload)) {
-			state.details[key] = value
+			if (key in state.details) {
+				state.details[key] = value
+			}
+		}
+		if (payload.pwd) {
+			window.$nuxt.$cookies.set('pw', payload.pwd)
 		}
 	},
 	clear(state) {
 		state.details = {}
+		window.$nuxt.$cookies.remove('pw')
 	}
 }
 
