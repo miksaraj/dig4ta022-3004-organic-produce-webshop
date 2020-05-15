@@ -114,6 +114,7 @@ export default {
 				}
 			}
 			if (pwd !== pwd2) {
+				alert('Salasanat eivät täsmää keskenään!')
 				return
 			} else {
 				userDetails.pwd = btoa(pwd)
