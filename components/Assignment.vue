@@ -1,15 +1,14 @@
 <template>
 	<b-card :title="item.header" text-variant="white" class="bg-primary">
 		<b-form-group class="mb-0" :label="item.description">
-			<!--	//	v-model="text" -->
-			<!--	:state="text.length >= 50" -->
 			<b-form-textarea
 				:placeholder="item.placeholder"
+				v-model="text"
 				rows="8"
 				max-rows="16"
 			/>
 		</b-form-group>
-		<!-- TODO: add submit button when we have an idea where this goes... -->
+		<b-button class="btn-primary" @click="handleSubmit">Lähetä</b-button>
 	</b-card>
 </template>
 
@@ -17,6 +16,11 @@
 import { mapGetters } from 'vuex'
 export default {
 	name: 'Assignment',
+	data() {
+		return {
+			text: ''
+		}
+	},
 	computed: {
 		...mapGetters('content', ['contentById']),
 		item() {
@@ -24,10 +28,14 @@ export default {
 		},
 		id() {
 			return this.$attrs.id
-		},
-		data() {
-			return {
-				text: ''
+		}
+	},
+	methods: {
+		handleSubmit() {
+			if (this.text.length >= 50) {
+				this.$store.dispatch('progress/markAsDone', this.id)
+			} else {
+				alert('Kirjoita nyt muutama sana vielä...')
 			}
 		}
 	}

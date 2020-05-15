@@ -8,28 +8,57 @@
 					{{ listItem }}
 				</li>
 			</ul>
-			<!-- HUOM! img -tyyppiset sektiot vaativat myös altin! -->
 			<b-img-lazy
 				v-else-if="section.type == 'img'"
-				:src="item.content"
+				:src="section.content"
 				fluid
-				:alt="item.alt"
+				:alt="section.alt"
 			/>
 		</div>
+		<br />
+		<b-form-checkbox v-model="done" size="lg" class="done-box">
+			Luettu!
+		</b-form-checkbox>
 	</div>
 </template>
+
+<style scoped>
+.done-box {
+	float: right;
+}
+
+.done-box .custom-control-label::before {
+	border-style: dotted !important;
+}
+
+.done-box.custom-control.custom-checkbox.b-custom-control-lg {
+	font-size: smaller !important;
+	opacity: 50% !important;
+}
+</style>
 
 <script>
 import { mapGetters } from 'vuex'
 export default {
 	name: 'TheoryElement',
 	computed: {
-		...mapGetters('content', ['contentById']),
+		...mapGetters({
+			contentById: 'content/contentById',
+			isRead: 'progress/isRead'
+		}),
 		item() {
 			return this.contentById(this.id)
 		},
 		id() {
 			return this.$attrs.id
+		},
+		done: {
+			get() {
+				return this.isRead(this.id)
+			},
+			set() {
+				this.$store.dispatch('progress/toggleRead', this.id)
+			}
 		}
 	}
 }

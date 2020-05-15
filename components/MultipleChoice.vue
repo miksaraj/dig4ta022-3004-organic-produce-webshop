@@ -1,5 +1,4 @@
 <template>
-	<!--b-form @submit.prevent="handleSubmit"-->
 	<b-form>
 		<h3>{{ item.header }}</h3>
 		<component
@@ -7,8 +6,9 @@
 			:key="part.order"
 			:is="part.type"
 			:item="part"
+			@saveAnswer="saveAnswer"
 		/>
-		<b-button type="submit" class="btn-primary">Lähetä</b-button>
+		<b-button class="btn-primary" @click="handleSubmit">Lähetä</b-button>
 	</b-form>
 </template>
 
@@ -24,6 +24,11 @@ export default {
 		RadioGroup,
 		SelectElement
 	},
+	data() {
+		return {
+			assignmentProgress: []
+		}
+	},
 	computed: {
 		...mapGetters('content', ['contentById']),
 		item() {
@@ -32,13 +37,37 @@ export default {
 		id() {
 			return this.$attrs.id
 		}
-	}
-	/* Later gator, ie. gotta figure this out
+	},
 	methods: {
 		handleSubmit() {
-			alert(JSON.stringify(this.fruitCollection))
+			if (this.assignmentProgress.length < this.item.parts.length) {
+				alert('Muista vastata kaikkiin kohtiin!')
+			} else {
+				let correct = 0
+				for (let i = 0; i < this.assignmentProgress.length; i++) {
+					const question = this.assignmentProgress[i]
+					if (question.answer === true) {
+						correct++
+					}
+				}
+				alert(correct + '/' + this.item.parts.length + ' oikein!')
+				this.$store.dispatch('progress/markAsDone', this.id)
+			}
+		},
+		saveAnswer(data) {
+			const index = this.assignmentProgress.findIndex(
+				x => x.idx === data.idx
+			)
+			if (index === -1) {
+				this.$set(
+					this.assignmentProgress,
+					this.assignmentProgress.length,
+					data
+				)
+			} else {
+				this.$set(this.assignmentProgress, index, data)
+			}
 		}
 	}
-	*/
 }
 </script>

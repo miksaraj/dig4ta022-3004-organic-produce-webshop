@@ -22,7 +22,7 @@
 </style>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 export default {
 	name: 'ProgressBar',
 	data() {
@@ -33,7 +33,7 @@ export default {
 		}
 	},
 	computed: {
-		...mapGetters('progress', ['progressByChapter', 'progressBySection']),
+		// ...mapGetters('progress', ['progressByChapter', 'progressBySection']),
 		item() {
 			return this.$attrs.item
 		},
@@ -55,11 +55,11 @@ export default {
 	},
 	methods: {
 		getDone(type) {
-			let done = []
+			const done = []
 			if (type === 'chapter') {
-				done = this.progressByChapter(this.item.id)
+				// done = this.progressByChapter(this.item.id)
 			} else if (type === 'section') {
-				done = this.progressBySection(this.item.id)
+				// done = this.progressBySection(this.item.id)
 			}
 			this.done = done.length
 		},
