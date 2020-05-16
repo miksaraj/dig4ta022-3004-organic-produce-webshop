@@ -4,7 +4,16 @@
 			<template v-slot:lead>
 				{{ !section.lead ? section.description : section.lead }}
 			</template>
-			<b-button class="btn-primary">Tehtävät</b-button>
+			<b-button
+				v-if="assignmentMode"
+				class="btn-primary"
+				@click="filterAssignments"
+			>
+				Takaisin
+			</b-button>
+			<b-button v-else class="btn-primary" @click="filterAssignments">
+				Tehtävät
+			</b-button>
 		</b-jumbotron>
 		<b-container fluid>
 			<component
@@ -34,20 +43,42 @@ export default {
 		ReturnAssignment,
 		VideoEmbed
 	},
+	data() {
+		return {
+			items: [],
+			assignmentMode: false,
+			assignmentsData: {
+				type: 'assignments',
+				lvl: 'section',
+				id: parseInt(this.$route.params.id)
+			}
+		}
+	},
 	computed: {
 		...mapGetters({
 			sectionById: 'sections/sectionById',
-			sectionStructure: 'structure/sectionStructure'
+			sectionStructure: 'structure/sectionStructure',
+			getContentList: 'structure/getContentList'
 		}),
-		items() {
-			return this.sectionStructure(this.sectionId)
-		},
 		sectionId() {
 			return parseInt(this.$route.params.id)
 		},
 		section() {
 			return this.sectionById(this.sectionId)
 		}
+	},
+	methods: {
+		filterAssignments() {
+			this.assignmentMode = !this.assignmentMode
+			if (this.assignmentMode === true) {
+				this.items = this.getContentList(this.assignmentsData)
+			} else {
+				this.items = this.sectionStructure(this.sectionId)
+			}
+		}
+	},
+	beforeMount() {
+		this.items = this.sectionStructure(this.sectionId)
 	}
 }
 </script>
