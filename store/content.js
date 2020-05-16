@@ -122,24 +122,22 @@ export const state = () => ({
 						'Vaaleanpunainen: liikkeeseen liittyvän tiedon käsittely otsalohkossa'
 					]
 				},
-				/*
 				{
 					type: 'img',
 					content:
-						'https://upload.wikimedia.org/wikipedia/commons/b/bb/Blausen_0102_Brain_Motor%26Sensory_%28flipped%29.png'
+						'/img/Blausen_0102_Brain_Motor&Sensory_(flipped).png',
+					alt: 'Aivojen rakenne'
 				},
-				*/
 				{
 					type: 'p',
 					content:
 						'Aivojen sisemmät osat vastaavat monista tahdosta riippumattomista mielen toiminnoista. Ne ovat aivojen vanhempia osia ja hyvin samankaltaisia eläinten aivojen kanssa. Tärkeä alue on esimerkiksi limbinen järjestelmä, joka on tärkeä tunteiden, motivaation ja muistin toiminnassa. Limbisen järjestelmän osia ovat esimerkiksi hippokampus ja mantelitumake. Hippokampus on tärkeä osa muistin kannalta. Sen avulla nyt mielessä olevat asiat siirtyvät pitkäkestoiseen muistiin. Mantelitumake liittyy tunteisiin, esimerkiksi pelkoon ja vihaan.'
 				},
-				/*
 				{
 					type: 'img',
-					content:
-						'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Blausen_0614_LimbicSystem.png/250px-Blausen_0614_LimbicSystem.png'
-				}, */
+					content: '/img/Blausen_0614_LimbicSystem.png',
+					alt: 'Limbinen järjestelmä'
+				},
 				{
 					type: 'ul',
 					content: [
@@ -154,12 +152,12 @@ export const state = () => ({
 					content:
 						' Aivojen kuorikerros ja sisemmät osat ovat jatkuvasti vuorovaikutuksessa keskenään. Opiskelija saattaa hermoilla kurssitöidensä kanssa lukiossa. Töitä on paljon ja aikaa vähän. Hermostuessa aivojen sisemmät ja vanhemmat osat, esimerkiksi mantelitumake, reagoivat tähän stressaavaan tilanteeseen. Stressihormonit alkavat vaikuttaa elimistössä. Opiskelija ei välttämättä edes ehdi tiedostaa tätä kehon reaktiota. Sydän sykkii ja kehon valtaa epämiellyttävä stressaantunut olo.  Stressaavassa tilanteessa elimistö voi aktivoitua ihmisen tahdosta riippumatta ja se voi tuntua epämiellyttävältä. Aivot käyvät kokoajan sisäistä keskustelua. Ihminen ei tarvitse välttämättä mitään ulkopuolista uhkaa tai varaa hermostumiselle, vaan mielessä pyörivät ajatukset voivat käynnistää stressireaktion. Tunteita voidaan kuitenkin oppia rauhoittelemaan itse. Aivojen sisempien osien reagoidessa voi opiskelija säädellä tunteitaan aivokuoren rauhoittelevalla viestillä, kuten: “Kaikki on hyvin, kyllä minä selviän tästä.” “ Teen yhden asian kaikessa rauhassa kerrallaan ja kyllä se siitä.”  Terveellisillä elämäntavoilla on myös positiivinen vaikutus hermoilun hallintaan. Väsyneenä, nälkäisenä tai alkoholin vaikutuksen alaisena tunteiden säätely voi olla vaikeampaa'
 				},
-				/*	,	{
+				{
 					type: 'img',
 					content:
-						'https://upload.wikimedia.org/wikipedia/commons/8/8c/Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg'
-				}
-				*/
+						'/img/Phineas_Gage_GageMillerPhoto2010-02-17_Unretouched_Color_Cropped.jpg',
+					alt: 'Phineas Cage'
+				},
 				{
 					type: 'p',
 					content:
@@ -278,7 +276,7 @@ export const state = () => ({
 				{
 					label: 'Pavlovin koirakoe kuvaa ilmiötä, jossa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
@@ -296,9 +294,8 @@ export const state = () => ({
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
 							value: 'valineellinen'
 						}
-					]
-					// correctAnswer: 'klassinen'
-					// tosin voit lisätä kommentoituna
+					],
+					correctAnswer: 'klassinen'
 				}
 			]
 		},

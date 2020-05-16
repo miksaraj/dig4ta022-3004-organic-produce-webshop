@@ -10,7 +10,7 @@
 			:accept="item.accept ? item.accept : ''"
 		></b-form-file>
 		<b-button class="btn-primary" @click="file = null">Tyhjennä</b-button>
-		<!-- TODO: add submit button when we have an idea where this goes... -->
+		<b-button class="btn-primary" @click="handleSubmit">Lähetä</b-button>
 	</div>
 </template>
 
@@ -36,6 +36,15 @@ export default {
 		},
 		id() {
 			return this.$attrs.id
+		}
+	},
+	methods: {
+		handleSubmit() {
+			if (this.file) {
+				this.$store.dispatch('progress/markAsDone', this.id)
+			} else {
+				alert('Valitse tiedosto lähetettäväksi.')
+			}
 		}
 	}
 }

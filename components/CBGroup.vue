@@ -7,6 +7,7 @@
 			button-variant="primary"
 			buttons
 			:stacked="item.stacked"
+			@change="checkAnswer"
 		/>
 	</b-form-group>
 </template>
@@ -19,9 +20,39 @@ export default {
 			selected: []
 		}
 	},
+	methods: {
+		checkAnswer() {
+			if (
+				!Array.isArray(this.selected) ||
+				Array.isArray(this.correctAnswer) ||
+				this.selected.length !== this.correctAnswer.length
+			) {
+				this.$emit('saveAnswer', {
+					idx: this.item.order,
+					answer: false
+				})
+				return
+			}
+			const selectedComp = this.selected.concat().sort()
+			const answerComp = this.correctAnswer.concat().sort()
+			for (let i = 0; i < selectedComp.length; i++) {
+				if (selectedComp[i] !== answerComp[i]) {
+					this.$emit('saveAnswer', {
+						idx: this.item.order,
+						answer: false
+					})
+					return
+				}
+			}
+			this.$emit('saveAnswer', { idx: this.item.order, answer: true })
+		}
+	},
 	computed: {
 		item() {
 			return this.$attrs.item
+		},
+		correctAnswer() {
+			return this.item.correctAnswer
 		}
 	}
 }

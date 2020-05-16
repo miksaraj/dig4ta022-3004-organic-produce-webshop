@@ -38,7 +38,7 @@ export default {
 	},
 	computed: {
 		...mapGetters({
-			sectionsByChapter: 'sections/sectionsByChapter',
+			// sectionsByChapter: 'sections/sectionsByChapter',
 			chapterById: 'chapters/chapterById'
 		})
 	},
@@ -58,7 +58,7 @@ export default {
 			}
 		},
 		getSubItems() {
-			this.subItems = this.sectionsByChapter(this.item.id)
+			// this.subItems = this.sectionsByChapter(this.item.id)
 		},
 		getChapterById(id) {
 			this.item = this.chapterById(id)
