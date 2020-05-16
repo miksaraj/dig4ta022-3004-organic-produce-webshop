@@ -24,7 +24,7 @@
 
 <script>
 export default {
-	name: 'CardListItem',
+	name: 'CardListGroup',
 	computed: {
 		items() {
 			return this.$attrs.items

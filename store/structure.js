@@ -387,5 +387,27 @@ export const getters = {
 				}
 			}
 		)
+	},
+	getContentList: state => data => {
+		let filters = []
+		if (data.type === 'theory') {
+			filters = ['TheoryElement', 'SpecialText', 'VideoEmbed']
+		} else {
+			filters = ['Assignment', 'MultipleChoice', 'ReturnAssignment']
+		}
+		if (data.lvl === 'overall') {
+			return state.list.filter(x => filters.some(y => y === x.type))
+		} else if (data.lvl === 'chapter') {
+			const sections = data.sections
+			return state.list.filter(
+				x =>
+					filters.some(y => y === x.type) &&
+					sections.some(z => z.id === x.sectionId)
+			)
+		} else if (data.lvl === 'section') {
+			return state.list.filter(
+				x => filters.some(y => y === x.type) && x.sectionId === data.id
+			)
+		}
 	}
 }
