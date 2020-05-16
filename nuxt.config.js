@@ -52,7 +52,8 @@ module.exports = {
 		'@nuxtjs/pwa',
 		// Doc: https://github.com/nuxt-community/dotenv-module
 		'@nuxtjs/dotenv',
-		'cookie-universal-nuxt'
+		'cookie-universal-nuxt',
+		'mdbvue/nuxt'
 	],
 	bootstrapVue: {
 		icons: true
@@ -115,5 +116,11 @@ module.exports = {
 	},
 	router: {
 		middleware: 'auth'
+	},
+	mdbvue: {
+		icons: false, // FA5
+		roboto: false, // font Roboto
+		css: false, // MDB CSS
+		bootstrap: false // Bootstrap CSS
 	}
 }
