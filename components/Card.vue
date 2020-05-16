@@ -1,5 +1,5 @@
 <template>
-	<b-card>
+	<b-card :img-src="item.src" :img-alt="item.header">
 		<h2>
 			<nuxt-link v-if="type === 'chapters'" :to="'/chapters/' + item.id">
 				{{ item.header }}

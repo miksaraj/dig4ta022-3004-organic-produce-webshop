@@ -1,9 +1,15 @@
 <template>
 	<div>
-		<b-jumbotron fluid :header="section.header" lead="subheader">
-			<template v-slot:lead>
+		<b-card
+			overlay
+			:title="section.header"
+			:img-src="section.src"
+			:img-alt="section.header"
+			class="section-header"
+		>
+			<b-card-text>
 				{{ !section.lead ? section.description : section.lead }}
-			</template>
+			</b-card-text>
 			<b-button
 				v-if="assignmentMode"
 				class="btn-primary"
@@ -14,7 +20,7 @@
 			<b-button v-else class="btn-primary" @click="filterAssignments">
 				Tehtävät
 			</b-button>
-		</b-jumbotron>
+		</b-card>
 		<b-container fluid>
 			<component
 				v-for="item in items"
@@ -25,6 +31,14 @@
 		</b-container>
 	</div>
 </template>
+
+<style scoped>
+.section-header {
+	margin-bottom: 3rem;
+	background-color: var(--color-main);
+	color: #ffffff;
+}
+</style>
 
 <script>
 import { mapGetters } from 'vuex'
