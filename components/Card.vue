@@ -1,5 +1,5 @@
 <template>
-	<b-card>
+	<b-card :img-src="item.src" :img-alt="item.header">
 		<h2>
 			<nuxt-link v-if="type === 'chapters'" :to="'/chapters/' + item.id">
 				{{ item.header }}
@@ -14,7 +14,7 @@
 		<p>{{ item.description }}</p>
 		<card-list-group :items="subItems" :type="type" :id="item.id" />
 		<template v-slot:footer>
-			<progress-bar :item="item" :subItems="subItems" />
+			<progress-bar :item="item" />
 		</template>
 	</b-card>
 </template>

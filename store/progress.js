@@ -4,14 +4,20 @@ export const state = () => ({
 })
 
 export const getters = {
-	/*
-	progressBySection: state => id => {
-		return state.completed.filter(item => item.section === id)
+	getProgressCount: state => array => {
+		let count = 0
+		const completed = state.completed
+		const assignments = state.assignments
+		array.forEach(id => {
+			if (
+				completed.some(x => x === id) ||
+				assignments.some(x => x === id)
+			) {
+				count++
+			}
+		})
+		return count
 	},
-	progressByChapter: state => id => {
-		return state.completed.filter(item => item.chapter === id)
-	},
-	*/
 	isRead: state => id => {
 		return state.completed.includes(id)
 	},

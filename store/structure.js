@@ -371,21 +371,55 @@ export const state = () => ({
 
 export const getters = {
 	sectionStructure: state => id => {
-		return [...state.list.filter(item => item.sectionId === id)].sort(
-			function() {
-				const key = 'order'
-				return function innerSort(a, b) {
-					const varA = a[key]
-					const varB = b[key]
-					let comparison = 0
-					if (varA > varB) {
-						comparison = 1
-					} else if (varA < varB) {
-						comparison = -1
-					}
-					return comparison
-				}
-			}
-		)
+		return orderContent([
+			...state.list.filter(item => item.sectionId === id)
+		])
+	},
+	getContentList: state => data => {
+		let filters = []
+		if (data.type === 'theory') {
+			filters = ['TheoryElement', 'SpecialText', 'VideoEmbed']
+		} else {
+			filters = ['Assignment', 'MultipleChoice', 'ReturnAssignment']
+		}
+		if (data.lvl === 'overall') {
+			return orderContent(
+				state.list.filter(x => filters.some(y => y === x.type))
+			)
+		} else if (data.lvl === 'chapter') {
+			const sections = data.sections
+			return orderContent(
+				state.list.filter(
+					x =>
+						filters.some(y => y === x.type) &&
+						sections.some(z => z.id === x.sectionId)
+				)
+			)
+		} else if (data.lvl === 'section') {
+			return orderContent(
+				state.list.filter(
+					x =>
+						filters.some(y => y === x.type) &&
+						x.sectionId === data.id
+				)
+			)
+		}
 	}
+}
+
+function orderContent(array) {
+	return array.sort(function() {
+		const key = 'order'
+		return function innserSort(a, b) {
+			const varA = a[key]
+			const varB = b[key]
+			let comparison = 0
+			if (varA > varB) {
+				comparison = 1
+			} else if (varA < varB) {
+				comparison = -1
+			}
+			return comparison
+		}
+	})
 }

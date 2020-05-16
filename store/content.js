@@ -1130,11 +1130,23 @@ export const getters = {
 		return state.list.find(item => item.id === id)
 	},
 	contentBySection: state => data => {
-		const assignments = []
+		const content = []
 		for (let i = 0; i < data.length; i++) {
 			const id = data[i].contentId
-			assignments.push(state.list.find(x => x.id === id))
+			content.push(state.list.find(x => x.id === id))
 		}
-		return assignments
+		return content
+	},
+	fetchContent: state => data => {
+		return state.list.filter(x => data.some(y => y.contentId === x.id))
+	},
+	contentByType: state => type => {
+		let filters = []
+		if (type === true) {
+			filters = ['TheoryElement', 'SpecialText', 'VideoEmbed']
+		} else {
+			filters = ['Assignment', 'MultipleChoice', 'ReturnAssignment']
+		}
+		return state.list.filter(x => filters.some(y => y === x.type))
 	}
 }
