@@ -14,7 +14,7 @@
 		<p>{{ item.description }}</p>
 		<card-list-group :items="subItems" :type="type" :id="item.id" />
 		<template v-slot:footer>
-			<progress-bar :item="item" :subItems="subItems" />
+			<progress-bar :item="item" />
 		</template>
 	</b-card>
 </template>

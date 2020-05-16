@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<b-row class="header-row">
-			<h2 v-if="route === 'index'">Kokonaisedistys</h2>
+			<h2>{{ route === 'index' ? 'Kokonaisedistys' : item.header }}</h2>
 		</b-row>
 		<b-row class="progress-bar-row">
-			<progress-bar :item="item" :subItems="subItems" />
+			<progress-bar :item="item" :bar="true" />
 		</b-row>
 	</div>
 </template>
@@ -32,36 +32,35 @@ export default {
 	data() {
 		return {
 			route: null,
-			subItems: [],
 			item: null
+		}
+	},
+	watch: {
+		$route() {
+			this.getRoute()
+			this.getItem()
 		}
 	},
 	computed: {
 		...mapGetters({
-			// sectionsByChapter: 'sections/sectionsByChapter',
+			sectionById: 'sections/sectionById',
 			chapterById: 'chapters/chapterById'
 		})
 	},
 	mounted() {
 		this.getRoute()
-		if (this.route !== 'index') {
-			this.getChapterById(parseInt(this.$route.params.id))
-			this.getSubItems()
-		}
+		this.getItem()
 	},
 	methods: {
 		getRoute() {
-			if (this.$route.name === 'index') {
-				this.route = this.$route.name
-			} else if (this.$route.name === 'chapters-id') {
-				this.route = this.$route.params.id
+			this.route = this.$route.name
+		},
+		getItem() {
+			if (this.route === 'chapters-id') {
+				this.item = this.chapterById(parseInt(this.$route.params.id))
+			} else if (this.route === 'chapters-chapters-id') {
+				this.item = this.sectionById(parseInt(this.$route.params.id))
 			}
-		},
-		getSubItems() {
-			// this.subItems = this.sectionsByChapter(this.item.id)
-		},
-		getChapterById(id) {
-			this.item = this.chapterById(id)
 		}
 	}
 }
