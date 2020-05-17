@@ -25,9 +25,6 @@
 				</b-button>
 				<!-- Add change password functionality -->
 			</b-col>
-			<b-col>
-				<p>Edistystietoa...</p>
-			</b-col>
 		</b-row>
 	</div>
 </template>
