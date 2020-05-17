@@ -293,7 +293,7 @@ export const state = () => ({
 				{
 					label: 'Pavlovin koirakoe kuvaa ilmiötä, jossa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
@@ -341,7 +341,7 @@ export const state = () => ({
 				{
 					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
@@ -495,7 +495,7 @@ export const state = () => ({
 					label:
 						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
@@ -627,7 +627,7 @@ export const state = () => ({
 			btnText: 'Lähetä',
 			parts: [
 				{
-					label: 'Mikä seuraavista väittämistä on väärin:',
+					label: 'Mitkä seuraavista väittämistä ovat oikein:',
 					order: 1,
 					type: 'CBGroup',
 					stacked: true,
@@ -646,8 +646,8 @@ export const state = () => ({
 								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
 							value: 'true'
 						}
-					]
-					// correctAnswer: 'false'
+					],
+					correctAnswer: 'true'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -764,7 +764,7 @@ export const state = () => ({
 					label:
 						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
