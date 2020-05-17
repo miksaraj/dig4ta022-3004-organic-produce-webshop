@@ -299,20 +299,20 @@ export const state = () => ({
 						{
 							text:
 								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
-							value: 'true'
+							value: 'klassinen'
 						},
 						{
 							text:
 								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
-							value: 'false'
+							value: 'mallioppiminen'
 						},
 						{
 							text:
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
-							value: 'false'
+							value: 'valineellinen'
 						}
-					]
-					// correctAnswer: 'klassinen'
+					],
+					correctAnswer: 'klassinen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -347,19 +347,19 @@ export const state = () => ({
 						{
 							text:
 								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
-							value: 'true'
+							value: 'behaviorismi'
 						},
 						{
 							text: 'ihminen on aktiivinen tiedonkäsittelijä',
-							value: 'false'
+							value: 'kognitiivinen'
 						},
 						{
 							text:
 								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'false'
+							value: 'kognitiivinen'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'behaviorismi'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -501,20 +501,20 @@ export const state = () => ({
 						{
 							text:
 								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
-							value: 'true'
+							value: 'pohjustus'
 						},
 						{
 							text:
 								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
-							value: 'false'
+							value: 'epätotta'
 						},
 						{
 							text:
 								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
-							value: 'false'
+							value: 'ei aina'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'pohjustus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -635,19 +635,18 @@ export const state = () => ({
 						{
 							text:
 								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
-							value: 'true'
+							value: 'oikein'
 						},
 						{
 							text: 'pitkäkestoinen muisti kuormittuu helposti',
-							value: 'false'
+							value: 'ei kuormitu'
 						},
 						{
-							text:
-								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'true'
+							text: 'tunteet vahvistavat muistijälkeä',
+							value: 'oikein'
 						}
 					],
-					correctAnswer: 'true'
+					correctAnswer: 'oikein'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -770,20 +769,20 @@ export const state = () => ({
 						{
 							text:
 								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
-							value: 'false'
+							value: 'pinnallinen'
 						},
 						{
 							text:
 								'tiedon syvällinen prosessointi tehostaa muistamista',
-							value: 'true'
+							value: 'syvallinen'
 						},
 						{
 							text:
 								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
-							value: 'false'
+							value: 'ei totta'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'syvallinen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -842,24 +841,24 @@ export const state = () => ({
 					label:
 						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'sisäisten mallien ja tiedon käsittelyn merkitystä',
-							value: 'false'
+							value: 'kognitiivinen'
 						},
 						{
 							text: 'tiedostamattoman merkitystä',
-							value: 'true'
+							value: 'psykodynaaminen'
 						},
 						{
 							text: 'palkkioiden ja rangaistusten merkitystä',
-							value: 'false'
+							value: 'behaviorismi'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'psykodynaaminen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -873,23 +872,23 @@ export const state = () => ({
 					label:
 						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text: 'projektio',
-							value: 'false'
+							value: 'projektio'
 						},
 						{
 							text: 'sublimaatio',
-							value: 'false'
+							value: 'sublimaatio'
 						},
 						{
 							text: 'torjunta',
-							value: 'true'
+							value: 'torjunta'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'torjunta'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -957,18 +956,18 @@ export const state = () => ({
 					items: [
 						{
 							text: 'tehtävä itsessään kiinnostaa ja innostaa',
-							value: 'true'
+							value: 'sisainen'
 						},
 						{
 							text: 'asiaa tehdään siitä saatavan palkkion takia',
-							value: 'false'
+							value: 'ulkoinen'
 						},
 						{
 							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
-							value: 'false'
+							value: 'amotivaatio'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'sisainen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1205,25 +1204,25 @@ export const state = () => ({
 				{
 					label: 'Konformisuus on ilmiö, jossa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
-							value: 'false'
+							value: 'autonomia'
 						},
 						{
 							text: 'henkilö mukautuu ryhmän paineeseen',
-							value: 'true'
+							value: 'konformisuus'
 						},
 						{
 							text:
 								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
-							value: 'false'
+							value: 'vapaamatkustaja'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'konformisuus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1258,26 +1257,26 @@ export const state = () => ({
 				{
 					label: 'Milgramin tutkimuksessa havaittiin, että',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
 							text:
 								'ihmiset eivät yleensä tottele johtajan käskyjä',
-							value: 'false'
+							value: 'tottelemattomuus'
 						},
 						{
 							text:
 								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
-							value: 'false'
+							value: 'itsenaisyys'
 						},
 						{
 							text:
 								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
-							value: 'true'
+							value: 'tottelevaisuus'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'tottelevaisuus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1361,30 +1360,30 @@ export const state = () => ({
 		},
 		{
 			id: 571,
-			header: 'Monivalintatehtävä: muuttja',
+			header: 'Monivalintatehtävä: muuttuja',
 			btnText: 'Lähetä',
 			parts: [
 				{
 					label: 'Tutkimuksessa muuttuja on ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
 							text: 'koehenkilö',
-							value: 'false'
+							value: 'koehenkilo'
 						},
 						{
 							text:
 								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
-							value: 'true'
+							value: 'muuttuja'
 						},
 						{
 							text: 'kontrolliryhmä',
-							value: 'true'
+							value: 'kontrolli'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'muuttuja'
 					// tosin voit lisätä kommentoituna
 				}
 			]
