@@ -1,5 +1,5 @@
 <template>
-	<b-form>
+	<b-form class="multiple-choice">
 		<h3>{{ item.header }}</h3>
 		<component
 			v-for="part in item.parts"
@@ -11,6 +11,12 @@
 		<b-button class="btn-primary" @click="handleSubmit">Lähetä</b-button>
 	</b-form>
 </template>
+
+<style scoped>
+.multiple-choice {
+	margin-bottom: 2rem;
+}
+</style>
 
 <script>
 import { mapGetters } from 'vuex'

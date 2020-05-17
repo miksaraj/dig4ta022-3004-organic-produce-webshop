@@ -1,5 +1,5 @@
 <template>
-	<b-card :title="item.header" text-variant="white" class="bg-primary">
+	<b-card :title="item.header" text-variant="white" class="assignment-card">
 		<b-form-group class="mb-0" :label="item.description">
 			<b-form-textarea
 				:placeholder="item.placeholder"
@@ -11,6 +11,20 @@
 		<b-button class="btn-primary" @click="handleSubmit">Lähetä</b-button>
 	</b-card>
 </template>
+
+<style scoped>
+.assignment-card {
+	background-color: var(--color-3);
+}
+
+.card.assignment-card {
+	margin-bottom: 2rem;
+}
+
+.btn-primary {
+	margin-top: 0.5rem;
+}
+</style>
 
 <script>
 import { mapGetters } from 'vuex'
