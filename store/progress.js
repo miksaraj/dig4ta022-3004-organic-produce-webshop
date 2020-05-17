@@ -38,6 +38,10 @@ export const mutations = {
 		if (!state.assignments.includes(id)) {
 			state.assignments.push(id)
 		}
+	},
+	clear(state) {
+		state.completed = []
+		state.assignments = []
 	}
 }
 
@@ -47,5 +51,8 @@ export const actions = {
 	},
 	markAsDone({ commit }, id) {
 		commit('markAsDone', id)
+	},
+	clear({ commit }) {
+		commit('clear')
 	}
 }
