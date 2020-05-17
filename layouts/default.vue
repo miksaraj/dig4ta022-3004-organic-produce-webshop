@@ -7,6 +7,7 @@
 		</b-container>
 		<side-drawer />
 		<footer-buttons />
+		<footer-component />
 	</div>
 </template>
 
@@ -14,11 +15,13 @@
 import Navbar from '~/components/Navbar.vue'
 import FooterButtons from '~/components/FooterButtons.vue'
 import SideDrawer from '~/components/SideDrawer.vue'
+import FooterComponent from '~/components/FooterComponent.vue'
 export default {
 	components: {
 		Navbar,
 		FooterButtons,
-		SideDrawer
+		SideDrawer,
+		FooterComponent
 	}
 }
 </script>
