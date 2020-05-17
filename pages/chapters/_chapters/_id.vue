@@ -42,6 +42,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+// components are only imported when needed
 const Assignment = () => import('~/components/Assignment.vue')
 const MultipleChoice = () => import('~/components/MultipleChoice.vue')
 const SpecialText = () => import('~/components/SpecialText.vue')

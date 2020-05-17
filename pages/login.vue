@@ -51,9 +51,12 @@ export default {
 	methods: {
 		login() {
 			let pwd = this.items.find(item => item.id === 'pwd')
+			// base64 encode pwd (not secure enough for real production)
 			pwd = btoa(pwd.input)
 			const user = this.items.find(item => item.id === 'username')
+			// check if user registered
 			if (user.input === this.$store.state.profile.details.username) {
+				// check if password matches the one saved in cookies
 				if (pwd === this.$cookies.get('pw')) {
 					this.$store.dispatch('auth/login')
 					this.$router.push('/')

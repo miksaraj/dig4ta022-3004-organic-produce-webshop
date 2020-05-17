@@ -59,7 +59,7 @@ export default {
 		}
 	},
 	mounted() {
-		if (!this.item && this.$route.name === 'index') {
+		if (this.bar && this.$route.name === 'index') {
 			this.getOverallProgress()
 		} else {
 			this.getItemProgress()
@@ -88,6 +88,10 @@ export default {
 			this.done = completed.length > 0 ? completed.length : 0
 		},
 		countProgress(id) {
+			/**
+			 * Retrieve contents of section by (section)Id
+			 * and return an array of content ids
+			 */
 			const arr = []
 			const content = this.sectionStructure(id)
 			for (let i = 0; i < content.length; i++) {

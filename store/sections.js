@@ -1,3 +1,4 @@
+// list of all sections with details required for dynamic rendering
 export const state = () => ({
 	list: [
 		{

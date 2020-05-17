@@ -1,3 +1,4 @@
+// list of all content with details required for dynamic rendering
 export const state = () => ({
 	list: [
 		{
@@ -1446,6 +1447,7 @@ export const getters = {
 	contentById: state => id => {
 		return state.list.find(item => item.id === id)
 	},
+	// return all content in section (by array of contentIds)
 	contentBySection: state => data => {
 		const content = []
 		for (let i = 0; i < data.length; i++) {
@@ -1454,9 +1456,11 @@ export const getters = {
 		}
 		return content
 	},
+	// fetch all content by array of contentIds
 	fetchContent: state => data => {
 		return state.list.filter(x => data.some(y => y.contentId === x.id))
 	},
+	// return content matching filters defined by given type
 	contentByType: state => type => {
 		let filters = []
 		if (type === true) {

@@ -23,7 +23,7 @@
 				>
 					Muokkaa profiilia
 				</b-button>
-				<!-- Add change password functionality -->
+				<!-- TODO: Add change password functionality -->
 			</b-col>
 		</b-row>
 	</div>

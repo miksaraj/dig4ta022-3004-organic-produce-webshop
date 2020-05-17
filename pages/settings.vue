@@ -51,6 +51,7 @@ export default {
 			this.$bvModal
 				.msgBoxConfirm(this.profileDeleteMsg, profileDeleteBox)
 				.then(value => {
+					// if ok clicked, delete profile
 					if (value === true) {
 						this.deleteProfile()
 					}
@@ -64,6 +65,7 @@ export default {
 			this.$bvModal
 				.msgBoxConfirm(this.resetProgressMsg, resetProgressBox)
 				.then(value => {
+					// if ok clicked, reset progress
 					if (value === true) {
 						this.resetProgress()
 					}

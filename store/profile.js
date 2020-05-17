@@ -13,6 +13,7 @@ export const mutations = {
 				state.details[key] = value
 			}
 		}
+		// set base64 encoded password to cookies
 		if (payload.pwd) {
 			window.$nuxt.$cookies.set('pw', payload.pwd)
 		}
