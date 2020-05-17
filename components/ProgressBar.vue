@@ -66,15 +66,6 @@ export default {
 		}
 	},
 	methods: {
-		getDone(type) {
-			const done = []
-			if (type === 'chapter') {
-				// done = this.progressByChapter(this.item.id)
-			} else if (type === 'section') {
-				// done = this.progressBySection(this.item.id)
-			}
-			this.done = done.length
-		},
 		getItemProgress() {
 			const completed = []
 			let contentIds = []
