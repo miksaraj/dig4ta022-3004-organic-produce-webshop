@@ -11,10 +11,8 @@
 			<b-card-text>
 				Tähän vois kirjoittaa jotain, mitä ny sit ikinästäkään.
 			</b-card-text>
-			<template v-slot:footer>
-				<options-row :type="type" />
-			</template>
 		</b-card>
+		<options-row :type="type" />
 		<card-deck v-if="view === 'cards'" :items="items" :type="type" />
 		<accordion-list v-if="view === 'list'" :items="items" />
 	</div>
@@ -26,14 +24,6 @@
 	margin-bottom: 2rem;
 	background-color: var(--color-secondary);
 	/* color: #ffffff; */
-}
-
-.hero-card .card-footer .row {
-	margin-bottom: unset !important;
-}
-
-.hero-card .card-title {
-	margin-top: 31rem;
 }
 </style>
 

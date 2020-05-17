@@ -1,7 +1,7 @@
 <template>
 	<div role="tablist">
 		<div v-for="item in items" :key="item.id">
-			<accordion-card :item="item" />
+			<accordion-card :item="item" :type="type" />
 		</div>
 	</div>
 </template>
@@ -16,6 +16,9 @@ export default {
 	computed: {
 		items() {
 			return this.$attrs.items
+		},
+		type() {
+			return this.$route.name === 'index' ? 'chapters' : 'sections'
 		}
 	}
 }
