@@ -397,9 +397,15 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 211,
+			header: 'Tarkkaavaisuustesti',
+			src: 'https://www.youtube.com/embed/nDQYdU5p0KY',
+			allowFullScreen: true
+		},
+		{
 			id: 21,
-			header: 'Tee testi ja vastaa kysymykseen',
-			//  video: 	'https://www.youtube.com/watch?v=Ahg6qcgoay4',
+			header:
+				'Tee yllä olevan videon testi ja kerro, miten se liittyi tarkkaavaisuuteen',
 			description:
 				'Tee testi osoitteessa https://www.youtube.com/watch?v=Ahg6qcgoay4 ja kerro, miten se liittyi tarkkaavaisuuteen',
 			placeholder: 'Kirjoita tähän...'
@@ -416,10 +422,16 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 231,
+			header: 'Video karttatestistä',
+			src: 'https://www.youtube.com/embed/vBPG_OBgTWg',
+			allowFullScreen: true
+		},
+		{
 			id: 23,
 			header: 'Karttatesti',
 			text:
-				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
+				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia.'
 		},
 		{
 			id: 24,
@@ -628,11 +640,6 @@ export const state = () => ({
 				{
 					type: 'p',
 					content:
-						'Tässä video Freudista: https://www.youtube.com/watch?v=mQaqXK7z9LM'
-				},
-				{
-					type: 'p',
-					content:
 						'Freudin mukaan mielihyvä oli pääosin seksuaalista. Freud huomasi, että hänen potilaansa kärsivät usein ahdistuksesta ja näkivät häiritseviä painajaisia. Unissa potilaiden tiedostamattomat vietit pääsivät tajuntaan. Freudin seksuaalisuutta korostanut psykologia oli hänen elinaikanaan poikkeuksellista. Sata vuotta sitten Euroopassa ilmapiiri ei ollut niin vapaamielinen kuin nykyään, joten Freudin ajatuksia arvosteltiin erityisesti moraalittomina.'
 				},
 				{
@@ -655,6 +662,12 @@ export const state = () => ({
 						'Superego eli yliminä ohjaa ihmisen moraalia ja asettaa erilaisia normeja toiminalle. Se kehittyy noin 3-6 vuotialle. Silloin lapsi käy niin kutsutun oidipaalisen vaiheen, jossa poikalapset rakastuvat äitiin ja tyttölapset isään. Taustalla on antiikin Kreikan satu Oidipuksesta, jonka vanhemmat hylkäsivät, mutta myöhemmin hän tietämättään rakastui äitiinsä ja murhasi isänsä. Pojat on tässä vaiheessa mustasukkaisia isälleen, koska poika joutuu jakamaan äidin isän kanssa. Isä on kuitenkin liian ylivertainen pojalle. Konflikti ratkeaa sillä, kun poika alkaa ihailemaan isäänsä ja haluaa tulla samanlaiseksi. Tässä vaiheessa lapselle kehittyy SUPER-EGO, joka on vastaa vähän samaa kuin omatunto. Super-ego rajoittaa egoa ja idiä. Se on kuin on laivan kapteeni, joka pitää laivan kurssin oikeassa suunnassa.  Super-ego voi olla kuitenkin liian korostunut, jolloin ihmiselle myöhemmässä elämässä voi Freudin mukaan kehittyä erilaisia neurooseja, eli pakkotoimintoja. Esimerkiksi pakonomaista tarvetta pestä käsiä. Alikehittynyt superego voi taas vaikuttaa siihen, että ihminen suostu hyväksymään auktoriteettejä.'
 				}
 			]
+		},
+		{
+			id: 371,
+			header: 'Video Freudista',
+			src: 'https://www.youtube.com/embed/mQaqXK7z9LM',
+			allowFullScreen: true
 		},
 		{
 			id: 38,
@@ -851,6 +864,12 @@ export const state = () => ({
 			placeholder: 'Kirjoita tähän...'
 		},
 		{
+			id: 431,
+			header: 'Video Caro Dweck ajattelutavoista',
+			src:
+				'https://embed.ted.com/talks/lang/fi/carol_dweck_the_power_of_believing_that_you_can_improve'
+		},
+		{
 			id: 43,
 			header: 'Tehtävä: Carol Dweck ja ajattelutavat ',
 			description:
@@ -971,30 +990,29 @@ export const state = () => ({
 		},
 		{
 			id: 54,
-			header:
-				'Tutkimusongelman määrittäminen: Miten älypuhelin vaikuttaa oppimistuloksiin?',
+			header: 'Tutkimusongelman määrittäminen:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
+						'Esimerkki tutkimusongelmsta: "Miten älypuhelin vaikuttaa oppimistuloksiin?" Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
 				}
 			]
 		},
 		{
 			id: 55,
-			header: 'Hypoteesi: Älypuhelin heikentää oppimistuloksia.',
+			header: 'Hypoteesi:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa.'
+						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa. Esimerkiksi:  Älypuhelin heikentää oppimistuloksia.'
 				}
 			]
 		},
 		{
 			id: 56,
-			header: 'Tutkimusote: kokeellinen',
+			header: 'Tutkimusote:',
 			text: [
 				{
 					type: 'p',
@@ -1016,7 +1034,7 @@ export const state = () => ({
 		},
 		{
 			id: 58,
-			header: 'Koehenkilöt: koeryhmä ja kontrolliryhmä',
+			header: 'Koeryhmä ja kontrolliryhmä',
 			text: [
 				{
 					type: 'p',

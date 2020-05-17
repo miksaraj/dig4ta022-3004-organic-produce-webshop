@@ -127,21 +127,33 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 21,
+			contentId: 211,
 			sectionId: 9,
 			order: 3,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 21,
+			sectionId: 9,
+			order: 4,
 			type: 'Assignment'
 		},
 		{
 			contentId: 22,
 			sectionId: 9,
-			order: 4,
+			order: 5,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 231,
+			sectionId: 9,
+			order: 6,
+			type: 'VideoEmbed'
 		},
 		{
 			contentId: 23,
 			sectionId: 9,
-			order: 5,
+			order: 7,
 			type: 'SpecialText'
 		},
 		{
@@ -178,7 +190,7 @@ export const state = () => ({
 			contentId: 29,
 			sectionId: 11,
 			order: 2,
-			type: 'Assignment'
+			type: 'ReturnAssignment'
 		},
 		{
 			contentId: 30,
@@ -223,6 +235,11 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 371,
+			sectionId: 12,
+			order: 2
+		},
+		{
 			contentId: 38,
 			sectionId: 13,
 			order: 1,
@@ -253,9 +270,15 @@ export const state = () => ({
 			type: 'Assignment'
 		},
 		{
-			contentId: 43,
+			contentId: 431,
 			sectionId: 14,
 			order: 3,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 43,
+			sectionId: 14,
+			order: 4,
 			type: 'Assignment'
 		},
 		{
