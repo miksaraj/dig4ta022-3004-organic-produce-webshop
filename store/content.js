@@ -282,17 +282,17 @@ export const state = () => ({
 						{
 							text:
 								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
-							value: 'klassinen'
+							value: 'true'
 						},
 						{
 							text:
 								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
-							value: 'mallioppiminen'
+							value: 'false'
 						},
 						{
 							text:
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
-							value: 'valineellinen'
+							value: 'false'
 						}
 					],
 					correctAnswer: 'klassinen'
@@ -312,6 +312,37 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Vaikka behaviorismi on saanut osakseen paljon kritiikkiä, sen vahvuutena voidaan pitää sen tieteellisiä ihanteita. Behaviorismissa psykologisia ilmiöitä, kuten oppimista, tutkittiin järjestelmällisesti. Tavoitteena oli saada objektiivista, eli tutkijasta riippumatonta tietoa.'
+				}
+			]
+		},
+		{
+			id: 141,
+			header: 'Monivalintatehtävä: ehdollistuminen',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
+							value: 'true'
+						},
+						{
+							text: 'ihminen on aktiivinen tiedonkäsittelijä',
+							value: 'false'
+						},
+						{
+							text:
+								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -358,6 +389,12 @@ export const state = () => ({
 						'Banduran mukaan oppiminen on valikoivaa. Esimerkiksi nukkekokeen yhdessä versiossa pahoinpitelevät aikuiset saivat toiselta aikuiselta kielteistä palautetta. Myöhemmin tämän koeryhmän lapset eivät pahoinpidelleet nukkea. Tätä ilmiötä kutsutaan sijaisvahvistamiseksi. Lapsi jäljittelee sellaista toimintaa, jota palkitaan, mutta jos malli saa rangaistuksen, lapsi ei toista tekoa. Lapsi tutkii ja tarkkailee ympäristöään ja pohtii, mitkä käyttäytymismallit ovat hyväksyttyjä, kiinnostavia tai palkittuja, ja lapsi jäljittelee näitä.  Myös mallilla on merkitystä. Lapset jäljittelevät helpommin sellaista henkilöä, jota he ihailevat tai pitävät korkea-arvoisena. '
 				}
 			]
+		},
+		{
+			id: 181,
+			header: 'Tehtävä: mallioppiminen',
+			description: 'Miten sosiaalinen oppiminen eroaa behaviorismista?',
+			placeholder: 'Kirjoita tähän...'
 		},
 		{
 			id: 19,
@@ -420,6 +457,39 @@ export const state = () => ({
 			header: 'Karttatesti',
 			text:
 				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
+		},
+		{
+			id: 231,
+			header: 'Monivalintatehtävä: sisäiset mallit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
+							value: 'true'
+						},
+						{
+							text:
+								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
+							value: 'false'
+						},
+						{
+							text:
+								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
 		},
 		{
 			id: 24,
@@ -519,6 +589,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 271,
+			header: 'Monivalintatehtävä: muistin toiminta',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Mikä seuraavista väittämistä on väärin:',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
+							value: 'true'
+						},
+						{
+							text: 'pitkäkestoinen muisti kuormittuu helposti',
+							value: 'false'
+						},
+						{
+							text:
+								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'false'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 28,
 			header: 'Prosessoinnin tasot',
 			text: [
@@ -612,6 +713,39 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 361,
+			header: 'Monivalintatehtävä: prosessointi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
+							value: 'false'
+						},
+						{
+							text:
+								'tiedon syvällinen prosessointi tehostaa muistamista',
+							value: 'true'
+						},
+						{
+							text:
+								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 37,
 			header: 'Tiedostamaton mieli',
 			text: [
@@ -653,6 +787,67 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Superego eli yliminä ohjaa ihmisen moraalia ja asettaa erilaisia normeja toiminalle. Se kehittyy noin 3-6 vuotialle. Silloin lapsi käy niin kutsutun oidipaalisen vaiheen, jossa poikalapset rakastuvat äitiin ja tyttölapset isään. Taustalla on antiikin Kreikan satu Oidipuksesta, jonka vanhemmat hylkäsivät, mutta myöhemmin hän tietämättään rakastui äitiinsä ja murhasi isänsä. Pojat on tässä vaiheessa mustasukkaisia isälleen, koska poika joutuu jakamaan äidin isän kanssa. Isä on kuitenkin liian ylivertainen pojalle. Konflikti ratkeaa sillä, kun poika alkaa ihailemaan isäänsä ja haluaa tulla samanlaiseksi. Tässä vaiheessa lapselle kehittyy SUPER-EGO, joka on vastaa vähän samaa kuin omatunto. Super-ego rajoittaa egoa ja idiä. Se on kuin on laivan kapteeni, joka pitää laivan kurssin oikeassa suunnassa.  Super-ego voi olla kuitenkin liian korostunut, jolloin ihmiselle myöhemmässä elämässä voi Freudin mukaan kehittyä erilaisia neurooseja, eli pakkotoimintoja. Esimerkiksi pakonomaista tarvetta pestä käsiä. Alikehittynyt superego voi taas vaikuttaa siihen, että ihminen suostu hyväksymään auktoriteettejä.'
+				}
+			]
+		},
+		{
+			id: 371,
+			header: 'Monivalintatehtävä: psykoanalyysi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sisäisten mallien ja tiedon käsittelyn merkitystä',
+							value: 'false'
+						},
+						{
+							text: 'tiedostamattoman merkitystä',
+							value: 'true'
+						},
+						{
+							text: 'palkkioiden ja rangaistusten merkitystä',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
+			id: 372,
+			header: 'Monivalintatehtävä: defenssit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'projektio',
+							value: 'false'
+						},
+						{
+							text: 'sublimaatio',
+							value: 'false'
+						},
+						{
+							text: 'torjunta',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -703,6 +898,35 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Suomalainen filosofi, Frank Martela, on tehnyt viimeisten vuosien ajan yhteistyötä Decin ja Ryanin kanssa. Hän kehitti itseohjautuvuusteoriaan neljännen tekijän. Motivaatiota nostaa se, jos henkilö kokee tekemisen merkitykselliseksi. Esimerkiksi vapaaehtoistoiminnassa ihminen voi kokea oman työnsä tärkeäksi. Opiskelun kannalta olennaista on huomata, että motivaatioon on todellakin mahdollista vaikuttaa. Jos nyt mikään ei tunnu kiinnostavan, voi yrittää herätellä sisäistä motivaatiota.'
+				}
+			]
+		},
+		{
+			id: 391,
+			header: 'Monivalintatehtävä: motivaatio',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Sisäinen motivaatio tarkoittaa sitä, että',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'tehtävä itsessään kiinnostaa ja innostaa',
+							value: 'true'
+						},
+						{
+							text: 'asiaa tehdään siitä saatavan palkkion takia',
+							value: 'false'
+						},
+						{
+							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -921,6 +1145,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 501,
+			header: 'Monivalintatehtävä: konformisuus',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Konformisuus on ilmiö, jossa',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
+							value: 'false'
+						},
+						{
+							text: 'henkilö mukautuu ryhmän paineeseen',
+							value: 'true'
+						},
+						{
+							text:
+								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
+							value: 'false'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 51,
 			header: 'Milgramin sähköshokkikoe',
 			text:
@@ -934,6 +1189,38 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Kiusaamistilanteessa voi olla kyse myös tottelevaisuudesta. Milgram tutki tätä ilmiötä sähköshokkikokeessaan ja huomasi, että mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille. Nuorten joukossa voi olla siis käskyjä jakeleva pomo, joka saa muutkin ryhmän jäsenet kiusaamaan koulukaveriaan. Katso video, missä ohikulkijat tottelevat univormuun pukeutunutta miestä: https://www.youtube.com/watch?v=2ykbmBFqq54'
+				}
+			]
+		},
+		{
+			id: 521,
+			header: 'Monivalintatehtävä: Milgram',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Milgramin tutkimuksessa havaittiin, että',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihmiset eivät yleensä tottele johtajan käskyjä',
+							value: 'false'
+						},
+						{
+							text:
+								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
+							value: 'false'
+						},
+						{
+							text:
+								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1011,6 +1298,36 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Muuttuja on se asia, jota halutaan tutkia. Tässä tapauksessa meillä on kaksi muuttujaa: älypuhelimen käyttö ja oppimistulokset. Näiden muuttujien välistä syy- seuraussuhdetta haluamme tutkia. Jotta näitä asioita voidaan tutkia, tulee ne muuttaa mitattavaan muotoon eli operationalisoida. Älypuhelimen käyttö muutetaan mitattavaan muotoon siten, että koehenkilöt asettavat älypuhelimensa pulpetilleen oppitunnin ajaksi ja saavat vapaasti käyttää sitä opetusta seuratessaan. Oppimistuloksia mitataan kokeella tunnin aiheesta. Eli opiskelijat tekevät oppitunnin päätteeksi kokeen. Koetuloksista saadaan arvo toiselle muuttujalle. Näin muuttujat on muutettu mitattavaan muotoon.'
+				}
+			]
+		},
+		{
+			id: 571,
+			header: 'Monivalintatehtävä: muuttja',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Tutkimuksessa muuttuja on ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'koehenkilö',
+							value: 'false'
+						},
+						{
+							text:
+								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
+							value: 'true'
+						},
+						{
+							text: 'kontrolliryhmä',
+							value: 'true'
+						}
+					]
+					// correctAnswer: 'true'
+					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
