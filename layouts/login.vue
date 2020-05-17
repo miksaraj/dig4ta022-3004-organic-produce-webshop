@@ -22,4 +22,10 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+
+@media screen and (max-width: 520px) {
+	.container {
+		width: 100vh;
+	}
+}
 </style>

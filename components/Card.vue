@@ -24,6 +24,18 @@
 	height: 95%;
 	margin-bottom: 1rem;
 	width: 24vw;
+	min-width: 20%;
+}
+@media screen and (max-width: 1124px) {
+	.card {
+		width: 36vw;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.card {
+		width: 76vw;
+	}
 }
 </style>
 
