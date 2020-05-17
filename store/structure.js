@@ -1,3 +1,4 @@
+// list of all content with refernces to section, order within section and type of element
 export const state = () => ({
 	list: [
 		{
@@ -473,6 +474,7 @@ export const getters = {
 	}
 }
 
+// retun an ordered list by key order
 function orderContent(array) {
 	return array.sort(function() {
 		const key = 'order'

@@ -22,9 +22,13 @@ export default {
 	},
 	methods: {
 		checkAnswer() {
+			/**
+			 * check if selected and correctAnswer arrays
+			 * are identical (for true answer)
+			 */
 			if (
 				!Array.isArray(this.selected) ||
-				Array.isArray(this.correctAnswer) ||
+				!Array.isArray(this.correctAnswer) ||
 				this.selected.length !== this.correctAnswer.length
 			) {
 				this.$emit('saveAnswer', {

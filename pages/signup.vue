@@ -103,6 +103,7 @@ export default {
 						return
 					}
 				} else {
+					// check if input in required fields
 					if (
 						this.items[i].input === '' &&
 						this.items[i].id !== 'name'
@@ -117,6 +118,7 @@ export default {
 				alert('Salasanat eivät täsmää keskenään!')
 				return
 			} else {
+				// base64 encode password (not secure enough for real production)
 				userDetails.pwd = btoa(pwd)
 			}
 			this.$store.dispatch('auth/login')

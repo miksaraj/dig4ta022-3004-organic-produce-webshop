@@ -123,6 +123,7 @@ export default {
 	watch: {
 		$route() {
 			const routeName = this.$route.name
+			// use only in chapters and sections pages
 			if (routeName.includes('chapters-id')) {
 				this.calcNavLinks()
 			}
@@ -132,6 +133,10 @@ export default {
 		calcNavLinks() {
 			const id = parseInt(this.$route.params.id)
 			const sections = this.$store.state.sections.list
+			/**
+			 * if there is no next section id in sections, next = false
+			 * then check if next section id belongs to current chapter
+			 */
 			if (this.$route.name === 'chapters-chapters-id') {
 				const content = this.sectionsByChapter(
 					parseInt(this.$route.params.chapters)
@@ -151,6 +156,7 @@ export default {
 						'/' +
 						(id + 1)
 				}
+				// The same for previous in sections
 				if (!sections.some(x => x.id === id - 1)) {
 					this.previous = null
 				} else if (!content.some(x => x.id === id - 1)) {
@@ -167,6 +173,7 @@ export default {
 						(id - 1)
 				}
 			} else {
+				// checks if next/previous chapter exists
 				const content = this.$store.state.chapters.list
 				if (!content.some(x => x.id === id + 1)) {
 					this.next = null

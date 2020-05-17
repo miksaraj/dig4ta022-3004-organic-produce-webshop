@@ -4,6 +4,10 @@ export const state = () => ({
 })
 
 export const getters = {
+	/**
+	 * return the count of completed theory sections and
+	 * assignments within an array of ids
+	 */
 	getProgressCount: state => array => {
 		let count = 0
 		const completed = state.completed

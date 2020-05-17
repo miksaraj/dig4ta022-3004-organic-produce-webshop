@@ -39,6 +39,7 @@ export default {
 	watch: {
 		$route() {
 			const routeName = this.$route.name
+			// use only in chapters and sections pages
 			if (routeName.includes('chapters-id')) {
 				this.updateItems()
 			}
@@ -46,6 +47,7 @@ export default {
 	},
 	mounted() {
 		const routeName = this.$route.name
+		// use only in chapters and sections pages
 		if (routeName.includes('chapters-id')) {
 			this.updateItems()
 		}

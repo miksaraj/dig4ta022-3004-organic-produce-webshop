@@ -1,6 +1,7 @@
 <template>
 	<b-form class="multiple-choice">
 		<h3>{{ item.header }}</h3>
+		<!-- returns the component specified dynamically -->
 		<component
 			v-for="part in item.parts"
 			:key="part.order"
@@ -20,6 +21,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+// Dynamic components only imported as needed
 const CBGroup = () => import('~/components/CBGroup.vue')
 const RadioGroup = () => import('~/components/RadioGroup.vue')
 const SelectElement = () => import('~/components/SelectElement.vue')
@@ -64,6 +66,10 @@ export default {
 			const index = this.assignmentProgress.findIndex(
 				x => x.idx === data.idx
 			)
+			/**
+			 * Sets a new entry into assignmentProgress if index
+			 * not found, else replaces the data at index
+			 */
 			if (index === -1) {
 				this.$set(
 					this.assignmentProgress,

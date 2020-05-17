@@ -59,6 +59,10 @@ export default {
 		this.getSubItems()
 	},
 	methods: {
+		/**
+		 * Get the content under the title content depending on type,
+		 * e.g. sections under chapters
+		 */
 		getSubItems() {
 			if (this.type === 'chapters') {
 				this.subItems = this.sectionsByChapter(this.item.id)

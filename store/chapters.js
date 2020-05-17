@@ -1,3 +1,4 @@
+// list of chapters with details required for dynamic rendering
 export const state = () => ({
 	// TÄÄLTÄ PUUTTUU KUVAT!
 	list: [
