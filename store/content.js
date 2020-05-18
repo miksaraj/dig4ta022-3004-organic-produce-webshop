@@ -1,15 +1,9 @@
-// list of all content with details required for dynamic rendering
 export const state = () => ({
 	list: [
 		{
 			id: 1,
 			header: 'Mitä ihmettä on psykologia',
 			text: [
-				{
-					type: 'p',
-					content:
-						'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
-				},
 				{
 					type: 'ul',
 					content: [
@@ -283,17 +277,17 @@ export const state = () => ({
 						{
 							text:
 								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
-							value: 'true'
+							value: 'klassinen'
 						},
 						{
 							text:
 								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
-							value: 'false'
+							value: 'mallioppiminen'
 						},
 						{
 							text:
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
-							value: 'false'
+							value: 'valineellinen'
 						}
 					],
 					correctAnswer: 'klassinen'
@@ -313,37 +307,6 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Vaikka behaviorismi on saanut osakseen paljon kritiikkiä, sen vahvuutena voidaan pitää sen tieteellisiä ihanteita. Behaviorismissa psykologisia ilmiöitä, kuten oppimista, tutkittiin järjestelmällisesti. Tavoitteena oli saada objektiivista, eli tutkijasta riippumatonta tietoa.'
-				}
-			]
-		},
-		{
-			id: 141,
-			header: 'Monivalintatehtävä: ehdollistuminen',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
-							value: 'true'
-						},
-						{
-							text: 'ihminen on aktiivinen tiedonkäsittelijä',
-							value: 'false'
-						},
-						{
-							text:
-								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -392,12 +355,6 @@ export const state = () => ({
 			]
 		},
 		{
-			id: 181,
-			header: 'Tehtävä: mallioppiminen',
-			description: 'Miten sosiaalinen oppiminen eroaa behaviorismista?',
-			placeholder: 'Kirjoita tähän...'
-		},
-		{
 			id: 19,
 			header: 'Sisäinen malli',
 			text: [
@@ -435,9 +392,15 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 211,
+			header: 'Tarkkaavaisuustesti',
+			src: 'https://www.youtube.com/embed/nDQYdU5p0KY',
+			allowFullScreen: true
+		},
+		{
 			id: 21,
-			header: 'Tee testi ja vastaa kysymykseen',
-			//  video: 	'https://www.youtube.com/watch?v=Ahg6qcgoay4',
+			header:
+				'Tee yllä olevan videon testi ja kerro, miten se liittyi tarkkaavaisuuteen',
 			description:
 				'Tee testi osoitteessa https://www.youtube.com/watch?v=Ahg6qcgoay4 ja kerro, miten se liittyi tarkkaavaisuuteen',
 			placeholder: 'Kirjoita tähän...'
@@ -454,43 +417,16 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 231,
+			header: 'Video karttatestistä',
+			src: 'https://www.youtube.com/embed/vBPG_OBgTWg',
+			allowFullScreen: true
+		},
+		{
 			id: 23,
 			header: 'Karttatesti',
 			text:
-				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
-		},
-		{
-			id: 231,
-			header: 'Monivalintatehtävä: sisäiset mallit',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label:
-						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
-							value: 'true'
-						},
-						{
-							text:
-								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
-							value: 'false'
-						},
-						{
-							text:
-								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
+				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia.'
 		},
 		{
 			id: 24,
@@ -590,37 +526,6 @@ export const state = () => ({
 			]
 		},
 		{
-			id: 271,
-			header: 'Monivalintatehtävä: muistin toiminta',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Mikä seuraavista väittämistä on väärin:',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
-							value: 'true'
-						},
-						{
-							text: 'pitkäkestoinen muisti kuormittuu helposti',
-							value: 'false'
-						},
-						{
-							text:
-								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'true'
-						}
-					]
-					// correctAnswer: 'false'
-					// tosin voit lisätä kommentoituna
-				}
-			]
-		},
-		{
 			id: 28,
 			header: 'Prosessoinnin tasot',
 			text: [
@@ -714,39 +619,6 @@ export const state = () => ({
 			]
 		},
 		{
-			id: 361,
-			header: 'Monivalintatehtävä: prosessointi',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label:
-						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
-							value: 'false'
-						},
-						{
-							text:
-								'tiedon syvällinen prosessointi tehostaa muistamista',
-							value: 'true'
-						},
-						{
-							text:
-								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
-		},
-		{
 			id: 37,
 			header: 'Tiedostamaton mieli',
 			text: [
@@ -759,11 +631,6 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Omana aikanaan Freudin ajatuksia pidettiin hyvin radikaaleina. Hän tutki omia potilaitaan ja muotoili kuuluisan teoriansa näiden pohjalta.  Freud korosti erityisesti mielen tiedostamatonta puolta, eli ajatuksia, tunteita. Ihmisen mieli koostuu Freudin mukaan kolmesta osasta. EGO, minä, on ihmisen mielen tietoinen osa, eli se, mitä ihmisellä on mielessään nyt. ID, se,  on mielen tiedostamaton osa, eläimellinen viettipohja, joka tavoittelee mielihyvää. Mielellä on myös kolmas osa, SUPER-EGO, yliminä, joka on enimmäkseen tiedostamaton, mutta ihminen pystyy myös tiedostamaan sen toimintaa.'
-				},
-				{
-					type: 'p',
-					content:
-						'Tässä video Freudista: https://www.youtube.com/watch?v=mQaqXK7z9LM'
 				},
 				{
 					type: 'p',
@@ -793,64 +660,9 @@ export const state = () => ({
 		},
 		{
 			id: 371,
-			header: 'Monivalintatehtävä: psykoanalyysi',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label:
-						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'sisäisten mallien ja tiedon käsittelyn merkitystä',
-							value: 'false'
-						},
-						{
-							text: 'tiedostamattoman merkitystä',
-							value: 'true'
-						},
-						{
-							text: 'palkkioiden ja rangaistusten merkitystä',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
-		},
-		{
-			id: 372,
-			header: 'Monivalintatehtävä: defenssit',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label:
-						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text: 'projektio',
-							value: 'false'
-						},
-						{
-							text: 'sublimaatio',
-							value: 'false'
-						},
-						{
-							text: 'torjunta',
-							value: 'true'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
+			header: 'Video Freudista',
+			src: 'https://www.youtube.com/embed/mQaqXK7z9LM',
+			allowFullScreen: true
 		},
 		{
 			id: 38,
@@ -899,35 +711,6 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Suomalainen filosofi, Frank Martela, on tehnyt viimeisten vuosien ajan yhteistyötä Decin ja Ryanin kanssa. Hän kehitti itseohjautuvuusteoriaan neljännen tekijän. Motivaatiota nostaa se, jos henkilö kokee tekemisen merkitykselliseksi. Esimerkiksi vapaaehtoistoiminnassa ihminen voi kokea oman työnsä tärkeäksi. Opiskelun kannalta olennaista on huomata, että motivaatioon on todellakin mahdollista vaikuttaa. Jos nyt mikään ei tunnu kiinnostavan, voi yrittää herätellä sisäistä motivaatiota.'
-				}
-			]
-		},
-		{
-			id: 391,
-			header: 'Monivalintatehtävä: motivaatio',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Sisäinen motivaatio tarkoittaa sitä, että',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text: 'tehtävä itsessään kiinnostaa ja innostaa',
-							value: 'true'
-						},
-						{
-							text: 'asiaa tehdään siitä saatavan palkkion takia',
-							value: 'false'
-						},
-						{
-							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1076,6 +859,12 @@ export const state = () => ({
 			placeholder: 'Kirjoita tähän...'
 		},
 		{
+			id: 431,
+			header: 'Video Caro Dweck ajattelutavoista',
+			src:
+				'https://embed.ted.com/talks/lang/fi/carol_dweck_the_power_of_believing_that_you_can_improve'
+		},
+		{
 			id: 43,
 			header: 'Tehtävä: Carol Dweck ja ajattelutavat ',
 			description:
@@ -1146,37 +935,6 @@ export const state = () => ({
 			]
 		},
 		{
-			id: 501,
-			header: 'Monivalintatehtävä: konformisuus',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Konformisuus on ilmiö, jossa',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
-							value: 'false'
-						},
-						{
-							text: 'henkilö mukautuu ryhmän paineeseen',
-							value: 'true'
-						},
-						{
-							text:
-								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
-							value: 'false'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
-		},
-		{
 			id: 51,
 			header: 'Milgramin sähköshokkikoe',
 			text:
@@ -1190,38 +948,6 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Kiusaamistilanteessa voi olla kyse myös tottelevaisuudesta. Milgram tutki tätä ilmiötä sähköshokkikokeessaan ja huomasi, että mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille. Nuorten joukossa voi olla siis käskyjä jakeleva pomo, joka saa muutkin ryhmän jäsenet kiusaamaan koulukaveriaan. Katso video, missä ohikulkijat tottelevat univormuun pukeutunutta miestä: https://www.youtube.com/watch?v=2ykbmBFqq54'
-				}
-			]
-		},
-		{
-			id: 521,
-			header: 'Monivalintatehtävä: Milgram',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Milgramin tutkimuksessa havaittiin, että',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text:
-								'ihmiset eivät yleensä tottele johtajan käskyjä',
-							value: 'false'
-						},
-						{
-							text:
-								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
-							value: 'false'
-						},
-						{
-							text:
-								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
-							value: 'true'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1259,30 +985,29 @@ export const state = () => ({
 		},
 		{
 			id: 54,
-			header:
-				'Tutkimusongelman määrittäminen: Miten älypuhelin vaikuttaa oppimistuloksiin?',
+			header: 'Tutkimusongelman määrittäminen:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
+						'Esimerkki tutkimusongelmsta: "Miten älypuhelin vaikuttaa oppimistuloksiin?" Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
 				}
 			]
 		},
 		{
 			id: 55,
-			header: 'Hypoteesi: Älypuhelin heikentää oppimistuloksia.',
+			header: 'Hypoteesi:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa.'
+						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa. Esimerkiksi:  Älypuhelin heikentää oppimistuloksia.'
 				}
 			]
 		},
 		{
 			id: 56,
-			header: 'Tutkimusote: kokeellinen',
+			header: 'Tutkimusote:',
 			text: [
 				{
 					type: 'p',
@@ -1303,38 +1028,8 @@ export const state = () => ({
 			]
 		},
 		{
-			id: 571,
-			header: 'Monivalintatehtävä: muuttja',
-			btnText: 'Lähetä',
-			parts: [
-				{
-					label: 'Tutkimuksessa muuttuja on ',
-					order: 1,
-					type: 'CBGroup',
-					stacked: true,
-					items: [
-						{
-							text: 'koehenkilö',
-							value: 'false'
-						},
-						{
-							text:
-								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
-							value: 'true'
-						},
-						{
-							text: 'kontrolliryhmä',
-							value: 'true'
-						}
-					]
-					// correctAnswer: 'true'
-					// tosin voit lisätä kommentoituna
-				}
-			]
-		},
-		{
 			id: 58,
-			header: 'Koehenkilöt: koeryhmä ja kontrolliryhmä',
+			header: 'Koeryhmä ja kontrolliryhmä',
 			text: [
 				{
 					type: 'p',
@@ -1447,7 +1142,6 @@ export const getters = {
 	contentById: state => id => {
 		return state.list.find(item => item.id === id)
 	},
-	// return all content in section (by array of contentIds)
 	contentBySection: state => data => {
 		const content = []
 		for (let i = 0; i < data.length; i++) {
@@ -1456,11 +1150,9 @@ export const getters = {
 		}
 		return content
 	},
-	// fetch all content by array of contentIds
 	fetchContent: state => data => {
 		return state.list.filter(x => data.some(y => y.contentId === x.id))
 	},
-	// return content matching filters defined by given type
 	contentByType: state => type => {
 		let filters = []
 		if (type === true) {
