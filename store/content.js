@@ -688,6 +688,36 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 271,
+			header: 'Monivalintatehtävä: muistin toiminta',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Mitkä seuraavista väittämistä ovat oikein:',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
+							value: 'oikein'
+						},
+						{
+							text: 'pitkäkestoinen muisti kuormittuu helposti',
+							value: 'ei kuormitu'
+						},
+						{
+							text: 'tunteet vahvistavat muistijälkeä',
+							value: 'oikein'
+						}
+					],
+					correctAnswer: 'oikein'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 28,
 			header: 'Prosessoinnin tasot',
 			text: [
