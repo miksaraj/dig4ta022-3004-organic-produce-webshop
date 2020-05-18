@@ -1001,6 +1001,35 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 391,
+			header: 'Monivalintatehtävä: motivaatio',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Sisäinen motivaatio tarkoittaa sitä, että',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'tehtävä itsessään kiinnostaa ja innostaa',
+							value: 'sisainen'
+						},
+						{
+							text: 'asiaa tehdään siitä saatavan palkkion takia',
+							value: 'ulkoinen'
+						},
+						{
+							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
+							value: 'amotivaatio'
+						}
+					],
+					correctAnswer: 'sisainen'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 40,
 			header: 'Virtaus-kokemus',
 			text: [

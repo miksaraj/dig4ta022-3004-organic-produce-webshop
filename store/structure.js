@@ -308,6 +308,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 391,
+			sectionId: 13,
+			order: 3,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 40,
 			sectionId: 13,
 			order: 3,
