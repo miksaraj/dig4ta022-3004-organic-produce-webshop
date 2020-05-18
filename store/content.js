@@ -1406,6 +1406,36 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 571,
+			header: 'Monivalintatehtävä: muuttuja',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Tutkimuksessa muuttuja on ',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text: 'koehenkilö',
+							value: 'koehenkilo'
+						},
+						{
+							text:
+								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
+							value: 'muuttuja'
+						},
+						{
+							text: 'kontrolliryhmä',
+							value: 'kontrolli'
+						}
+					],
+					correctAnswer: 'muuttuja'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 58,
 			header: 'Koeryhmä ja kontrolliryhmä',
 			text: [

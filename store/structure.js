@@ -326,21 +326,21 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 401,
-			sectionId: 14,
-			order: 2,
-			type: 'MultipleChoice'
-		},
-		{
 			contentId: 42,
 			sectionId: 14,
 			order: 2,
 			type: 'Assignment'
 		},
 		{
-			contentId: 43,
+			contentId: 431,
 			sectionId: 14,
 			order: 3,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 43,
+			sectionId: 14,
+			order: 4,
 			type: 'Assignment'
 		},
 		{
