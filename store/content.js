@@ -811,6 +811,39 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 361,
+			header: 'Monivalintatehtävä: prosessointi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
+							value: 'pinnallinen'
+						},
+						{
+							text:
+								'tiedon syvällinen prosessointi tehostaa muistamista',
+							value: 'syvallinen'
+						},
+						{
+							text:
+								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
+							value: 'ei totta'
+						}
+					],
+					correctAnswer: 'syvallinen'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 37,
 			header: 'Tiedostamaton mieli',
 			text: [
