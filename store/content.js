@@ -478,6 +478,12 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 181,
+			header: 'Tehtävä: mallioppiminen',
+			description: 'Miten sosiaalinen oppiminen eroaa behaviorismista?',
+			placeholder: 'Kirjoita tähän...'
+		},
+		{
 			id: 19,
 			header: 'Sisäinen malli',
 			text: [
