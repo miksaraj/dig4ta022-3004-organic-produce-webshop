@@ -1250,6 +1250,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 501,
+			header: 'Monivalintatehtävä: konformisuus',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Konformisuus on ilmiö, jossa',
+					order: 1,
+					type: 'RadioGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
+							value: 'autonomia'
+						},
+						{
+							text: 'henkilö mukautuu ryhmän paineeseen',
+							value: 'konformisuus'
+						},
+						{
+							text:
+								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
+							value: 'vapaamatkustaja'
+						}
+					],
+					correctAnswer: 'konformisuus'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 51,
 			header: 'Milgramin sähköshokkikoe',
 			text:
