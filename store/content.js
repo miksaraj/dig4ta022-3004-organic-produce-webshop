@@ -890,6 +890,67 @@ export const state = () => ({
 			allowFullScreen: true
 		},
 		{
+			id: 372,
+			header: 'Monivalintatehtävä: psykoanalyysi',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
+					order: 1,
+					type: 'RadioGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'sisäisten mallien ja tiedon käsittelyn merkitystä',
+							value: 'kognitiivinen'
+						},
+						{
+							text: 'tiedostamattoman merkitystä',
+							value: 'psykodynaaminen'
+						},
+						{
+							text: 'palkkioiden ja rangaistusten merkitystä',
+							value: 'behaviorismi'
+						}
+					],
+					correctAnswer: 'psykodynaaminen'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
+			id: 373,
+			header: 'Monivalintatehtävä: defenssit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
+					order: 1,
+					type: 'RadioGroup',
+					stacked: true,
+					items: [
+						{
+							text: 'projektio',
+							value: 'projektio'
+						},
+						{
+							text: 'sublimaatio',
+							value: 'sublimaatio'
+						},
+						{
+							text: 'torjunta',
+							value: 'torjunta'
+						}
+					],
+					correctAnswer: 'torjunta'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 38,
 			header: 'Humanistinen psykologia',
 			text: [

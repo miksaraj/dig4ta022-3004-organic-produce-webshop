@@ -290,6 +290,12 @@ export const state = () => ({
 			type: 'MultipleChoice'
 		},
 		{
+			contentId: 373,
+			sectionId: 12,
+			order: 4,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 38,
 			sectionId: 13,
 			order: 1,
