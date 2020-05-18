@@ -166,6 +166,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 505,
+			header: 'Monivalintatehtävä: aivot',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Valitse kaikki, jotka kuvaavat mantelitumakkeen toimintaa aivoissa ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'Vaikuttaa voimakkaiden tunnereaktioiden syntyyn.',
+							value: 'mantelitumake'
+						},
+						{
+							text: 'Taistele tai pakene -mekanismi.',
+							value: 'mantelitumake'
+						},
+						{
+							text:
+								'Ensisijainen aivoalue joka on yhteydessä uneen. ',
+							value: 'käpyrauhanen'
+						}
+					],
+					correctAnswer: 'mantelitumake'
+				}
+			]
+		},
+		{
 			id: 6,
 			header: 'Synnynnäinen temperamentti',
 			text: [
@@ -188,6 +219,36 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Mary Rothbart erottelee temperamentista kolme ulottuvuutta. Nämä ovat itsesäätely, taipumus kokea negatiivisia tunteita sekä ulospäinsuuntautuneisuus. Itsesäätelyllä tarkoitetaan sitä, että miten henkilö pystyy itse ohjaamaan tarkkaavaisuuttaan, käyttäytymistään ja tunteitaan. Toisille oman käyttäytymisen säätely on haastavampaa kuin toisille. Ihmisten välillä on eroa myös sen suhteen, miten herkästi he kokevat negatiivisia tunteita esimerkiksi pelkoa. Ulospäinsuuntautuneisuus selittää sitä, että miten kiinnostunut henkilö on hakeutumaan muiden seuraan. Toiset ovat luonnostaan ujompia muiden seurassa, toiset hakevat mielellään kontaktia toisten ihmisen kanssa. Temperamentin suhteen olemme yksilöllisiä ja tieto omasta temperamentista voi olla hyödyllistä ja auttaa ymmärtämään omaa käyttäytymistä eri tilanteissa.'
+				}
+			]
+		},
+		{
+			id: 605,
+			header: 'Monivalintatehtävä: temperamentti',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Valitse yksi: temperamentti tarkoittaa',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text: 'Voimakastahtoista ihmistä',
+							value: 'sinnikkyys'
+						},
+						{
+							text:
+								'Ympäristön muovaamaa tapaa reagoida ärsykkeisiin. ',
+							value: 'ehdollistuminen'
+						},
+						{
+							text:
+								'ihmisen synnynnäinen tapa esimerkiksi reagoida ärsykkeisiin. ',
+							value: 'temperamentti'
+						}
+					],
+					correctAnswer: 'temperamentti'
 				}
 			]
 		},
@@ -229,6 +290,37 @@ export const state = () => ({
 			header: 'Amala ja Kamala Intiasta sekä Genie Kaliforniasta',
 			text:
 				'Intiassa 1920- luvulla löydettiin Amala ja Kamala. He olivat 1,5-, ja 8- vuotiaita tyttöjä löydettäessä luonnosta. He liikkuivat neljällä jalalla, eivät puhuneet vaan ääntelivät kuin sudet. Nuorempi tytöistä kuoli pian, mutta toinen eli muutamia vuosia. Tätä tapausta on epäilty myös huijaukseksi ja villilapsitapauksiin onkin syytä suhtautua kriittisesti. Toinen hieman tuoreempi tapaus on Genie. Hänet löydettiin 1970-luvulla Kaliforniassa ja Genie oli tuolloin 13-vuotias. Hänen mielenterveysongelmista kärsivä isänsä oli eristänyt hänet yhteen huoneeseen. Genie ei kuullut puhetta eikä hänellä juurikaan ollut virikkeitä. Hänen isänsä löi häntä, mikäli hän äänteli, myös hänen liikkumistaan rajoitettiin. Hänet oli esimerkiksi kahlittu pottaan. Genie ehti olla vankilassaan 12 vuotta, jonka jälkeen hänen äitinsä jätti miehensä ja otti Genien mukaan. Äiti vei Genien sosiaalitoimistoon. Genie otettiin huostaan ja vanhemmat joutuivat syytteeseen kaltoinkohtelusta. Hänen isänsä teki itsemurhan.'
+		},
+		{
+			id: 109,
+			header: 'Monivalintatehtävä: muovautuvuus',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Valitse yksi: plastisiteetti tarkoittaa',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text:
+								'Ympäristö muovaa hermosolujen haaroittuneisuutta.',
+							value: 'plastisiteetti'
+						},
+						{
+							text:
+								'Kaikkien aivot ovat täysin samanlaiset, mutta ympäristö muovaa niistä erilaisuutta. ',
+							value: 'kaksoset'
+						},
+						{
+							text:
+								'ihmisen synnynnäinen tapa esimerkiksi reagoida ärsykkeisiin. ',
+							value: 'temperamentti'
+						}
+					],
+					correctAnswer: 'plastisiteetti'
+				}
+			]
 		},
 		{
 			id: 11,

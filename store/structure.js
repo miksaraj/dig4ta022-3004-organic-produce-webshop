@@ -32,10 +32,22 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 505,
+			sectionId: 3,
+			order: 2,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 6,
 			sectionId: 4,
 			order: 1,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 605,
+			sectionId: 4,
+			order: 2,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 7,
@@ -60,6 +72,12 @@ export const state = () => ({
 			sectionId: 5,
 			order: 4,
 			type: 'SpecialText'
+		},
+		{
+			contentId: 109,
+			sectionId: 5,
+			order: 5,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 11,
@@ -102,6 +120,12 @@ export const state = () => ({
 			sectionId: 8,
 			order: 1,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 151,
+			sectionId: 7,
+			order: 2,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 16,
