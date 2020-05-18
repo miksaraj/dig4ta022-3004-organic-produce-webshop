@@ -403,6 +403,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 141,
+			header: 'Monivalintatehtävä: ehdollistuminen',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
+					order: 1,
+					type: 'RadioGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
+							value: 'behaviorismi'
+						},
+						{
+							text: 'ihminen on aktiivinen tiedonkäsittelijä',
+							value: 'kognitiivinen'
+						},
+						{
+							text:
+								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
+							value: 'kognitiivinen'
+						}
+					],
+					correctAnswer: 'behaviorismi'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 15,
 			header: 'Jäljittelevä ihminen',
 			text: [

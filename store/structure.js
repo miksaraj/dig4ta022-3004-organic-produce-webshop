@@ -122,12 +122,6 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 151,
-			sectionId: 7,
-			order: 2,
-			type: 'MultipleChoice'
-		},
-		{
 			contentId: 16,
 			sectionId: 8,
 			order: 2,
