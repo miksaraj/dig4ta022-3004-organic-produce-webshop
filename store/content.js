@@ -5,11 +5,6 @@ export const state = () => ({
 			header: 'Mitä ihmettä on psykologia',
 			text: [
 				{
-					type: 'p',
-					content:
-						'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
-				},
-				{
 					type: 'ul',
 					content: [
 						'Miksi ihmiset valitsevat mieluiten tyhjän penkin metrossa?',
