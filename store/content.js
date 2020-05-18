@@ -1298,6 +1298,38 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 521,
+			header: 'Monivalintatehtävä: Milgram',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Milgramin tutkimuksessa havaittiin, että',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ihmiset eivät yleensä tottele johtajan käskyjä',
+							value: 'tottelemattomuus'
+						},
+						{
+							text:
+								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
+							value: 'itsenaisyys'
+						},
+						{
+							text:
+								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
+							value: 'tottelevaisuus'
+						}
+					],
+					correctAnswer: 'tottelevaisuus'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 53,
 			header: 'Stereotypiat',
 			text: [
