@@ -524,7 +524,8 @@ export const state = () => ({
 			id: 211,
 			header: 'Tarkkaavaisuustesti',
 			src: 'https://www.youtube.com/embed/nDQYdU5p0KY',
-			allowFullScreen: true
+			allowFullScreen: true,
+			description: 'Tämä on Transport for Londonin tuottama video'
 		},
 		{
 			id: 21,
@@ -549,7 +550,9 @@ export const state = () => ({
 			id: 231,
 			header: 'Video karttatestistä',
 			src: 'https://www.youtube.com/embed/vBPG_OBgTWg',
-			allowFullScreen: true
+			allowFullScreen: true,
+			description:
+				'Tämä on illusionisti Darren Brownin hämäys, joilla tietä neuvovan tarkkaavaisuus on kohdistunut karttaan eikä hän huomaa ilmiselviä muutoksia ympäristössään'
 		},
 		{
 			id: 23,
@@ -887,7 +890,8 @@ export const state = () => ({
 			id: 371,
 			header: 'Video Freudista',
 			src: 'https://www.youtube.com/embed/mQaqXK7z9LM',
-			allowFullScreen: true
+			allowFullScreen: true,
+			description: 'Tässä videossa kerrotaan Freudin tärkeimmistä opeista'
 		},
 		{
 			id: 372,
@@ -1168,7 +1172,7 @@ export const state = () => ({
 		},
 		{
 			id: 42,
-			header: 'Tehtävä: ',
+			header: 'Tehtävä: Tunteet kouluaineissa',
 			description:
 				'Oletko itse kokenut vastaavia tunteita eri kouluaineissa? Miten voisit muuttaa omia attribuointityylejäsi eri aineissa? ',
 			placeholder: 'Kirjoita tähän...'
@@ -1177,7 +1181,9 @@ export const state = () => ({
 			id: 431,
 			header: 'Video Caro Dweck ajattelutavoista',
 			src:
-				'https://embed.ted.com/talks/lang/fi/carol_dweck_the_power_of_believing_that_you_can_improve'
+				'https://embed.ted.com/talks/lang/fi/carol_dweck_the_power_of_believing_that_you_can_improve',
+			allowFullScreen: true,
+			description: 'Carol Dweck puhuu erilaisista ajattelutavoista'
 		},
 		{
 			id: 43,
@@ -1342,13 +1348,14 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Siskosi ei tahdo selvitä matematiikan tehtävistä ja sen perusteella voi syntyä käsitys, että kaikki tytöt ovat heikkoja matematiikassa. Yleistäminen helpottaa monimutkaisen maailman hahmottamista, mutta johtaa usein virheellisiin havaintoihin. Kaikki samaan ryhmään kuuluvat eivät ole samanlaisia. Stereotypioita on syytä kyseenalaistaa. Ne eivät ole totuuksia, vaan yksittäisen kokemuksen kautta syntyneitä yleistyksiä. Stereotypiat voivat johtaa syrjintään, mikäli jokin ihmisryhmä ja sen edustajat nähdään aina negatiivisessa valossa. Sukupuoleen liittyvät stereotypiat voivat vaikeuttaa esimerkiksi tasa-arvon toteutumista työelämässä. Tällaisia haitallisia stereotypioita ovat esimerkiksi “tytöt ovat heikompia matematiikassa kuin pojat”, “miehet ovat parempia johtajia kuin naiset”, “naiset ovat liian tunteellisia”.'
-				},
-				{
-					type: 'p',
-					content:
-						'Stereotypiat voivat myös muuttaa yksilön käyttäytymistä. Henkilö voi alkaa käyttäytymään stereotypian mukaisesti ja siksi ne ovat vaarallisia. Tutkijat Aronson ja Steele halusivat tutkia tummaihoisten huonoa koulumenestystä Yhdysvalloissa 1990-luvulla. Rasistinen selitys tummaihoisten heikommalle koulumenestykselle oli se, että tummaihoiset olivat tyhmempiä. Aronson ja Steele jakoivat valko- ja tummaihoiset koehenkilöt kolmeen ryhmään. Koehenkilöille annettiin ongelmanratkaisua vaativia tehtäviä. Mutta vain yhdelle ryhmälle kerrottiin, että tutkimuksessa testattiin älykkyyttä. Tämä oli ainoa ryhmä, jossa valkoihoiset pärjäsivät tummaihoisia paremmin. Mikäli mustaihoiset eivät tienneet olevansa älykkyystestissä, heidän suorituksensa oli siis parempi. Tutkimuksessa toteutui stereotypiauhka eli stereotypian kohteena olevan ihmisen toiminta muuttuu stereotypian mukaiseksi, mikäli stereotypia aktivoidaan tilanteessa. Älykkyyttä mittaavassa tehtävässä henkilö, joka uskoo olevansa vähemmän älykkäämpi kuin muut, alisuoriutuu tehtävässä. Mieli täyttyy huolilla ja epäonnistumisen pelolla, ja suorituskyky heikkenee. Stereotypia tummaihoisten heikommasta älykkyydestä vaikutti siis tummaihoisten koulumenestykseen. Stereotypiasta tuli niin kutsuttu itseään toteuttava ennuste.'
 				}
 			]
+		},
+		{
+			id: 533,
+			header: 'Tutkimus stereotypioista',
+			text:
+				'Stereotypiat voivat myös muuttaa yksilön käyttäytymistä. Henkilö voi alkaa käyttäytymään stereotypian mukaisesti ja siksi ne ovat vaarallisia. Tutkijat Aronson ja Steele halusivat tutkia tummaihoisten huonoa koulumenestystä Yhdysvalloissa 1990-luvulla. Rasistinen selitys tummaihoisten heikommalle koulumenestykselle oli se, että tummaihoiset olivat tyhmempiä. Aronson ja Steele jakoivat valko- ja tummaihoiset koehenkilöt kolmeen ryhmään. Koehenkilöille annettiin ongelmanratkaisua vaativia tehtäviä. Mutta vain yhdelle ryhmälle kerrottiin, että tutkimuksessa testattiin älykkyyttä. Tämä oli ainoa ryhmä, jossa valkoihoiset pärjäsivät tummaihoisia paremmin. Mikäli mustaihoiset eivät tienneet olevansa älykkyystestissä, heidän suorituksensa oli siis parempi. Tutkimuksessa toteutui stereotypiauhka eli stereotypian kohteena olevan ihmisen toiminta muuttuu stereotypian mukaiseksi, mikäli stereotypia aktivoidaan tilanteessa. Älykkyyttä mittaavassa tehtävässä henkilö, joka uskoo olevansa vähemmän älykkäämpi kuin muut, alisuoriutuu tehtävässä. Mieli täyttyy huolilla ja epäonnistumisen pelolla, ja suorituskyky heikkenee. Stereotypia tummaihoisten heikommasta älykkyydestä vaikutti siis tummaihoisten koulumenestykseen. Stereotypiasta tuli niin kutsuttu itseään toteuttava ennuste.'
 		},
 		{
 			id: 54,

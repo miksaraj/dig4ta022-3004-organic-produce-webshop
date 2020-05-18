@@ -281,7 +281,7 @@ export const state = () => ({
 			contentId: 371,
 			sectionId: 12,
 			order: 2,
-			type: 'MultipleChoice'
+			type: 'VideoEmbed'
 		},
 		{
 			contentId: 372,
@@ -416,6 +416,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 533,
+			sectionId: 17,
+			order: 2,
+			type: 'SpecialText'
+		},
+		{
 			contentId: 54,
 			sectionId: 18,
 			order: 1,
@@ -441,7 +447,7 @@ export const state = () => ({
 		},
 		{
 			contentId: 571,
-			sectionId: 16,
+			sectionId: 18,
 			order: 5,
 			type: 'MultipleChoice'
 		},
