@@ -170,15 +170,21 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 23,
+			contentId: 231,
 			sectionId: 9,
 			order: 5,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 23,
+			sectionId: 9,
+			order: 6,
 			type: 'SpecialText'
 		},
 		{
-			contentId: 231,
+			contentId: 232,
 			sectionId: 9,
-			order: 6,
+			order: 7,
 			type: 'MultipleChoice'
 		},
 		{

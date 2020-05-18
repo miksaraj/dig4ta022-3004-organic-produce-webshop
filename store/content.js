@@ -558,6 +558,39 @@ export const state = () => ({
 				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia.'
 		},
 		{
+			id: 232,
+			header: 'Monivalintatehtävä: sisäiset mallit',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
+					order: 1,
+					type: 'RadioGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
+							value: 'pohjustus'
+						},
+						{
+							text:
+								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
+							value: 'epätotta'
+						},
+						{
+							text:
+								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
+							value: 'ei aina'
+						}
+					],
+					correctAnswer: 'pohjustus'
+					// tosin voit lisätä kommentoituna
+				}
+			]
+		},
+		{
 			id: 24,
 			header: 'Muistin toiminta',
 			text: [
