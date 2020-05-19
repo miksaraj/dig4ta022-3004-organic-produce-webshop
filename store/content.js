@@ -1,3 +1,4 @@
+// list of all content with details required for dynamic rendering
 export const state = () => ({
 	list: [
 		{
@@ -429,7 +430,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'behaviorismi'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -589,7 +589,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'pohjustus'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -716,7 +715,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'oikein'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -842,7 +840,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'syvallinen'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -920,7 +917,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'psykodynaaminen'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -950,7 +946,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'torjunta'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1029,7 +1024,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'sisainen'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1282,7 +1276,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'konformisuus'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1331,7 +1324,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'tottelevaisuus'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1438,7 +1430,6 @@ export const state = () => ({
 						}
 					],
 					correctAnswer: 'muuttuja'
-					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
@@ -1519,7 +1510,6 @@ export const state = () => ({
 			id: 64,
 			header: 'Otsikko',
 			description: 'Kootut selitykset'
-			// tähän voi lisätä accept: '.jpg, .png., .gif' tai jotain
 		},
 		{
 			id: 65,
@@ -1557,6 +1547,7 @@ export const getters = {
 	contentById: state => id => {
 		return state.list.find(item => item.id === id)
 	},
+	// return all content in section (by array of contentIds)
 	contentBySection: state => data => {
 		const content = []
 		for (let i = 0; i < data.length; i++) {
@@ -1565,9 +1556,11 @@ export const getters = {
 		}
 		return content
 	},
+	// fetch all content by array of contentIds
 	fetchContent: state => data => {
 		return state.list.filter(x => data.some(y => y.contentId === x.id))
 	},
+	// return content matching filters defined by given type
 	contentByType: state => type => {
 		let filters = []
 		if (type === true) {
