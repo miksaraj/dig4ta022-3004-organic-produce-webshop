@@ -32,10 +32,22 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 505,
+			sectionId: 3,
+			order: 2,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 6,
 			sectionId: 4,
 			order: 1,
 			type: 'TheoryElement'
+		},
+		{
+			contentId: 605,
+			sectionId: 4,
+			order: 2,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 7,
@@ -60,6 +72,12 @@ export const state = () => ({
 			sectionId: 5,
 			order: 4,
 			type: 'SpecialText'
+		},
+		{
+			contentId: 109,
+			sectionId: 5,
+			order: 5,
+			type: 'MultipleChoice'
 		},
 		{
 			contentId: 11,
@@ -152,15 +170,21 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 23,
+			contentId: 231,
 			sectionId: 9,
 			order: 5,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 23,
+			sectionId: 9,
+			order: 6,
 			type: 'SpecialText'
 		},
 		{
-			contentId: 231,
+			contentId: 232,
 			sectionId: 9,
-			order: 6,
+			order: 7,
 			type: 'MultipleChoice'
 		},
 		{
@@ -257,12 +281,18 @@ export const state = () => ({
 			contentId: 371,
 			sectionId: 12,
 			order: 2,
-			type: 'MultipleChoice'
+			type: 'VideoEmbed'
 		},
 		{
 			contentId: 372,
 			sectionId: 12,
 			order: 3,
+			type: 'MultipleChoice'
+		},
+		{
+			contentId: 373,
+			sectionId: 12,
+			order: 4,
 			type: 'MultipleChoice'
 		},
 		{
@@ -278,6 +308,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 391,
+			sectionId: 13,
+			order: 3,
+			type: 'MultipleChoice'
+		},
+		{
 			contentId: 40,
 			sectionId: 13,
 			order: 3,
@@ -290,21 +326,21 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
-			contentId: 401,
-			sectionId: 14,
-			order: 2,
-			type: 'MultipleChoice'
-		},
-		{
 			contentId: 42,
 			sectionId: 14,
 			order: 2,
 			type: 'Assignment'
 		},
 		{
-			contentId: 43,
+			contentId: 431,
 			sectionId: 14,
 			order: 3,
+			type: 'VideoEmbed'
+		},
+		{
+			contentId: 43,
+			sectionId: 14,
+			order: 4,
 			type: 'Assignment'
 		},
 		{
@@ -380,6 +416,12 @@ export const state = () => ({
 			type: 'TheoryElement'
 		},
 		{
+			contentId: 533,
+			sectionId: 17,
+			order: 2,
+			type: 'SpecialText'
+		},
+		{
 			contentId: 54,
 			sectionId: 18,
 			order: 1,
@@ -405,7 +447,7 @@ export const state = () => ({
 		},
 		{
 			contentId: 571,
-			sectionId: 16,
+			sectionId: 18,
 			order: 5,
 			type: 'MultipleChoice'
 		},

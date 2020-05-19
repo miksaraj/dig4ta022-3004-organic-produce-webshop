@@ -1,15 +1,9 @@
-// list of all content with details required for dynamic rendering
 export const state = () => ({
 	list: [
 		{
 			id: 1,
 			header: 'Mitä ihmettä on psykologia',
 			text: [
-				{
-					type: 'p',
-					content:
-						'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.'
-				},
 				{
 					type: 'ul',
 					content: [
@@ -172,6 +166,37 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 505,
+			header: 'Monivalintatehtävä: aivot',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label:
+						'Valitse kaikki, jotka kuvaavat mantelitumakkeen toimintaa aivoissa ',
+					order: 1,
+					type: 'CBGroup',
+					stacked: true,
+					items: [
+						{
+							text:
+								'Vaikuttaa voimakkaiden tunnereaktioiden syntyyn.',
+							value: 'mantelitumake'
+						},
+						{
+							text: 'Taistele tai pakene -mekanismi.',
+							value: 'mantelitumake'
+						},
+						{
+							text:
+								'Ensisijainen aivoalue joka on yhteydessä uneen. ',
+							value: 'käpyrauhanen'
+						}
+					],
+					correctAnswer: 'mantelitumake'
+				}
+			]
+		},
+		{
 			id: 6,
 			header: 'Synnynnäinen temperamentti',
 			text: [
@@ -194,6 +219,36 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Mary Rothbart erottelee temperamentista kolme ulottuvuutta. Nämä ovat itsesäätely, taipumus kokea negatiivisia tunteita sekä ulospäinsuuntautuneisuus. Itsesäätelyllä tarkoitetaan sitä, että miten henkilö pystyy itse ohjaamaan tarkkaavaisuuttaan, käyttäytymistään ja tunteitaan. Toisille oman käyttäytymisen säätely on haastavampaa kuin toisille. Ihmisten välillä on eroa myös sen suhteen, miten herkästi he kokevat negatiivisia tunteita esimerkiksi pelkoa. Ulospäinsuuntautuneisuus selittää sitä, että miten kiinnostunut henkilö on hakeutumaan muiden seuraan. Toiset ovat luonnostaan ujompia muiden seurassa, toiset hakevat mielellään kontaktia toisten ihmisen kanssa. Temperamentin suhteen olemme yksilöllisiä ja tieto omasta temperamentista voi olla hyödyllistä ja auttaa ymmärtämään omaa käyttäytymistä eri tilanteissa.'
+				}
+			]
+		},
+		{
+			id: 605,
+			header: 'Monivalintatehtävä: temperamentti',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Valitse yksi: temperamentti tarkoittaa',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text: 'Voimakastahtoista ihmistä',
+							value: 'sinnikkyys'
+						},
+						{
+							text:
+								'Ympäristön muovaamaa tapaa reagoida ärsykkeisiin. ',
+							value: 'ehdollistuminen'
+						},
+						{
+							text:
+								'ihmisen synnynnäinen tapa esimerkiksi reagoida ärsykkeisiin. ',
+							value: 'temperamentti'
+						}
+					],
+					correctAnswer: 'temperamentti'
 				}
 			]
 		},
@@ -235,6 +290,37 @@ export const state = () => ({
 			header: 'Amala ja Kamala Intiasta sekä Genie Kaliforniasta',
 			text:
 				'Intiassa 1920- luvulla löydettiin Amala ja Kamala. He olivat 1,5-, ja 8- vuotiaita tyttöjä löydettäessä luonnosta. He liikkuivat neljällä jalalla, eivät puhuneet vaan ääntelivät kuin sudet. Nuorempi tytöistä kuoli pian, mutta toinen eli muutamia vuosia. Tätä tapausta on epäilty myös huijaukseksi ja villilapsitapauksiin onkin syytä suhtautua kriittisesti. Toinen hieman tuoreempi tapaus on Genie. Hänet löydettiin 1970-luvulla Kaliforniassa ja Genie oli tuolloin 13-vuotias. Hänen mielenterveysongelmista kärsivä isänsä oli eristänyt hänet yhteen huoneeseen. Genie ei kuullut puhetta eikä hänellä juurikaan ollut virikkeitä. Hänen isänsä löi häntä, mikäli hän äänteli, myös hänen liikkumistaan rajoitettiin. Hänet oli esimerkiksi kahlittu pottaan. Genie ehti olla vankilassaan 12 vuotta, jonka jälkeen hänen äitinsä jätti miehensä ja otti Genien mukaan. Äiti vei Genien sosiaalitoimistoon. Genie otettiin huostaan ja vanhemmat joutuivat syytteeseen kaltoinkohtelusta. Hänen isänsä teki itsemurhan.'
+		},
+		{
+			id: 109,
+			header: 'Monivalintatehtävä: muovautuvuus',
+			btnText: 'Lähetä',
+			parts: [
+				{
+					label: 'Valitse yksi: plastisiteetti tarkoittaa',
+					order: 1,
+					type: 'SelectElement',
+					stacked: true,
+					items: [
+						{
+							text:
+								'Ympäristö muovaa hermosolujen haaroittuneisuutta.',
+							value: 'plastisiteetti'
+						},
+						{
+							text:
+								'Kaikkien aivot ovat täysin samanlaiset, mutta ympäristö muovaa niistä erilaisuutta. ',
+							value: 'kaksoset'
+						},
+						{
+							text:
+								'ihmisen synnynnäinen tapa esimerkiksi reagoida ärsykkeisiin. ',
+							value: 'temperamentti'
+						}
+					],
+					correctAnswer: 'plastisiteetti'
+				}
+			]
 		},
 		{
 			id: 11,
@@ -283,17 +369,17 @@ export const state = () => ({
 						{
 							text:
 								'johonkin asiaan syntyy uusi reaktio (klassinen ehdollistuminen)',
-							value: 'true'
+							value: 'klassinen'
 						},
 						{
 							text:
 								'opitaan asia toiselta ihmiseltä (mallioppiminen)',
-							value: 'false'
+							value: 'mallioppiminen'
 						},
 						{
 							text:
 								'opitaan toiminnan seurauksista (välineellinen ehdollistuminen)',
-							value: 'false'
+							value: 'valineellinen'
 						}
 					],
 					correctAnswer: 'klassinen'
@@ -324,25 +410,25 @@ export const state = () => ({
 				{
 					label: 'Behaviorismi on psykologian suuntaus, jonka mukaan',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'ihminen on muokattavissa palkkioiden ja rangaistusten avulla',
-							value: 'true'
+							value: 'behaviorismi'
 						},
 						{
 							text: 'ihminen on aktiivinen tiedonkäsittelijä',
-							value: 'false'
+							value: 'kognitiivinen'
 						},
 						{
 							text:
 								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'false'
+							value: 'kognitiivinen'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'behaviorismi'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -435,9 +521,16 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 211,
+			header: 'Tarkkaavaisuustesti',
+			src: 'https://www.youtube.com/embed/nDQYdU5p0KY',
+			allowFullScreen: true,
+			description: 'Tämä on Transport for Londonin tuottama video'
+		},
+		{
 			id: 21,
-			header: 'Tee testi ja vastaa kysymykseen',
-			//  video: 	'https://www.youtube.com/watch?v=Ahg6qcgoay4',
+			header:
+				'Tee yllä olevan videon testi ja kerro, miten se liittyi tarkkaavaisuuteen',
 			description:
 				'Tee testi osoitteessa https://www.youtube.com/watch?v=Ahg6qcgoay4 ja kerro, miten se liittyi tarkkaavaisuuteen',
 			placeholder: 'Kirjoita tähän...'
@@ -454,13 +547,21 @@ export const state = () => ({
 			]
 		},
 		{
+			id: 231,
+			header: 'Video karttatestistä',
+			src: 'https://www.youtube.com/embed/vBPG_OBgTWg',
+			allowFullScreen: true,
+			description:
+				'Tämä on illusionisti Darren Brownin hämäys, joilla tietä neuvovan tarkkaavaisuus on kohdistunut karttaan eikä hän huomaa ilmiselviä muutoksia ympäristössään'
+		},
+		{
 			id: 23,
 			header: 'Karttatesti',
 			text:
-				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia. Video nähtävissä osoitteessa: https://www.youtube.com/watch?v=vBPG_OBgTWg'
+				'Taikurit osaavat käyttää hyvin hyödyksi ihmisen tarkkaavaisuutta.  Ihmisen huomio kiinnittyy helposti yhteen tiettyyn asiaan, tällöin puhutaan valikoivasta tarkkaavaisuudesta. Tarkkaavaisuuden ulkopuolelle jäävät asiat sivutetaan, eikä niitä edes välttämättä huomaa. Kun huomio on kiinnittynyt muualle, voi taikuri esimerkiksi piilottaa esineitä tai tuoda takintaskusta esiin uusia.'
 		},
 		{
-			id: 231,
+			id: 232,
 			header: 'Monivalintatehtävä: sisäiset mallit',
 			btnText: 'Lähetä',
 			parts: [
@@ -468,26 +569,26 @@ export const state = () => ({
 					label:
 						'Valitse oikea vaihtoehto. Sisäinen malli suuntaa tarkkaavaisuutta, joten ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'ennen oppituntia kannattaa herätellä sisäisiä malleja pohtimalla, mitä tietää oppitunnin aiheesta jo ennestään.',
-							value: 'true'
+							value: 'pohjustus'
 						},
 						{
 							text:
 								'oppitunnilla on mahdotonta valikoida opettajan opetusta tarkkaavaisuuden kohteeksi.',
-							value: 'false'
+							value: 'epätotta'
 						},
 						{
 							text:
 								'uudet havainnot ympäristöstä vahvistavat aina sisäisiä malleja.',
-							value: 'false'
+							value: 'ei aina'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'pohjustus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -595,7 +696,7 @@ export const state = () => ({
 			btnText: 'Lähetä',
 			parts: [
 				{
-					label: 'Mikä seuraavista väittämistä on väärin:',
+					label: 'Mitkä seuraavista väittämistä ovat oikein:',
 					order: 1,
 					type: 'CBGroup',
 					stacked: true,
@@ -603,19 +704,18 @@ export const state = () => ({
 						{
 							text:
 								'työmuistissa asioita käsitellään aktiivisesti, mutta sinne mahtuu vain vähän asioita kerrallaan',
-							value: 'true'
+							value: 'oikein'
 						},
 						{
 							text: 'pitkäkestoinen muisti kuormittuu helposti',
-							value: 'false'
+							value: 'ei kuormitu'
 						},
 						{
-							text:
-								'yksilön tunteet ja ajatukset ovat aivan keskeisiä tutkimuskohteita',
-							value: 'true'
+							text: 'tunteet vahvistavat muistijälkeä',
+							value: 'oikein'
 						}
-					]
-					// correctAnswer: 'false'
+					],
+					correctAnswer: 'oikein'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -722,26 +822,26 @@ export const state = () => ({
 					label:
 						'Mikä seuraavista väittämistä on oikein: Tutkijat Hyde ja Jenkins huomasivat tutkimuksessaan, että ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
 							text:
 								'sanojen miellyttävyyden pohtiminen on tiedon pinnallista prosessointia',
-							value: 'false'
+							value: 'pinnallinen'
 						},
 						{
 							text:
 								'tiedon syvällinen prosessointi tehostaa muistamista',
-							value: 'true'
+							value: 'syvallinen'
 						},
 						{
 							text:
 								'tiedon prosessoinnin tasolla ei ole merkitystä oppimiselle',
-							value: 'false'
+							value: 'ei totta'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'syvallinen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -759,11 +859,6 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Omana aikanaan Freudin ajatuksia pidettiin hyvin radikaaleina. Hän tutki omia potilaitaan ja muotoili kuuluisan teoriansa näiden pohjalta.  Freud korosti erityisesti mielen tiedostamatonta puolta, eli ajatuksia, tunteita. Ihmisen mieli koostuu Freudin mukaan kolmesta osasta. EGO, minä, on ihmisen mielen tietoinen osa, eli se, mitä ihmisellä on mielessään nyt. ID, se,  on mielen tiedostamaton osa, eläimellinen viettipohja, joka tavoittelee mielihyvää. Mielellä on myös kolmas osa, SUPER-EGO, yliminä, joka on enimmäkseen tiedostamaton, mutta ihminen pystyy myös tiedostamaan sen toimintaa.'
-				},
-				{
-					type: 'p',
-					content:
-						'Tässä video Freudista: https://www.youtube.com/watch?v=mQaqXK7z9LM'
 				},
 				{
 					type: 'p',
@@ -793,6 +888,13 @@ export const state = () => ({
 		},
 		{
 			id: 371,
+			header: 'Video Freudista',
+			src: 'https://www.youtube.com/embed/mQaqXK7z9LM',
+			allowFullScreen: true,
+			description: 'Tässä videossa kerrotaan Freudin tärkeimmistä opeista'
+		},
+		{
+			id: 372,
 			header: 'Monivalintatehtävä: psykoanalyysi',
 			btnText: 'Lähetä',
 			parts: [
@@ -800,30 +902,30 @@ export const state = () => ({
 					label:
 						'Mikä seuraavista väittämistä on oikein: Psykoanalyysi on psykologian suuntaus ja hoitomenetelmä, joka korostaa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'sisäisten mallien ja tiedon käsittelyn merkitystä',
-							value: 'false'
+							value: 'kognitiivinen'
 						},
 						{
 							text: 'tiedostamattoman merkitystä',
-							value: 'true'
+							value: 'psykodynaaminen'
 						},
 						{
 							text: 'palkkioiden ja rangaistusten merkitystä',
-							value: 'false'
+							value: 'behaviorismi'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'psykodynaaminen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
 		{
-			id: 372,
+			id: 373,
 			header: 'Monivalintatehtävä: defenssit',
 			btnText: 'Lähetä',
 			parts: [
@@ -831,23 +933,23 @@ export const state = () => ({
 					label:
 						'Opiskelija on saanut matematiikan kokeesta hylätyn arvosanan. Äiti tiedustelee kotona, että miten kurssi etenee ja että miten koe meni. Mutta opiskelija yrittää koko ajan vaihtaa puheenaihetta, hän ei halua ajatella koko asiaa. Kyseessä on defenssi, mutta mikä seuraavista?',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text: 'projektio',
-							value: 'false'
+							value: 'projektio'
 						},
 						{
 							text: 'sublimaatio',
-							value: 'false'
+							value: 'sublimaatio'
 						},
 						{
 							text: 'torjunta',
-							value: 'true'
+							value: 'torjunta'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'torjunta'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -915,18 +1017,18 @@ export const state = () => ({
 					items: [
 						{
 							text: 'tehtävä itsessään kiinnostaa ja innostaa',
-							value: 'true'
+							value: 'sisainen'
 						},
 						{
 							text: 'asiaa tehdään siitä saatavan palkkion takia',
-							value: 'false'
+							value: 'ulkoinen'
 						},
 						{
 							text: 'henkilöllä ei ole motivaatiota tehdä mitään',
-							value: 'false'
+							value: 'amotivaatio'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'sisainen'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1070,10 +1172,18 @@ export const state = () => ({
 		},
 		{
 			id: 42,
-			header: 'Tehtävä: ',
+			header: 'Tehtävä: Tunteet kouluaineissa',
 			description:
 				'Oletko itse kokenut vastaavia tunteita eri kouluaineissa? Miten voisit muuttaa omia attribuointityylejäsi eri aineissa? ',
 			placeholder: 'Kirjoita tähän...'
+		},
+		{
+			id: 431,
+			header: 'Video Caro Dweck ajattelutavoista',
+			src:
+				'https://embed.ted.com/talks/lang/fi/carol_dweck_the_power_of_believing_that_you_can_improve',
+			allowFullScreen: true,
+			description: 'Carol Dweck puhuu erilaisista ajattelutavoista'
 		},
 		{
 			id: 43,
@@ -1153,25 +1263,25 @@ export const state = () => ({
 				{
 					label: 'Konformisuus on ilmiö, jossa',
 					order: 1,
-					type: 'CBGroup',
+					type: 'RadioGroup',
 					stacked: true,
 					items: [
 						{
 							text:
 								'henkilö tekee itsenäisiä ja vastuullisia päätöksiä',
-							value: 'false'
+							value: 'autonomia'
 						},
 						{
 							text: 'henkilö mukautuu ryhmän paineeseen',
-							value: 'true'
+							value: 'konformisuus'
 						},
 						{
 							text:
 								'henkilö ei osallistu ryhmän toimintaan millään tavalla',
-							value: 'false'
+							value: 'vapaamatkustaja'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'konformisuus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1201,26 +1311,26 @@ export const state = () => ({
 				{
 					label: 'Milgramin tutkimuksessa havaittiin, että',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
 							text:
 								'ihmiset eivät yleensä tottele johtajan käskyjä',
-							value: 'false'
+							value: 'tottelemattomuus'
 						},
 						{
 							text:
 								'muilla ihmisillä ei ole merkitystä yksilön toiminnalle',
-							value: 'false'
+							value: 'itsenaisyys'
 						},
 						{
 							text:
 								'mikäli auktoriteetti niin käskee, koehenkilöt olivat valmiita antamaan voimakkaitakin sähköiskuja toisille ihmisille',
-							value: 'true'
+							value: 'tottelevaisuus'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'tottelevaisuus'
 					// tosin voit lisätä kommentoituna
 				}
 			]
@@ -1238,13 +1348,14 @@ export const state = () => ({
 					type: 'p',
 					content:
 						'Siskosi ei tahdo selvitä matematiikan tehtävistä ja sen perusteella voi syntyä käsitys, että kaikki tytöt ovat heikkoja matematiikassa. Yleistäminen helpottaa monimutkaisen maailman hahmottamista, mutta johtaa usein virheellisiin havaintoihin. Kaikki samaan ryhmään kuuluvat eivät ole samanlaisia. Stereotypioita on syytä kyseenalaistaa. Ne eivät ole totuuksia, vaan yksittäisen kokemuksen kautta syntyneitä yleistyksiä. Stereotypiat voivat johtaa syrjintään, mikäli jokin ihmisryhmä ja sen edustajat nähdään aina negatiivisessa valossa. Sukupuoleen liittyvät stereotypiat voivat vaikeuttaa esimerkiksi tasa-arvon toteutumista työelämässä. Tällaisia haitallisia stereotypioita ovat esimerkiksi “tytöt ovat heikompia matematiikassa kuin pojat”, “miehet ovat parempia johtajia kuin naiset”, “naiset ovat liian tunteellisia”.'
-				},
-				{
-					type: 'p',
-					content:
-						'Stereotypiat voivat myös muuttaa yksilön käyttäytymistä. Henkilö voi alkaa käyttäytymään stereotypian mukaisesti ja siksi ne ovat vaarallisia. Tutkijat Aronson ja Steele halusivat tutkia tummaihoisten huonoa koulumenestystä Yhdysvalloissa 1990-luvulla. Rasistinen selitys tummaihoisten heikommalle koulumenestykselle oli se, että tummaihoiset olivat tyhmempiä. Aronson ja Steele jakoivat valko- ja tummaihoiset koehenkilöt kolmeen ryhmään. Koehenkilöille annettiin ongelmanratkaisua vaativia tehtäviä. Mutta vain yhdelle ryhmälle kerrottiin, että tutkimuksessa testattiin älykkyyttä. Tämä oli ainoa ryhmä, jossa valkoihoiset pärjäsivät tummaihoisia paremmin. Mikäli mustaihoiset eivät tienneet olevansa älykkyystestissä, heidän suorituksensa oli siis parempi. Tutkimuksessa toteutui stereotypiauhka eli stereotypian kohteena olevan ihmisen toiminta muuttuu stereotypian mukaiseksi, mikäli stereotypia aktivoidaan tilanteessa. Älykkyyttä mittaavassa tehtävässä henkilö, joka uskoo olevansa vähemmän älykkäämpi kuin muut, alisuoriutuu tehtävässä. Mieli täyttyy huolilla ja epäonnistumisen pelolla, ja suorituskyky heikkenee. Stereotypia tummaihoisten heikommasta älykkyydestä vaikutti siis tummaihoisten koulumenestykseen. Stereotypiasta tuli niin kutsuttu itseään toteuttava ennuste.'
 				}
 			]
+		},
+		{
+			id: 533,
+			header: 'Tutkimus stereotypioista',
+			text:
+				'Stereotypiat voivat myös muuttaa yksilön käyttäytymistä. Henkilö voi alkaa käyttäytymään stereotypian mukaisesti ja siksi ne ovat vaarallisia. Tutkijat Aronson ja Steele halusivat tutkia tummaihoisten huonoa koulumenestystä Yhdysvalloissa 1990-luvulla. Rasistinen selitys tummaihoisten heikommalle koulumenestykselle oli se, että tummaihoiset olivat tyhmempiä. Aronson ja Steele jakoivat valko- ja tummaihoiset koehenkilöt kolmeen ryhmään. Koehenkilöille annettiin ongelmanratkaisua vaativia tehtäviä. Mutta vain yhdelle ryhmälle kerrottiin, että tutkimuksessa testattiin älykkyyttä. Tämä oli ainoa ryhmä, jossa valkoihoiset pärjäsivät tummaihoisia paremmin. Mikäli mustaihoiset eivät tienneet olevansa älykkyystestissä, heidän suorituksensa oli siis parempi. Tutkimuksessa toteutui stereotypiauhka eli stereotypian kohteena olevan ihmisen toiminta muuttuu stereotypian mukaiseksi, mikäli stereotypia aktivoidaan tilanteessa. Älykkyyttä mittaavassa tehtävässä henkilö, joka uskoo olevansa vähemmän älykkäämpi kuin muut, alisuoriutuu tehtävässä. Mieli täyttyy huolilla ja epäonnistumisen pelolla, ja suorituskyky heikkenee. Stereotypia tummaihoisten heikommasta älykkyydestä vaikutti siis tummaihoisten koulumenestykseen. Stereotypiasta tuli niin kutsuttu itseään toteuttava ennuste.'
 		},
 		{
 			id: 54,
@@ -1259,30 +1370,29 @@ export const state = () => ({
 		},
 		{
 			id: 54,
-			header:
-				'Tutkimusongelman määrittäminen: Miten älypuhelin vaikuttaa oppimistuloksiin?',
+			header: 'Tutkimusongelman määrittäminen:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
+						'Esimerkki tutkimusongelmsta: "Miten älypuhelin vaikuttaa oppimistuloksiin?" Jotta voidaan edes tutkia mitä tahansa ilmiötä, täytyy olla ensin selkeä kysymys, mihin etsitään vastauksia. Tutkimuksen tekeminen alkaa aina hyvästä kysymyksestä eli tutkimusongelman määrittelemisestä.'
 				}
 			]
 		},
 		{
 			id: 55,
-			header: 'Hypoteesi: Älypuhelin heikentää oppimistuloksia.',
+			header: 'Hypoteesi:',
 			text: [
 				{
 					type: 'p',
 					content:
-						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa.'
+						'Hypoteesi on ennuste tutkimustuloksista, jonka tutkija tekee aiemman tutkimustiedon varassa. Esimerkiksi:  Älypuhelin heikentää oppimistuloksia.'
 				}
 			]
 		},
 		{
 			id: 56,
-			header: 'Tutkimusote: kokeellinen',
+			header: 'Tutkimusote:',
 			text: [
 				{
 					type: 'p',
@@ -1304,37 +1414,37 @@ export const state = () => ({
 		},
 		{
 			id: 571,
-			header: 'Monivalintatehtävä: muuttja',
+			header: 'Monivalintatehtävä: muuttuja',
 			btnText: 'Lähetä',
 			parts: [
 				{
 					label: 'Tutkimuksessa muuttuja on ',
 					order: 1,
-					type: 'CBGroup',
+					type: 'SelectElement',
 					stacked: true,
 					items: [
 						{
 							text: 'koehenkilö',
-							value: 'false'
+							value: 'koehenkilo'
 						},
 						{
 							text:
 								'se asia, jota halutaan tutkia, esimerkiksi motivaatio',
-							value: 'true'
+							value: 'muuttuja'
 						},
 						{
 							text: 'kontrolliryhmä',
-							value: 'true'
+							value: 'kontrolli'
 						}
-					]
-					// correctAnswer: 'true'
+					],
+					correctAnswer: 'muuttuja'
 					// tosin voit lisätä kommentoituna
 				}
 			]
 		},
 		{
 			id: 58,
-			header: 'Koehenkilöt: koeryhmä ja kontrolliryhmä',
+			header: 'Koeryhmä ja kontrolliryhmä',
 			text: [
 				{
 					type: 'p',
@@ -1447,7 +1557,6 @@ export const getters = {
 	contentById: state => id => {
 		return state.list.find(item => item.id === id)
 	},
-	// return all content in section (by array of contentIds)
 	contentBySection: state => data => {
 		const content = []
 		for (let i = 0; i < data.length; i++) {
@@ -1456,11 +1565,9 @@ export const getters = {
 		}
 		return content
 	},
-	// fetch all content by array of contentIds
 	fetchContent: state => data => {
 		return state.list.filter(x => data.some(y => y.contentId === x.id))
 	},
-	// return content matching filters defined by given type
 	contentByType: state => type => {
 		let filters = []
 		if (type === true) {
