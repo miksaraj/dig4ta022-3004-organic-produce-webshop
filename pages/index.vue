@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<b-card
-			overlay
 			title="Psyka 1"
 			img-src="/img/aloitus.jpg"
 			img-alt="Aloitus"
+			img-right
 			style="width: 100%;"
 			class="hero-card"
 		>

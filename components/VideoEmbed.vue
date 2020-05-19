@@ -2,7 +2,6 @@
 	<div>
 		<h3 v-if="item.header">{{ item.header }}</h3>
 		<b-embed
-			type="video"
 			aspect="16by9"
 			:src="item.src"
 			:allowfullscreen="item.allowFullScreen"
