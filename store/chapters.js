@@ -1,6 +1,5 @@
 // list of chapters with details required for dynamic rendering
 export const state = () => ({
-	// TÄÄLTÄ PUUTTUU KUVAT!
 	list: [
 		{
 			id: 1,
@@ -44,7 +43,6 @@ export const state = () => ({
 			id: 7,
 			header: 'Psykologinen tutkimus',
 			description: 'Miten tehdään psykologista tutkimusta?',
-			// FIXME
 			src: '/img/chapterImg/analysis-hospital-doctor-medical.jpg'
 		}
 	]
