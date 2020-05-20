@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<b-card
-			title="Psyka 1"
+			title="Psykologian 1.kurssi"
 			img-src="/img/aloitus.jpg"
 			img-alt="Aloitus"
 			img-right
@@ -9,7 +9,9 @@
 			class="hero-card"
 		>
 			<b-card-text>
-				Tähän vois kirjoittaa jotain, mitä ny sit ikinästäkään.
+				Tervetuloa lukion psykologian 1. kurssille. Tällä kurssilla on
+				seitsemän eri lukua, jotka johdattelevat sinua ymmärtämään
+				ihmismielen toimintaa. Klikkaa ensimmäistä korttia "Aloitus".
 			</b-card-text>
 		</b-card>
 		<options-row :type="type" />
