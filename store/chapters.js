@@ -45,7 +45,7 @@ export const state = () => ({
 			header: 'Psykologinen tutkimus',
 			description: 'Miten tehdään psykologista tutkimusta?',
 			// FIXME
-			src: '/img/chapterImg/research.html'
+			src: '/img/chapterImg/analysis-hospital-doctor-medical.jpg'
 		}
 	]
 })
