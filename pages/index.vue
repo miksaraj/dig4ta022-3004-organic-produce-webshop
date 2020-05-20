@@ -23,7 +23,7 @@
 .hero-card {
 	margin-bottom: 2rem;
 	background-color: var(--color-secondary);
-	/* color: #ffffff; */
+	color: #ffffff;
 }
 </style>
 

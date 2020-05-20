@@ -32,19 +32,20 @@ export const state = () => ({
 			header: 'Tunteiden ja motivaation näkökulma',
 			description:
 				'Innostus syntyy itsetunnon, vapauden ja muiden ihmisten avulla',
-			src: '/img/chapterImg/tunteetjamotivaatio'
+			src: '/img/chapterImg/tunteetjamotivaatio.png'
 		},
 		{
 			id: 6,
 			header: 'Sosiokulttuurinen näkökulma',
 			description: 'Ryhmän ja yhteisöjen vaikutus yksilöön',
-			src: '/img/chapterImg/sosiokulttuurinen'
+			src: '/img/chapterImg/sosiokulttuurinen.png'
 		},
 		{
 			id: 7,
 			header: 'Psykologinen tutkimus',
 			description: 'Miten tehdään psykologista tutkimusta?',
-			src: '/img/chapterImg/research'
+			// FIXME
+			src: '/img/chapterImg/research.html'
 		}
 	]
 })
